@@ -1,0 +1,429 @@
+{
+  "kpis": {
+    "records": 16734,
+    "states": 29,
+    "markets": 1774,
+    "commodities": 269,
+    "avg_modal": 5591.58,
+    "avg_min": 5062.35,
+    "avg_max": 7849.51,
+    "avg_spread": 2787.17
+  },
+  "top_comms_price": [
+    {
+      "Commodity": "Black pepper",
+      "records": 17,
+      "avg_modal": 63776.53,
+      "avg_min": 57687.29,
+      "avg_max": 68378.71,
+      "spread": 10691.41
+    },
+    {
+      "Commodity": "Jasmine",
+      "records": 15,
+      "avg_modal": 60266.67,
+      "avg_min": 58533.33,
+      "avg_max": 62000.0,
+      "spread": 3466.67
+    },
+    {
+      "Commodity": "Arecanut(Betelnut/Supari)",
+      "records": 60,
+      "avg_modal": 29997.73,
+      "avg_min": 24164.07,
+      "avg_max": 32236.08,
+      "spread": 8072.02
+    },
+    {
+      "Commodity": "Dry Chillies",
+      "records": 25,
+      "avg_modal": 24925.16,
+      "avg_min": 20096.76,
+      "avg_max": 28696.12,
+      "spread": 8599.36
+    },
+    {
+      "Commodity": "Fish",
+      "records": 26,
+      "avg_modal": 24911.54,
+      "avg_min": 21184.62,
+      "avg_max": 29011.54,
+      "spread": 7826.92
+    },
+    {
+      "Commodity": "Cummin Seed(Jeera)",
+      "records": 29,
+      "avg_modal": 23945.33,
+      "avg_min": 21624.5,
+      "avg_max": 25438.24,
+      "spread": 3813.75
+    },
+    {
+      "Commodity": "Copra",
+      "records": 10,
+      "avg_modal": 22163.1,
+      "avg_min": 21510.0,
+      "avg_max": 23200.0,
+      "spread": 1690.0
+    },
+    {
+      "Commodity": "Mushroom",
+      "records": 32,
+      "avg_modal": 21717.19,
+      "avg_min": 20740.62,
+      "avg_max": 22678.12,
+      "spread": 1937.5
+    },
+    {
+      "Commodity": "Turmeric",
+      "records": 16,
+      "avg_modal": 20421.57,
+      "avg_min": 18174.19,
+      "avg_max": 21593.88,
+      "spread": 3419.69
+    },
+    {
+      "Commodity": "Chili Red",
+      "records": 22,
+      "avg_modal": 17745.45,
+      "avg_min": 15286.36,
+      "avg_max": 27925.91,
+      "spread": 12639.55
+    },
+    {
+      "Commodity": "Betal Leaves",
+      "records": 15,
+      "avg_modal": 16200.0,
+      "avg_min": 15000.0,
+      "avg_max": 17400.0,
+      "spread": 2400.0
+    },
+    {
+      "Commodity": "Garlic",
+      "records": 202,
+      "avg_modal": 15317.9,
+      "avg_min": 12958.53,
+      "avg_max": 18593.28,
+      "spread": 5634.75
+    },
+    {
+      "Commodity": "Rose(Local)",
+      "records": 27,
+      "avg_modal": 15231.48,
+      "avg_min": 14600.0,
+      "avg_max": 15862.96,
+      "spread": 1262.96
+    },
+    {
+      "Commodity": "Lemon",
+      "records": 206,
+      "avg_modal": 14458.48,
+      "avg_min": 13641.22,
+      "avg_max": 15295.65,
+      "spread": 1654.44
+    },
+    {
+      "Commodity": "Sesamum(Sesame,Gingelly,Til)",
+      "records": 73,
+      "avg_modal": 14332.6,
+      "avg_min": 12682.37,
+      "avg_max": 15309.49,
+      "spread": 2627.12
+    }
+  ],
+  "top_states": [
+    {
+      "State": "Tamil Nadu",
+      "records": 7022,
+      "avg_modal": 6202.91,
+      "avg_min": 5870.28,
+      "avg_max": 6535.53
+    },
+    {
+      "State": "Madhya Pradesh",
+      "records": 1887,
+      "avg_modal": 4973.48,
+      "avg_min": 4080.42,
+      "avg_max": 5557.29
+    },
+    {
+      "State": "Maharashtra",
+      "records": 1136,
+      "avg_modal": 4820.33,
+      "avg_min": 3950.42,
+      "avg_max": 5744.39
+    },
+    {
+      "State": "Gujarat",
+      "records": 935,
+      "avg_modal": 6139.97,
+      "avg_min": 5311.16,
+      "avg_max": 6808.28
+    },
+    {
+      "State": "Punjab",
+      "records": 721,
+      "avg_modal": 3416.87,
+      "avg_min": 3234.07,
+      "avg_max": 3599.31
+    },
+    {
+      "State": "Keralam",
+      "records": 682,
+      "avg_modal": 6503.48,
+      "avg_min": 6156.17,
+      "avg_max": 6837.1
+    },
+    {
+      "State": "Karnataka",
+      "records": 599,
+      "avg_modal": 9217.64,
+      "avg_min": 7766.13,
+      "avg_max": 10151.87
+    },
+    {
+      "State": "Telangana",
+      "records": 532,
+      "avg_modal": 4181.58,
+      "avg_min": 3665.8,
+      "avg_max": 4770.37
+    },
+    {
+      "State": "Haryana",
+      "records": 479,
+      "avg_modal": 3876.69,
+      "avg_min": 3325.37,
+      "avg_max": 4392.42
+    },
+    {
+      "State": "Rajasthan",
+      "records": 410,
+      "avg_modal": 5080.05,
+      "avg_min": 4453.98,
+      "avg_max": 5664.52
+    },
+    {
+      "State": "West Bengal",
+      "records": 410,
+      "avg_modal": 4764.43,
+      "avg_min": 4598.46,
+      "avg_max": 4941.23
+    },
+    {
+      "State": "Odisha",
+      "records": 384,
+      "avg_modal": 3707.05,
+      "avg_min": 3410.99,
+      "avg_max": 3970.89
+    },
+    {
+      "State": "Andhra Pradesh",
+      "records": 302,
+      "avg_modal": 5492.14,
+      "avg_min": 4952.99,
+      "avg_max": 5760.09
+    },
+    {
+      "State": "Bihar",
+      "records": 165,
+      "avg_modal": 3335.5,
+      "avg_min": 3225.9,
+      "avg_max": 185275.3
+    },
+    {
+      "State": "Uttar Pradesh",
+      "records": 159,
+      "avg_modal": 2171.54,
+      "avg_min": 2078.9,
+      "avg_max": 2244.47
+    }
+  ],
+  "top_arbitrage": [
+    {
+      "Commodity": "Jasmine",
+      "markets": 15,
+      "min_market_price": 30000.0,
+      "max_market_price": 97500.0,
+      "arbitrage_gap": 67500.0
+    },
+    {
+      "Commodity": "Dry Chillies",
+      "markets": 15,
+      "min_market_price": 4700.0,
+      "max_market_price": 71522.0,
+      "arbitrage_gap": 66822.0
+    },
+    {
+      "Commodity": "Black pepper",
+      "markets": 17,
+      "min_market_price": 30000.0,
+      "max_market_price": 85000.0,
+      "arbitrage_gap": 55000.0
+    },
+    {
+      "Commodity": "Fish",
+      "markets": 6,
+      "min_market_price": 7000.0,
+      "max_market_price": 55000.0,
+      "arbitrage_gap": 48000.0
+    },
+    {
+      "Commodity": "Green Chilli",
+      "markets": 419,
+      "min_market_price": 0.01,
+      "max_market_price": 45000.0,
+      "arbitrage_gap": 44999.99
+    },
+    {
+      "Commodity": "Arecanut(Betelnut/Supari)",
+      "markets": 25,
+      "min_market_price": 4000.0,
+      "max_market_price": 48869.0,
+      "arbitrage_gap": 44869.0
+    },
+    {
+      "Commodity": "Rose(Local)",
+      "markets": 27,
+      "min_market_price": 250.0,
+      "max_market_price": 40000.0,
+      "arbitrage_gap": 39750.0
+    },
+    {
+      "Commodity": "Coconut",
+      "markets": 210,
+      "min_market_price": 30.0,
+      "max_market_price": 35915.0,
+      "arbitrage_gap": 35885.0
+    },
+    {
+      "Commodity": "Green Peas",
+      "markets": 57,
+      "min_market_price": 1755.0,
+      "max_market_price": 32000.0,
+      "arbitrage_gap": 30245.0
+    },
+    {
+      "Commodity": "Marigold(Calcutta)",
+      "markets": 28,
+      "min_market_price": 350.0,
+      "max_market_price": 30000.0,
+      "arbitrage_gap": 29650.0
+    }
+  ],
+  "ml_results": [
+    {
+      "Model": "Mean Baseline",
+      "Feature_Set": "Market Characteristics (No Prices)",
+      "MAE": 3293.723,
+      "RMSE": 6012.361,
+      "R2": -0.0
+    },
+    {
+      "Model": "Ridge Regression",
+      "Feature_Set": "Market Characteristics (No Prices)",
+      "MAE": 1597.111,
+      "RMSE": 3903.677,
+      "R2": 0.578
+    },
+    {
+      "Model": "Random Forest",
+      "Feature_Set": "Market Characteristics (No Prices)",
+      "MAE": 1306.269,
+      "RMSE": 3920.286,
+      "R2": 0.575
+    },
+    {
+      "Model": "Mean Baseline",
+      "Feature_Set": "With Min & Max Prices",
+      "MAE": 3293.723,
+      "RMSE": 6012.361,
+      "R2": -0.0
+    },
+    {
+      "Model": "Ridge Regression",
+      "Feature_Set": "With Min & Max Prices",
+      "MAE": 192.906,
+      "RMSE": 1924.25,
+      "R2": 0.898
+    },
+    {
+      "Model": "Random Forest",
+      "Feature_Set": "With Min & Max Prices",
+      "MAE": 140.102,
+      "RMSE": 915.572,
+      "R2": 0.977
+    }
+  ],
+  "top_err_comms": [
+    {
+      "Commodity": "Arecanut(Betelnut/Supari)",
+      "Records": 6,
+      "MAE": 4425.92,
+      "Median_Actual_Price": 33985.5,
+      "Mean_Percentage_Error": 12.77
+    },
+    {
+      "Commodity": "Kabuli Chana(Chickpeas-White)",
+      "Records": 5,
+      "MAE": 903.93,
+      "Median_Actual_Price": 8701.0,
+      "Mean_Percentage_Error": 10.54
+    },
+    {
+      "Commodity": "Jasmine",
+      "Records": 6,
+      "MAE": 755.2,
+      "Median_Actual_Price": 56250.0,
+      "Mean_Percentage_Error": 1.34
+    },
+    {
+      "Commodity": "Cummin Seed(Jeera)",
+      "Records": 6,
+      "MAE": 751.92,
+      "Median_Actual_Price": 24425.0,
+      "Mean_Percentage_Error": 3.05
+    },
+    {
+      "Commodity": "Apple",
+      "Records": 27,
+      "MAE": 408.8,
+      "Median_Actual_Price": 8060.0,
+      "Mean_Percentage_Error": 5.28
+    },
+    {
+      "Commodity": "Garlic",
+      "Records": 47,
+      "MAE": 346.38,
+      "Median_Actual_Price": 14000.0,
+      "Mean_Percentage_Error": 3.0
+    },
+    {
+      "Commodity": "buttery",
+      "Records": 5,
+      "MAE": 324.43,
+      "Median_Actual_Price": 4020.0,
+      "Mean_Percentage_Error": 7.3
+    },
+    {
+      "Commodity": "Sesamum(Sesame,Gingelly,Til)",
+      "Records": 16,
+      "MAE": 306.87,
+      "Median_Actual_Price": 14102.5,
+      "Mean_Percentage_Error": 2.15
+    },
+    {
+      "Commodity": "Pomegranate",
+      "Records": 22,
+      "MAE": 305.88,
+      "Median_Actual_Price": 17000.0,
+      "Mean_Percentage_Error": 2.71
+    },
+    {
+      "Commodity": "Wheat",
+      "Records": 76,
+      "MAE": 304.81,
+      "Median_Actual_Price": 2850.0,
+      "Mean_Percentage_Error": 11.39
+    }
+  ]
+}

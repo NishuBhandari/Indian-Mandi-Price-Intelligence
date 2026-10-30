@@ -1,0 +1,7 @@
+Experiment,Feature_Set,Model,MAE,RMSE,R2
+Market Characteristics (No Prices),Market Characteristics (No Prices),Mean Baseline,3293.723011099506,6012.361050204094,-1.5775625947567207e-05
+Market Characteristics (No Prices),Market Characteristics (No Prices),Ridge Regression,1597.110771998817,3903.6772070927154,0.578435003033974
+Market Characteristics (No Prices),Market Characteristics (No Prices),Random Forest,1306.2691367343205,3920.2859738928782,0.5748401517288435
+With Min & Max Prices,With Min & Max Prices,Mean Baseline,3293.723011099506,6012.361050204094,-1.5775625947567207e-05
+With Min & Max Prices,With Min & Max Prices,Ridge Regression,192.90584759720656,1924.2499974475975,0.8975670370440668
+With Min & Max Prices,With Min & Max Prices,Random Forest,140.1021008135567,915.5721637696091,0.9768099381727484
