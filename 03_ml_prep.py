@@ -1,14 +1,21 @@
 """
-Indian Mandi Price Intelligence - Phase 3: Machine Learning Preparation
-Prepares data transformations, feature sets, and pipelines for the 5 core algorithms:
-Regression:
-  1. Linear Regression
-  2. Polynomial Regression (Degree 2)
-  3. Decision Tree Regressor
-Classification:
-  4. Logistic Regression
-  5. Decision Tree Classifier
+Indian Mandi Price Intelligence - Phase 3: Machine Learning Preparation & Pipeline Validation
+Preliminary pipeline-validation step verifying feature transformers, categorical encoders,
+and model definitions prior to the authoritative Phase 4 and Phase 5 evaluations.
+
+Authoritative Evaluations:
+  - Phase 4 (04_model_evaluation.py): 60/20/20 split evaluating Regression:
+      1. Linear Regression
+      2. Polynomial Regression (Degree 2 with Ridge regularizer)
+      3. Decision Tree Regressor
+  - Phase 5 (05_classification.py): 80/20 stratified split evaluating Classification:
+      4. Logistic Regression
+      5. Decision Tree Classifier
 """
+
+import sys
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 from pathlib import Path
 import numpy as np
@@ -20,11 +27,14 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, TargetEncoder, PolynomialFeatures, StandardScaler
 from sklearn.impute import SimpleImputer
 from sklearn.dummy import DummyRegressor
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression, Ridge
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
-DATA_PATH = Path("9ef84268-d588-465a-a308-a864a43d0070.csv")
+DATA_PATH = Path("outputs/audited_mandi_data.csv")
+if not DATA_PATH.exists():
+    DATA_PATH = Path("9ef84268-d588-465a-a308-a864a43d0070.csv")
+
 OUT = Path("outputs")
 OUT.mkdir(exist_ok=True)
 
@@ -52,15 +62,14 @@ df = df.dropna(subset=required).copy()
 df = df[
     (df[price_cols] > 0).all(axis=1)
     & (df["Min_Price"] <= df["Max_Price"])
+    & (df["Max_Price"] < 500000)
 ].copy()
 
-# -------------------------------------------------------------
-# Target variable assignment
-# -------------------------------------------------------------
-features_A = categorical_cols
-features_B = categorical_cols + ["Min_Price", "Max_Price"]
-target = df["Modal_Price"]
+# Define target variable for regression
+features_market_only = categorical_cols
+target_regression = df["Modal_Price"]
 
+# Target variable for classification (Price Tiers)
 def assign_tier(price):
     if price < 3000:
         return "Budget"
@@ -71,18 +80,22 @@ def assign_tier(price):
 
 df["Price_Tier"] = df["Modal_Price"].apply(assign_tier)
 
-train_idx, test_idx = train_test_split(df.index, test_size=0.20, random_state=42)
-y_train, y_test = target.loc[train_idx], target.loc[test_idx]
+print("=" * 72)
+print("PHASE 3: PRELIMINARY PIPELINE VALIDATION & TRANSFORMATION AUDIT")
+print("=" * 72)
+print(f"Clean modelling records:       {len(df):,}")
+print(f"Primary Features (Descriptor): {features_market_only}")
+print(f"\nPrice Tier Class Distribution (for Phase 5 Classification):")
+for tier, count in df["Price_Tier"].value_counts().items():
+    print(f"  {tier:<10}: {count:>6,} ({count/len(df)*100:.1f}%)")
 
-print("=" * 65)
-print("PHASE 3: ML PREPARATION & PIPELINE VALIDATION")
-print("=" * 65)
-print(f"Clean rows available: {len(df):,}")
-print(f"Features (Market Characteristics): {features_A}")
-print(f"Price Tier counts:\n{df['Price_Tier'].value_counts().to_string()}")
+# Preliminary train/test split for pipeline verification
+# Note: Authoritative multi-model evaluation in Phase 4 uses a strict 60/20/20 train/validation/test split
+train_idx, test_idx = train_test_split(df.index, test_size=0.20, random_state=42)
+y_train, y_test = target_regression.loc[train_idx], target_regression.loc[test_idx]
 
 # -------------------------------------------------------------
-# Benchmark Regression Pipelines for Phase 3 Check
+# Verify Regression Pipeline Definitions (matching Phase 4)
 # -------------------------------------------------------------
 encoder_ohe = OneHotEncoder(handle_unknown="ignore", min_frequency=5)
 
@@ -95,7 +108,7 @@ pipe_poly = Pipeline([
     ("target_enc", TargetEncoder(smooth="auto", cv=5, random_state=42)),
     ("scaler", StandardScaler()),
     ("poly", PolynomialFeatures(degree=2, include_bias=False)),
-    ("model", LinearRegression())
+    ("model", Ridge(alpha=10.0))
 ])
 
 pipe_dt = Pipeline([
@@ -110,23 +123,26 @@ models = {
 }
 
 results = []
-X_train_A, X_test_A = df.loc[train_idx, features_A], df.loc[test_idx, features_A]
+X_train = df.loc[train_idx, features_market_only]
+X_test = df.loc[test_idx, features_market_only]
 
+print("\nVerifying regression estimators on preliminary validation split...")
 for name, pipe in models.items():
-    pipe.fit(X_train_A, y_train)
-    preds = pipe.predict(X_test_A)
+    pipe.fit(X_train, y_train)
+    preds = pipe.predict(X_test)
     results.append({
         "Model": name,
-        "Feature_Set": "Market Characteristics Only",
+        "Feature_Set": "Market Characteristics Only (Preliminary Verification)",
         "MAE": mean_absolute_error(y_test, preds),
         "RMSE": np.sqrt(mean_squared_error(y_test, preds)),
         "R2": r2_score(y_test, preds)
     })
 
 results_df = pd.DataFrame(results).sort_values("MAE")
-print("\nPhase 3 Model Pipeline Benchmark:")
+print("\nPreliminary Pipeline Verification Results (NOT final evaluation):")
 print(results_df.round(3).to_string(index=False))
 
+# Export preliminary log
 results_df.to_csv(OUT / "model_comparison.csv", index=False)
-print(f"\nSaved preparation benchmark to {OUT / 'model_comparison.csv'}")
-print("Phase 3 ML Prep completed successfully.")
+print(f"\nSaved preliminary pipeline check to {OUT / 'model_comparison.csv'}")
+print("Note: Run 04_model_evaluation.py and 05_classification.py for authoritative benchmark results.")

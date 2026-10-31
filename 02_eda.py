@@ -1,15 +1,29 @@
+"""
+Indian Mandi Price Intelligence - Phase 2: Exploratory Data Analysis (EDA)
+Computes state-level, commodity-level, and APMC market-level price intelligence summaries
+from the clean audited dataset.
+"""
+
+import sys
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 from pathlib import Path
 import pandas as pd
+import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import seaborn as sns
 
 # ==========================================
-# 1. LOAD AND PREPARE DATA
+# 1. LOAD AUDITED DATASET
 # ==========================================
 
-DATA_PATH = Path("9ef84268-d588-465a-a308-a864a43d0070.csv")
+DATA_PATH = Path("outputs/audited_mandi_data.csv")
+if not DATA_PATH.exists():
+    DATA_PATH = Path("9ef84268-d588-465a-a308-a864a43d0070.csv")
+
 OUT = Path("outputs")
 OUT.mkdir(exist_ok=True)
 
@@ -23,78 +37,95 @@ price_cols = ["Min_Price", "Max_Price", "Modal_Price"]
 for col in price_cols:
     df[col] = pd.to_numeric(df[col], errors="coerce")
 
-df["Arrival_Date"] = pd.to_datetime(
-    df["Arrival_Date"], dayfirst=True, errors="coerce"
-)
+if "Arrival_Date" in df.columns:
+    df["Arrival_Date"] = pd.to_datetime(df["Arrival_Date"], errors="coerce")
 
-sns.set_theme(style="whitegrid")
+print("=" * 70)
+print("INDIAN MANDI PRICE INTELLIGENCE - 02: EXPLORATORY DATA ANALYSIS")
+print("=" * 70)
+print(f"Audited records analyzed: {len(df):,}")
 
 # ==========================================
-# 2. STATE-LEVEL ANALYSIS
+# 2. STATE-LEVEL PRICE INTELLIGENCE
 # ==========================================
 
 state_summary = (
     df.groupby("State")
     .agg(
-        Record_Count=("Modal_Price", "count"),
+        Total_Records=("Modal_Price", "count"),
+        Avg_Modal_Price=("Modal_Price", "mean"),
         Median_Modal_Price=("Modal_Price", "median"),
-        Mean_Modal_Price=("Modal_Price", "mean"),
-        Median_Min_Price=("Min_Price", "median"),
-        Median_Max_Price=("Max_Price", "median")
+        Avg_Min_Price=("Min_Price", "mean"),
+        Avg_Max_Price=("Max_Price", "mean"),
+        Price_Spread=("Max_Price", lambda x: (x - df.loc[x.index, "Min_Price"]).mean())
     )
-    .sort_values("Median_Modal_Price", ascending=False)
+    .reset_index()
+    .sort_values("Avg_Modal_Price", ascending=False)
 )
 
-state_summary.to_csv(OUT / "state_price_summary.csv")
-state_summary.to_csv(OUT / "state_summary.csv")
+state_summary.to_csv(OUT / "state_summary.csv", index=False)
+state_summary.to_csv(OUT / "state_price_summary.csv", index=False)
+
+print("\nTop 5 States by Average Modal Price (Rs./Quintal):")
+print(state_summary.head(5)[["State", "Total_Records", "Avg_Modal_Price", "Price_Spread"]].round(2).to_string(index=False))
 
 # ==========================================
-# 3. COMMODITY ANALYSIS
+# 3. COMMODITY-LEVEL PRICE INTELLIGENCE
 # ==========================================
 
 commodity_summary = (
     df.groupby("Commodity")
     .agg(
-        Records=("Modal_Price", "count"),
-        Median_Price=("Modal_Price", "median"),
-        Mean_Price=("Modal_Price", "mean"),
-        Price_Std=("Modal_Price", "std"),
-        Median_Min=("Min_Price", "median"),
-        Median_Max=("Max_Price", "median")
+        Total_Records=("Modal_Price", "count"),
+        Avg_Modal_Price=("Modal_Price", "mean"),
+        Median_Modal_Price=("Modal_Price", "median"),
+        Avg_Min_Price=("Min_Price", "mean"),
+        Avg_Max_Price=("Max_Price", "mean"),
+        Price_Spread=("Max_Price", lambda x: (x - df.loc[x.index, "Min_Price"]).mean())
     )
-    .sort_values("Median_Price", ascending=False)
+    .reset_index()
+    .sort_values("Total_Records", ascending=False)
 )
 
-commodity_summary.to_csv(OUT / "commodity_price_summary.csv")
-commodity_summary.to_csv(OUT / "commodity_summary.csv")
+commodity_summary.to_csv(OUT / "commodity_summary.csv", index=False)
+commodity_summary.to_csv(OUT / "commodity_price_summary.csv", index=False)
+
+print("\nTop 5 Commodities by Transaction Volume (Records):")
+print(commodity_summary.head(5)[["Commodity", "Total_Records", "Avg_Modal_Price", "Price_Spread"]].round(2).to_string(index=False))
 
 # ==========================================
-# 4. MARKET VARIATION & OUTLIERS
+# 4. APMC MARKET VARIATION & ARBITRAGE
 # ==========================================
 
 market_summary = (
-    df.groupby(["Commodity", "Market"])
+    df.groupby(["State", "District", "Market"])
     .agg(
-        Records=("Modal_Price", "count"),
-        Median_Price=("Modal_Price", "median")
+        Total_Records=("Modal_Price", "count"),
+        Unique_Commodities=("Commodity", "nunique"),
+        Avg_Modal_Price=("Modal_Price", "mean")
     )
     .reset_index()
+    .sort_values("Total_Records", ascending=False)
 )
+market_summary.to_csv(OUT / "market_summary.csv", index=False)
 
-market_summary.to_csv(OUT / "market_price_variation.csv")
+# Inter-market arbitrage opportunities (same commodity across multiple mandis)
+arbitrage_df = (
+    df.groupby("Commodity")
+    .agg(
+        Mandis_Reporting=("Market", "nunique"),
+        Min_Modal_Price=("Modal_Price", "min"),
+        Max_Modal_Price=("Modal_Price", "max")
+    )
+    .query("Mandis_Reporting >= 5")
+    .reset_index()
+)
+arbitrage_df["Arbitrage_Spread"] = arbitrage_df["Max_Modal_Price"] - arbitrage_df["Min_Modal_Price"]
+arbitrage_df["Price_Ratio"] = arbitrage_df["Max_Modal_Price"] / arbitrage_df["Min_Modal_Price"]
+arbitrage_df = arbitrage_df.sort_values("Arbitrage_Spread", ascending=False)
+arbitrage_df.to_csv(OUT / "intermarket_arbitrage.csv", index=False)
 
-# Outliers
-q1 = df["Modal_Price"].quantile(0.25)
-q3 = df["Modal_Price"].quantile(0.75)
-iqr = q3 - q1
-upper = q3 + 1.5 * iqr
-lower = q1 - 1.5 * iqr
+print("\nTop 5 Inter-Market Arbitrage Opportunities (Min 5 Mandis):")
+print(arbitrage_df.head(5)[["Commodity", "Mandis_Reporting", "Min_Modal_Price", "Max_Modal_Price", "Arbitrage_Spread", "Price_Ratio"]].round(2).to_string(index=False))
 
-outliers = df[
-    (df["Modal_Price"] < lower)
-    | (df["Modal_Price"] > upper)
-].copy()
-
-outliers.to_csv(OUT / "modal_price_outliers.csv", index=False)
-
-print("Phase 2 EDA completed successfully.")
+print("\nPhase 2 EDA completed successfully.")
