@@ -1,0 +1,149 @@
+Commodity,Category,Reporting_Mandis,Lowest_Mandi_Price,Highest_Mandi_Price,Arbitrage_Gap,Price_Ratio
+Jasmine,Other Agri,15,30000.0,97500.0,67500.0,3.25
+Dry Chillies,Vegetables,15,4700.0,71522.0,66822.0,15.22
+Black pepper,Spices,17,30000.0,85000.0,55000.0,2.83
+Fish,Other Agri,6,7000.0,55000.0,48000.0,7.86
+Green Chilli,Vegetables,419,0.01,45000.0,44999.99,4500000.0
+Arecanut(Betelnut/Supari),Cash Crops,25,4000.0,48869.0,44869.0,12.22
+Rose(Local),Other Agri,27,250.0,40000.0,39750.0,160.0
+Coconut,Cash Crops,210,30.0,35915.0,35885.0,1197.17
+Green Peas,Vegetables,57,1755.0,32000.0,30245.0,18.23
+Marigold(Calcutta),Other Agri,28,350.0,30000.0,29650.0,85.71
+Mango,Fruits,10,1100.0,30000.0,28900.0,27.27
+Garlic,Vegetables,186,2.3,28000.0,27997.7,12173.91
+Lemon,Fruits,205,3.0,27750.0,27747.0,9250.0
+Chili Red,Other Agri,18,2500.0,28300.0,25800.0,11.32
+Apple,Fruits,142,180.0,25500.0,25320.0,141.67
+Coriander(Leaves),Spices,221,6.0,25000.0,24994.0,4166.67
+Tender Coconut,Cash Crops,91,35.0,25000.0,24965.0,714.29
+Turmeric,Spices,13,10289.0,35127.06,24838.06,3.41
+Ginger(Green),Vegetables,238,1740.0,26300.0,24560.0,15.11
+Ginger(Dry),Vegetables,12,4100.0,26000.0,21900.0,6.34
+Copra,Cash Crops,8,9500.0,31131.0,21631.0,3.28
+Pomegranate,Fruits,102,3000.0,24500.0,21500.0,8.17
+Grapes,Fruits,41,2500.0,24000.0,21500.0,9.6
+Betal Leaves,Other Agri,15,5000.0,26000.0,21000.0,5.2
+Mushroom,Other Agri,32,9200.0,30000.0,20800.0,3.26
+Kakada,Other Agri,5,47500.0,67500.0,20000.0,1.42
+Lime,Other Agri,76,1500.0,20000.0,18500.0,13.33
+Cummin Seed(Jeera),Spices,29,20117.5,36182.18,16064.68,1.8
+Sunflower/Sunflower Seed,Cash Crops,8,6000.0,22000.0,16000.0,3.67
+Onion Green,Vegetables,183,13.0,15000.0,14987.0,1153.85
+Red gram/Arhar/Tur(whole),Cereals & Pulses,75,4219.0,19100.0,14881.0,4.53
+Orange,Fruits,66,1700.0,16000.0,14300.0,9.41
+Corriander seed,Other Agri,16,7000.0,21000.0,14000.0,3.0
+Mint(Pudina),Other Agri,169,5.0,13800.0,13795.0,2760.0
+Black Gram(Urd Beans)(Whole),Vegetables,163,2899.0,16650.0,13751.0,5.74
+Bitter gourd,Vegetables,354,850.0,14500.0,13650.0,17.06
+Onion,Vegetables,494,0.01,13600.0,13599.99,1360000.0
+Tamarind Fruit,Spices,30,4600.0,18000.0,13400.0,3.91
+Turmeric(raw),Spices,6,2200.0,15500.0,13300.0,7.05
+Soyabean,Cash Crops,302,1371.0,14328.0,12957.0,10.45
+Guava,Fruits,149,2000.0,14000.0,12000.0,7.0
+Drumstick,Other Agri,206,2000.0,14000.0,12000.0,7.0
+Beans,Vegetables,167,1850.0,13500.0,11650.0,7.3
+Tube Rose(Loose),Other Agri,7,4000.0,15500.0,11500.0,3.88
+Pea Pod/Pea Cod/हरी मटर,Other Agri,10,1000.0,12500.0,11500.0,12.5
+Banana,Fruits,319,0.03,11500.0,11499.97,383333.33
+Green Gram(Moong)(Whole),Cereals & Pulses,93,4666.0,15750.0,11084.0,3.38
+Capsicum,Other Agri,143,800.0,11000.0,10200.0,13.75
+"Sesamum(Sesame,Gingelly,Til)",Cash Crops,61,9000.0,19125.0,10125.0,2.12
+Gur(Jaggery),Other Agri,22,1600.0,11600.0,10000.0,7.25
+Carrot,Vegetables,272,32.2,9900.0,9867.8,307.45
+Amla(Nelli Kai),Other Agri,88,2300.0,12000.0,9700.0,5.22
+Pineapple,Fruits,49,640.0,10200.0,9560.0,15.94
+Ridgeguard(Tori),Other Agri,244,38.0,9400.0,9362.0,247.37
+Rice,Cereals & Pulses,75,2500.0,11500.0,9000.0,4.6
+Methi(Leaves),Spices,36,19.0,9000.0,8981.0,473.68
+Red gram split/Arhar dal/Tur dal,Cereals & Pulses,9,5800.0,14750.0,8950.0,2.54
+Yam(Ratalu),Vegetables,101,800.0,9500.0,8700.0,11.88
+Cucumbar(Kheera),Other Agri,292,0.01,8700.0,8699.99,870000.0
+Cluster beans,Vegetables,204,1500.0,10000.0,8500.0,6.67
+Brinjal,Vegetables,533,0.01,8500.0,8499.99,850000.0
+Beetroot,Vegetables,214,1100.0,9500.0,8400.0,8.64
+Lentil(Masur)(Whole),Cereals & Pulses,44,4801.0,13200.0,8399.0,2.75
+Indian Beans(Seam),Vegetables,49,3000.0,11200.0,8200.0,3.73
+Banana - Green,Fruits,228,600.0,8800.0,8200.0,14.67
+Peas Wet,Vegetables,32,4000.0,12000.0,8000.0,3.0
+Mango(Raw-Ripe),Fruits,102,4000.0,12000.0,8000.0,3.0
+Potato,Vegetables,471,0.01,8000.0,7999.99,800000.0
+French Beans(Frasbean),Vegetables,40,1300.0,9100.0,7800.0,7.0
+Green Gram Dal(Moong Dal),Cereals & Pulses,8,7000.0,14750.0,7750.0,2.11
+Cauliflower,Vegetables,364,300.0,8000.0,7700.0,26.67
+Black Gram Dal(Urd Dal),Cereals & Pulses,12,6688.0,14300.0,7612.0,2.14
+Cabbage,Vegetables,351,120.0,7680.0,7560.0,64.0
+Kabuli Chana(Chickpeas-White),Vegetables,25,5250.0,12800.0,7550.0,2.44
+Cowpea(Veg),Other Agri,100,1000.0,8500.0,7500.0,8.5
+Green Avare(W),Other Agri,171,4000.0,11500.0,7500.0,2.88
+Bhindi(Ladies Finger),Vegetables,406,600.0,8000.0,7400.0,13.33
+Masur Dal,Cereals & Pulses,18,7500.0,14870.0,7370.0,1.98
+Ground Nut Seed,Other Agri,12,7250.0,14500.0,7250.0,2.0
+Knool Khol,Other Agri,90,1300.0,8500.0,7200.0,6.54
+Groundnut,Cash Crops,169,4280.0,11429.0,7149.0,2.67
+Mousambi(Sweet Lime),Other Agri,98,900.0,8000.0,7100.0,8.89
+Jack Fruit(Ripe),Other Agri,6,3000.0,10000.0,7000.0,3.33
+Custard Apple(Sharifa),Fruits,24,2000.0,9000.0,7000.0,4.5
+Turnip,Other Agri,21,1500.0,8500.0,7000.0,5.67
+Tomato,Vegetables,517,0.01,7000.0,6999.99,700000.0
+Pointed gourd(Parval),Vegetables,49,1700.0,8400.0,6700.0,4.94
+Colacasia,Other Agri,102,1200.0,7750.0,6550.0,6.46
+Field Pea,Other Agri,11,2500.0,9000.0,6500.0,3.6
+Amaranthus,Other Agri,198,1000.0,7500.0,6500.0,7.5
+Sweet Potato,Vegetables,103,1600.0,8000.0,6400.0,5.0
+Guar,Other Agri,43,2000.0,8200.0,6200.0,4.1
+Bengal Gram(Gram)(Whole),Cereals & Pulses,196,4000.0,10175.0,6175.0,2.54
+Little gourd(Kundru),Vegetables,45,1000.0,7000.0,6000.0,7.0
+Raddish,Other Agri,281,1.02,6000.0,5998.98,5882.35
+Jowar(Sorghum),Cereals & Pulses,75,2100.0,8000.0,5900.0,3.81
+Elephant Yam(Suran)/Amorphophallus,Vegetables,126,2000.0,7750.0,5750.0,3.88
+Isabgul(Psyllium),Other Agri,8,10630.0,16250.0,5620.0,1.53
+Pumpkin,Vegetables,304,400.0,6000.0,5600.0,15.0
+Cotton,Cash Crops,141,7200.0,12800.0,5600.0,1.78
+Tinda,Other Agri,17,23.0,5600.0,5577.0,243.48
+Chikoos(Sapota),Fruits,59,2500.0,8000.0,5500.0,3.2
+Karbuja(Musk Melon),Fruits,17,600.0,6000.0,5400.0,10.0
+Maize,Cereals & Pulses,332,1500.0,6750.0,5250.0,4.5
+Papaya,Fruits,200,1000.0,6200.0,5200.0,6.2
+Snakeguard,Other Agri,217,1000.0,5800.0,4800.0,5.8
+Thondekai,Other Agri,104,1250.0,6000.0,4750.0,4.8
+Bottle gourd,Vegetables,347,300.0,5000.0,4700.0,16.67
+Jute,Cash Crops,9,11200.0,15800.0,4600.0,1.41
+Chilly Capsicum,Other Agri,25,1400.0,6000.0,4600.0,4.29
+Seetapal,Other Agri,14,3000.0,7200.0,4200.0,2.4
+Ashgourd,Vegetables,191,12.0,4200.0,4188.0,350.0
+Chow Chow,Other Agri,132,1600.0,5750.0,4150.0,3.59
+Water Melon,Fruits,49,400.0,4500.0,4100.0,11.25
+Leafy Vegetable,Other Agri,14,1000.0,5000.0,4000.0,5.0
+Spinach,Vegetables,62,7.0,4000.0,3993.0,571.43
+Paddy(Common),Cereals & Pulses,400,1600.0,5500.0,3900.0,3.44
+Mustard,Spices,106,5500.0,9380.0,3880.0,1.71
+Methi Seeds,Spices,20,6140.0,10010.0,3870.0,1.63
+Sweet Corn,Other Agri,48,1900.0,5500.0,3600.0,2.89
+Papaya(Raw),Fruits,22,500.0,4000.0,3500.0,8.0
+Wheat,Cereals & Pulses,349,2100.0,5550.0,3450.0,2.64
+Sponge gourd,Vegetables,24,800.0,4100.0,3300.0,5.12
+Kulthi(Horse Gram),Cereals & Pulses,9,3829.0,6875.0,3046.0,1.8
+Ragi(Finger Millet),Cereals & Pulses,15,2756.0,5750.0,2994.0,2.09
+Ladies Finger,Other Agri,18,1700.0,4500.0,2800.0,2.65
+Tapioca,Other Agri,101,2200.0,5000.0,2800.0,2.27
+Baby Corn,Other Agri,12,2250.0,5000.0,2750.0,2.22
+Paddy(Basmati),Cereals & Pulses,29,2750.0,5251.0,2501.0,1.91
+Sweet Pumpkin,Vegetables,30,800.0,3300.0,2500.0,4.12
+buttery,Other Agri,23,2160.0,4600.0,2440.0,2.13
+Kinnow,Other Agri,6,1400.0,3800.0,2400.0,2.71
+Paddy(Fine/Superfine/Grade A),Cereals & Pulses,14,2089.0,4311.0,2222.0,2.06
+Guar Seed(Cluster Beans Seed),Vegetables,17,5500.0,7691.0,2191.0,1.4
+Bajra(Pearl Millet/Cumbu),Cereals & Pulses,122,1800.0,3810.0,2010.0,2.12
+Round gourd,Vegetables,6,500.0,2500.0,2000.0,5.0
+Mustard Oil,Spices,7,17666.66755,19600.0,1933.33,1.11
+Linseed,Other Agri,13,9000.0,10865.0,1865.0,1.21
+Other green and fresh vegetables,Other Agri,8,650.0,2500.0,1850.0,3.85
+Suva(Dill Seed),Other Agri,5,9000.0,10745.0,1745.0,1.19
+Field Bean(Anumulu),Other Agri,5,3300.0,5000.0,1700.0,1.52
+Castor Seed,Other Agri,39,6900.0,8525.0,1625.0,1.24
+Barley(Jau),Cereals & Pulses,8,2000.0,3476.0,1476.0,1.74
+Squash(Chappal Kadoo),Other Agri,15,850.0,2300.0,1450.0,2.71
+Rice(Fine/Superfine/Grade A),Cereals & Pulses,5,4000.0,5000.0,1000.0,1.25
+Safflower,Other Agri,7,5700.0,6670.0,970.0,1.17
+Kodo Millet(Varagu),Other Agri,12,1875.0,2615.0,740.0,1.39
+Lak(Teora),Other Agri,7,3000.0,3705.0,705.0,1.24

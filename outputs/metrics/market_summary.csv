@@ -1,0 +1,1784 @@
+State,District,Market,Total_Records,Distinct_Commodities,Avg_Modal_Price,Avg_Price_Spread
+Tamil Nadu,Madurai,Anna nagar(Uzhavar Sandhai ),70,69,7797.14,457.14
+Tamil Nadu,Krishnagiri,Hosur(Uzhavar Sandhai ),66,66,9399.24,1201.52
+Tamil Nadu,Thiruvannamalai,Tiruvannamalai(Uzhavar Sandhai ),62,62,7258.87,1140.32
+Tamil Nadu,Salem,Thathakapatti(Uzhavar Sandhai ),62,62,8647.58,1056.45
+Tamil Nadu,Thiruchirappalli,KKNagar(Uzhavar Sandhai ),62,62,8314.52,154.84
+Tamil Nadu,Madurai,Chokkikulam(Uzhavar Sandhai ),60,60,7615.83,1585.0
+Maharashtra,Pune,APMC Pune,60,60,4364.0,2735.63
+NCT of Delhi,Delhi,APMC Azadpur,59,55,4869.68,3550.41
+Tamil Nadu,Coimbatore,RSPuram(Uzhavar Sandhai ),58,58,7265.52,1055.17
+Tamil Nadu,Salem,Hasthampatti(Uzhavar Sandhai ),57,57,6125.44,812.28
+Tamil Nadu,Salem,Ammapet(Uzhavar Sandhai ),57,57,6157.89,680.7
+Tamil Nadu,Vellore,Kahithapattarai(Uzhavar Sandhai ),56,56,7115.18,330.36
+Tamil Nadu,Coimbatore,Mettupalayam(Uzhavar Sandhai ),56,56,6758.93,1110.71
+Tamil Nadu,Thoothukudi,Tuticorin(Uzhavar Sandhai ),56,56,8430.36,771.43
+Tamil Nadu,Salem,Sooramangalam(Uzhavar Sandhai ),56,56,5675.89,505.36
+Tamil Nadu,Chengalpet,Jameenrayapettai(Uzhavar Sandhai ),56,56,6721.43,950.0
+Tamil Nadu,Namakkal,Namakkal(Uzhavar Sandhai ),56,56,7334.82,1044.64
+Tamil Nadu,Madurai,Anaiyur(Uzhavar Sandhai ),56,56,8021.43,1492.86
+Tamil Nadu,Vellore,Vellore RM,56,56,6950.89,573.21
+Tamil Nadu,Coimbatore,Singanallur(Uzhavar Sandhai ),55,55,7394.55,1210.91
+Tamil Nadu,Vellore,Katpadi (Uzhavar Sandhai ),55,55,7252.73,127.27
+Tamil Nadu,Chengalpet,Nanganallur(Uzhavar Sandhai ),54,54,7884.26,675.93
+Tamil Nadu,Theni,Theni(Uzhavar Sandhai ),54,54,7451.85,1188.89
+Tamil Nadu,The Nilgiris,Udhagamandalam(Uzhavar Sandhai ),53,53,6552.83,1143.4
+Keralam,Palakad,Palakkad Market,52,45,7634.62,971.15
+Tamil Nadu,Perambalur,Perambalur(Uzhavar Sandhai ),52,52,7362.5,925.0
+Tamil Nadu,Madurai,Palanganatham(Uzhavar Sandhai ),52,52,8123.08,1946.15
+Tamil Nadu,Thirupathur,Thirupathur RM,51,51,5309.8,0.0
+Tamil Nadu,Salem,Athur(Uzhavar Sandhai ),51,50,5755.88,880.39
+Tamil Nadu,Thanjavur,Thanjavur(Uzhavar Sandhai ),51,51,8158.82,560.78
+Tamil Nadu,Dharmapuri,Dharmapuri(Uzhavar Sandhai ),51,51,6802.94,433.33
+Tamil Nadu,Ranipet,Ranipettai(Uzhavar Sandhai ),51,51,7920.59,531.37
+Tamil Nadu,Thiruchirappalli,Musiri(Uzhavar Sandhai ),50,50,5606.0,728.0
+Tamil Nadu,Namakkal,Rasipuram(Uzhavar Sandhai ),50,50,6787.0,778.0
+Tamil Nadu,Pudukkottai,Pudukottai(Uzhavar Sandhai ),50,50,6680.0,940.0
+Tamil Nadu,Kallakurichi,Kallakurichi(Uzhavar Sandhai ),50,50,8060.0,0.0
+Tamil Nadu,Dindigul,Dindigul(Uzhavar Sandhai ),50,50,7400.0,1220.0
+Tamil Nadu,Tirunelveli,Palayamkottai(Uzhavar Sandhai ),49,49,6535.71,1108.16
+Tamil Nadu,Vellore,Gudiyatham(Uzhavar Sandhai ),49,49,5996.94,71.43
+Tamil Nadu,Villupuram,Tindivanam RM,48,48,6303.12,35.42
+Maharashtra,Nagpur,APMC Nagpur,48,44,4531.42,1683.19
+Tamil Nadu,Chengalpet,Pallavaram(Uzhavar Sandhai ),48,48,7088.54,1135.42
+Tamil Nadu,Krishnagiri,Krishnagiri(Uzhavar Sandhai ),47,47,5569.15,853.19
+Tamil Nadu,Villupuram,Villupuram(Uzhavar Sandhai ),47,47,6526.6,372.34
+Tamil Nadu,Salem,Mettur(Uzhavar Sandhai ),47,47,5761.7,927.66
+Tamil Nadu,Karur,Kulithalai(Uzhavar Sandhai ),46,46,5714.13,628.26
+Tamil Nadu,Dharmapuri,Palacode(Uzhavar Sandhai ),46,46,6129.35,367.39
+Tamil Nadu,Ranipet,Arcot(Uzhavar Sandhai ),46,46,5550.0,217.39
+Tamil Nadu,Coimbatore,Vadavalli(Uzhavar Sandhai ),46,46,6452.17,656.52
+Karnataka,Bengaluru,Binny Mill (FF&V) Bengaluru APMC,46,42,3814.13,1295.65
+Tamil Nadu,Kannyiakumari,Vadaseri RM,46,46,9241.3,726.09
+Keralam,Ernakulam,North Paravur Market,45,41,8064.44,1091.11
+Tamil Nadu,Erode,Sampath Nagar(Uzhavar Sandhai ),45,45,7012.22,535.56
+Tamil Nadu,Thenkasi,Tenkasi(Uzhavar Sandhai ),45,45,5527.78,122.22
+Tamil Nadu,Thiruchirappalli,Lalgudi(Uzhavar Sandhai ),45,45,5858.89,37.78
+Tamil Nadu,Coimbatore,Sulur(Uzhavar Sandhai ),45,45,6252.22,1028.89
+Tamil Nadu,Coimbatore,Sundarapuram(Uzhavar Sandhai ),45,45,6428.89,604.44
+Tamil Nadu,Thiruppur,Udumalpettai RM,45,45,6244.44,1177.78
+Tamil Nadu,Tiruvarur,Mannargudi I(Uzhavar Sandhai ),44,44,7170.45,0.0
+Tamil Nadu,Salem,Elampillai(Uzhavar Sandhai ),44,44,5696.59,561.36
+Tamil Nadu,Thiruchirappalli,Thuraiyur RM,44,44,5325.0,722.73
+Tamil Nadu,Thirupathur,Vaniyampadi(Uzhavar Sandhai ),44,44,5670.45,0.0
+Tamil Nadu,Dharmapuri,Harur(Uzhavar Sandhai ),44,44,6000.0,1022.73
+Tamil Nadu,Krishnagiri,Avallapalli(Uzhavar Sandhai ),44,44,6363.64,681.82
+Tamil Nadu,Thiruvannamalai,Chengam(Uzhavar Sandhai ),44,44,6025.0,1004.55
+Tamil Nadu,Namakkal,Thiruchengodu RM,43,43,5670.93,858.14
+Tamil Nadu,Salem,Thammampatti (Uzhavar Sandhai ),43,43,5556.98,625.58
+Tamil Nadu,Salem,Edapadi (Uzhavar Sandhai ),43,43,5030.23,418.6
+Tamil Nadu,Dharmapuri,Pennagaram(Uzhavar Sandhai ),43,43,5756.98,593.02
+Madhya Pradesh,Neemuch,Neemuch APMC,43,37,13312.67,4509.33
+Tamil Nadu,Thiruvannamalai,Polur(Uzhavar Sandhai ),43,43,5162.79,967.44
+Tamil Nadu,Virudhunagar,Aruppukottai(Uzhavar Sandhai ),42,42,7215.48,592.86
+Jammu and Kashmir,Jammu,MAC F&V Market Narwal Jammu,42,41,5140.48,1261.9
+Tamil Nadu,Ramanathapuram,Ramanathapuram(Uzhavar Sandhai ),42,42,11294.05,902.38
+Tamil Nadu,Theni,Kambam(Uzhavar Sandhai ),42,42,5876.19,228.57
+Tamil Nadu,Cuddalore,Cuddalore(Uzhavar Sandhai ),42,42,5710.71,321.43
+Tamil Nadu,Karur,Gandhigramam(Uzhavar Sandhai),42,42,5798.81,759.52
+Maharashtra,Pune,Pune(Moshi),42,42,4253.71,1338.45
+Tamil Nadu,Dindigul,Palani(Uzhavar Sandhai ),42,42,5875.0,1492.86
+Tamil Nadu,Namakkal,Paramathivelur(Uzhavar Sandhai ),41,41,5568.29,780.49
+Tamil Nadu,Tirunelveli,Melapalayam(Uzhavar Sandhai ),41,41,5852.44,1036.59
+Tamil Nadu,Theni,Andipatti(Uzhavar Sandhai ),41,41,6453.66,414.63
+Tamil Nadu,Thanjavur,Kumbakonam (Uzhavar Sandhai ),41,41,7321.95,848.78
+Tamil Nadu,Ramanathapuram,Paramakudi(Uzhavar Sandhai ),41,41,11167.07,1217.07
+Tamil Nadu,Vellore,Perampet(Uzhavar Sandhai),41,41,4843.9,492.68
+Tamil Nadu,Kallakurichi,Sankarapuram(Uzhavar Sandhai ),41,41,5585.37,24.39
+Tamil Nadu,Villupuram,Gingee(Uzhavar Sandhai ),40,40,5593.75,87.5
+Tamil Nadu,The Nilgiris,Coonoor(Uzhavar Sandhai ),40,40,6206.25,812.5
+Tamil Nadu,Salem,Jalagandapuram(Uzhavar Sandhai ),40,40,5396.25,557.5
+Tamil Nadu,Nagapattinam,Nagapattinam(Uzhavar Sandhai ),40,40,6091.25,677.5
+Tamil Nadu,Kancheepuram,Padappai(Uzhavar Sandhai ),40,40,5986.25,1672.5
+Tamil Nadu,Virudhunagar,Rajapalayam(Uzhavar Sandhai ),40,40,6383.75,732.5
+Tamil Nadu,Coimbatore,Pollachi(Uzhavar Sandhai ),40,40,6461.25,1197.5
+Tamil Nadu,Dharmapuri,A.Jattihalli(Uzhavar Sandhai ),40,40,6897.5,525.0
+Tamil Nadu,Thoothukudi,Kovilpatti(Uzhavar Sandhai ),40,40,6425.0,600.0
+Tamil Nadu,Thiruvannamalai,Tamarainagar(Uzhavar Sandhai ),40,40,6402.5,1135.0
+Tamil Nadu,Vellore,Pallikonda(Uzhavar Sandhai),40,40,4962.5,400.0
+Tamil Nadu,Erode,Sathiyamagalam(Uzhavar Sandhai ),40,40,4555.0,490.0
+Gujarat,Surat,Surat APMC,39,39,3807.05,2657.69
+Tamil Nadu,Sivagangai,Sivagangai (Uzhavar Sandhai ),39,39,5833.33,856.41
+Tamil Nadu,Chengalpet,Guduvancheri(Uzhavar Sandhai ),39,39,6951.28,994.87
+Tamil Nadu,Sivagangai,Tirupatthur(Uzhavar Sandhai ),39,39,5951.28,1010.26
+Tamil Nadu,Krishnagiri,Denkanikottai(Uzhavar Sandhai ),39,39,6384.62,871.79
+Rajasthan,Jodhpur,Jodhpur (F&V) APMC,39,39,3079.49,2133.33
+Tamil Nadu,Thiruppur,Tiruppur (North) (Uzhavar Sandhai ),39,39,5314.1,689.74
+Tamil Nadu,Thiruvannamalai,Arani(Uzhavar Sandhai ),39,39,5503.85,992.31
+Keralam,Palakad,Koduvayoor Market,39,36,5220.51,400.0
+Tamil Nadu,Namakkal,Kumarapalayam(Uzhavar Sandhai ),38,38,5253.95,634.21
+Tamil Nadu,Mayiladuthurai,Sirkali(Uzhavar Sandhai ),38,38,5153.95,481.58
+Tamil Nadu,Thiruchirappalli,Thiruverumbur(Uzhavar Sandhai ),38,38,6351.32,144.74
+Karnataka,Bengaluru,Bengaluru APMC,38,31,9351.32,2592.11
+Tamil Nadu,Chengalpet,Chengalpet(Uzhavar Sandhai ),38,38,6388.16,1118.42
+Tamil Nadu,Thanjavur,Pattukottai(Uzhavar Sandhai ),38,38,6202.63,310.53
+Tamil Nadu,Thiruchirappalli,Manapparai(Uzhavar Sandhai ),38,38,6525.0,139.47
+Tamil Nadu,Virudhunagar,Thalavaipuram(Uzhavar Sandhai ),37,37,6128.38,1300.0
+Tamil Nadu,Sivagangai,Karaikudi(Uzhavar Sandhai ),37,37,6356.76,772.97
+Tamil Nadu,Madurai,Melur(Uzhavar Sandhai ),37,37,5533.78,705.41
+Tamil Nadu,Theni,Chinnamanur(Uzhavar Sandhai ),37,37,6214.86,462.16
+Rajasthan,Udaipur,Udaipur (F&V) APMC,37,37,3098.65,1508.11
+Tamil Nadu,Dharmapuri,Karimangalam(Uzhavar Sandhai),37,37,5502.7,475.68
+Haryana,Hissar,Hansi APMC,37,37,5720.03,2074.49
+Tamil Nadu,Karur,Karur(Uzhavar Sandhai ),36,36,6048.61,569.44
+Tamil Nadu,Virudhunagar,Kariyapatti(Uzhavar Sandhai ),36,36,6154.17,552.78
+Tamil Nadu,Tiruvarur,Mannargudi II(Uzhavar Sandhai ),36,36,6213.89,427.78
+Tamil Nadu,Thiruvannamalai,Cheyyar(Uzhavar Sandhai ),36,36,4340.28,869.44
+Telangana,Hyderabad,Bowenpally APMC,36,29,2251.39,1702.78
+Rajasthan,Jaipur,Jaipur (F&V) APMC,36,36,4031.94,2422.22
+Tamil Nadu,Theni,Periyakulam(Uzhavar Sandhai ),36,36,5097.22,288.89
+Tamil Nadu,The Nilgiris,Gudalur(Uzhavar Sandhai ),36,36,5806.94,602.78
+Tamil Nadu,Sivagangai,Devakottai (Uzhavar Sandhai ),36,36,6427.78,555.56
+Tamil Nadu,Cuddalore,Vadalur(Uzhavar Sandhai ),35,35,5878.57,357.14
+Tamil Nadu,Dindigul,Chinnalapatti(Uzhavar Sandhai ),35,35,5998.57,1517.14
+Rajasthan,Ganganagar,Sriganganagar (F&V) APMC,35,35,4848.57,480.0
+Tamil Nadu,Namakkal,Mohanur(Uzhavar Sandhai ),35,35,5681.43,1054.29
+Tamil Nadu,Virudhunagar,Sivakasi(Uzhavar Sandhai ),35,35,5257.14,914.29
+Maharashtra,Chattrapati Sambhajinagar,APMC Chattrapati Sambhajinagar,35,34,3514.94,2046.29
+Tamil Nadu,Thiruppur,Tiruppur (South) (Uzhavar Sandhai ),35,35,5214.29,942.86
+Haryana,Kurukshetra,Shahabad APMC,34,34,3901.21,1122.97
+Haryana,Kurukshetra,Thanesar APMC,34,34,5098.53,2508.82
+Punjab,Patiala,Patran APMC,34,32,3906.56,0.0
+Assam,Kamrup,Pamohi(Garchuk) APMC,34,29,3311.88,779.43
+Tamil Nadu,Erode,Perundurai(Uzhavar Sandhai ),34,34,4872.06,491.18
+Tamil Nadu,Virudhunagar,Srivilliputhur(Uzhavar Sandhai ),34,34,4747.06,917.65
+Tamil Nadu,Virudhunagar,Sathur(Uzhavar Sandhai ),34,34,5448.53,632.35
+Tamil Nadu,Salem,Vazhapadi(Uzhavar Sandhai),34,34,5925.0,626.47
+Tamil Nadu,Thiruvannamalai,Vandavasi(Uzhavar Sandhai ),34,34,4704.41,826.47
+Gujarat,Ahmedabad,Ahmedabad APMC,34,34,3189.71,1911.76
+Tamil Nadu,Erode,Thalavadi(Uzhavar Sandhai ),34,34,3988.24,529.41
+Tamil Nadu,Thiruppur,Dharapuram(Uzhavar Sandhai ),34,34,5863.24,744.12
+Tamil Nadu,Erode,Gobichettipalayam(Uzhavar Sandhai ),34,34,4785.29,564.71
+Tamil Nadu,Sivagangai,Singampunari(Uzhavar Sandhai ),34,34,5611.76,952.94
+Karnataka,Mysuru,Mysuru APMC,34,33,4084.47,537.41
+Tamil Nadu,Kallakurichi,Ulundurpet RM,33,33,4606.06,30.3
+Tamil Nadu,Cuddalore,Viruthachalam(Uzhavar Sandhai ),33,33,5853.03,493.94
+Telangana,Warangal,Warangal APMC,33,29,7610.79,1900.3
+Tamil Nadu,Thirupathur,Natrampalli(Uzhavar Sandhai ),33,33,5477.27,1075.76
+Keralam,Ernakulam,Perumbavoor Market,33,32,7178.79,1312.12
+Gujarat,Porbandar,Porbandar APMC,33,32,6204.39,1570.61
+Tamil Nadu,Thiruchirappalli,Manachanallur(Uzhavar Sandhai ),33,33,5978.79,200.0
+Maharashtra,Solapur,APMC Solapur,32,32,3068.75,3384.38
+Gujarat,Dahod,Dahod(Veg. Market) APMC,32,32,3606.25,1678.12
+Tamil Nadu,Theni,Devaram(Uzhavar Sandhai ),32,32,4678.12,0.0
+Tamil Nadu,Theni,Bodinayakanur(Uzhavar Sandhai ),32,32,4621.88,0.0
+Tamil Nadu,Erode,Periyar Nagar(Uzhavar Sandhai ),32,32,5142.19,453.12
+Madhya Pradesh,Mandsaur,Mandsaur APMC,32,22,13414.53,4443.88
+Jammu and Kashmir,Kathua,Kathua (F&V),31,31,4766.13,1458.06
+Haryana,Hissar,Barwala(Hisar) APMC,31,30,5001.97,790.42
+Rajasthan,Ajmer,Ajmer(F&V) APMC,31,31,4261.29,2483.87
+Tamil Nadu,Tirunelveli,NGO Colony(Uzhavar Sandhai ),31,31,4972.58,803.23
+Tamil Nadu,Thiruppur,Palladam(Uzhavar Sandhai ),31,31,4491.94,693.55
+Tamil Nadu,Thenkasi,Sankarankoil(Uzhavar Sandhai ),30,30,5000.0,500.0
+Tamil Nadu,Karur,Pallapatti (Uzhavar Sandhai ),30,30,5400.0,666.67
+Keralam,Ernakulam,Thrippunithura Market,30,30,7006.67,1736.67
+Punjab,Fatehgarh,Bassi Pathana APMC,30,30,4048.7,353.33
+Punjab,Fazilka,Jalalabad APMC,30,29,4578.87,399.33
+Tamil Nadu,Coimbatore,Kurichi(Uzhavar Sandhai ),30,30,5580.0,533.33
+Tamil Nadu,Thiruvallur,Tiruthani(Uzhavar Sandhai ),30,30,6416.67,0.0
+Keralam,Kottayam,Athirampuzha Market,29,28,6231.03,282.76
+Keralam,Alappuzha,Chengannur Market,29,28,5475.86,388.97
+Tamil Nadu,Krishnagiri,Kaveripattinam(Uzhavar Sandhai ),29,29,5724.14,482.76
+Tamil Nadu,Kannyiakumari,Myladi(Uzhavar Sandhai ),29,29,6267.24,534.48
+Maharashtra,Ahilyanagar,APMC Rahata,29,29,3105.41,1930.45
+Tamil Nadu,Salem,Attayampatti(Uzhavar Sandhai ),29,29,5553.45,327.59
+Haryana,Ambala,Naraingarh APMC,29,29,2905.17,1000.0
+Tamil Nadu,Mayiladuthurai,Mayiladuthurai(Uzhavar Sandhai ),29,29,4456.9,568.97
+Tamil Nadu,Nagapattinam,Vedaranyam(Uzhavar Sandhai),29,29,4963.79,279.31
+Tamil Nadu,Virudhunagar,Virudhunagar(Uzhavar Sandhai ),29,29,4289.66,558.62
+Tamil Nadu,Thiruppur,Kangayam(Uzhavar Sandhai ),28,28,4858.93,496.43
+Punjab,Sangrur,Bhawanigarh APMC,28,28,4246.82,378.57
+Punjab,Sangrur,Malerkotla APMC,28,28,2810.71,1293.57
+Haryana,Sonipat,Ganaur APMC,28,28,5142.86,1303.57
+Punjab,Hoshiarpur,Dasuya APMC,27,27,4881.27,0.0
+Keralam,Ernakulam,Aluva Market,27,27,5118.52,1574.07
+Tamil Nadu,Cuddalore,Panruti(Uzhavar Sandhai ),27,27,5462.96,222.22
+Tamil Nadu,Tiruvarur,Tiruthuraipoondi(Uzhavar Sandhai ),26,26,5932.69,134.62
+Tamil Nadu,Pudukkottai,Gandarvakottai(Uzhavar Sandhai ),26,26,4855.77,711.54
+Keralam,Kozhikode(Calicut),Mukkom Market,26,26,5407.69,457.69
+Tamil Nadu,Madurai,Thirumangalam(Uzhavar Sandhai ),26,26,5455.77,796.15
+Telangana,Hyderabad,RYTHU BAZAR ERRAGADDA,26,26,2914.77,0.0
+Telangana,Medchal Malkajgiri,"Kukatpally,RBZ",26,26,3330.77,0.0
+NCT of Delhi,Delhi,APMC Keshopur,26,26,3415.38,1792.31
+Tamil Nadu,Pudukkottai,Viralimalai(Uzhavar Sandhai ),26,26,5817.31,634.62
+Madhya Pradesh,Indore,Indore(F&V) APMC,26,26,2353.85,2242.31
+Telangana,Ranga Reddy,"Vanasthalipuram,RBZ",26,26,3503.85,0.0
+Punjab,Hoshiarpur,Tanda Urmur APMC,25,25,4856.0,880.0
+Gujarat,Surendranagar,Vadhvan APMC,25,25,3430.0,860.0
+Tamil Nadu,Kancheepuram,Kancheepuram(Uzhavar Sandhai ),25,25,3856.0,200.0
+Tamil Nadu,Kancheepuram,Kundrathur(Uzhavar Sandhai ),25,25,3928.0,240.0
+Keralam,Alappuzha,Kayamkulam Market,25,23,4656.0,200.0
+Tamil Nadu,Pudukkottai,Ponnamaravathi(Uzhavar Sandhai),25,25,4720.0,520.0
+Gujarat,Banaskanth,Deesa(Deesa Veg Yard) APMC,25,25,4208.0,1488.0
+Telangana,Hyderabad,RYTHU BAZAR MEHDIPATNAM,25,25,3352.0,0.0
+Tamil Nadu,Thanjavur,Peravurani(Uzhavar Sandhai),25,25,5524.0,120.0
+Jammu and Kashmir,Srinagar,Parimpore Srinagar (F&V),25,23,5780.0,916.0
+Chattisgarh,Raigarh,Raigarh APMC,24,24,2850.0,725.0
+Haryana,Mahendragarh-Narnaul,Narnaul APMC,24,24,3562.5,1350.0
+Gujarat,Rajkot,Rajkot APMC,24,19,9421.67,2625.21
+Maharashtra,Nagpur,APMC Hingna,24,24,3099.88,1713.21
+Keralam,Thirssur,Chelakkara Market,24,24,4687.5,316.67
+Andaman and Nicobar,North and Middle Andaman,Diglipur Vegetable Market (Subhashgram),24,24,8940.33,4189.5
+Tamil Nadu,Kancheepuram,Sunguvarchatram(Uzhavar Sandhai ),24,24,3870.83,208.33
+Telangana,Ranga Reddy,"Saroornagar,RBZ",24,24,3441.67,0.0
+Punjab,Ludhiana,Khanna APMC,24,24,2941.67,0.0
+Tamil Nadu,Pudukkottai,Karambakkudi(Uzhavar Sandhai ),24,24,4531.25,770.83
+Telangana,Hyderabad,Gudimalkapur APMC,24,24,1991.67,1229.17
+Tamil Nadu,Ariyalur,Ariyalur(Uzhavar Sandhai),24,24,5504.17,591.67
+Tamil Nadu,Chengalpet,Thirukalukundram(Uzhavar Sandhai ),24,24,4812.5,125.0
+Tamil Nadu,Thiruvallur,Paruthipattu(Uzhavar Sandhai ),23,23,5130.43,0.0
+Karnataka,Shivamogga,Shimoga APMC,23,23,3830.43,1921.74
+Andaman and Nicobar,North and Middle Andaman,Mayabander Vegetable Market,23,23,6891.3,1179.13
+Maharashtra,Solapur,APMC Akluj,23,23,3219.04,1413.43
+Keralam,Kozhikode(Calicut),Quilandy Market,23,23,5239.13,317.39
+Tamil Nadu,Madurai,Usilampatti(Uzhavar Sandhai ),23,23,6158.7,647.83
+Karnataka,Bengaluru South,Ramanagara APMC,23,22,4308.7,1400.0
+Madhya Pradesh,Katni,Katni APMC,23,17,5174.61,1131.43
+Tamil Nadu,Karur,Vengamedu(Uzhavar Sandhai ),23,23,5815.22,586.96
+Tamil Nadu,Thanjavur,Papanasam(Uzhavar Sandhai ),23,23,5934.78,1226.09
+Maharashtra,Nashik,APMC Nasik,22,22,3386.36,2495.91
+Madhya Pradesh,Indore,Indore APMC,22,16,5644.82,3033.45
+Tamil Nadu,Karur,Velayuthampalayam(Uzhavar Sandhai ),22,22,5722.73,872.73
+Madhya Pradesh,Ratlam,Jaora APMC,22,21,14183.18,5543.18
+Gujarat,Navsari,Navsari APMC,22,22,3469.32,1120.45
+Chandigarh,Chandigarh,Chandigarh (Grain/F&V) APMC,22,22,4209.09,2771.82
+Tamil Nadu,Tiruvarur,Tiruvarur(Uzhavar Sandhai ),22,22,5327.27,0.0
+Gujarat,Vadodara(Baroda),Padra APMC,22,22,3011.36,786.36
+Telangana,Hyderabad,RYTHU BAZAR FALAKNUMA,22,22,3522.73,0.0
+Telangana,Hyderabad,Mahboob Manison APMC,22,19,4688.64,1618.18
+Karnataka,Kolar,Bangarpet APMC,22,22,4040.91,1538.64
+NCT of Delhi,Delhi,"Fish,Poultry & Egg Market, Gazipur APMC",22,3,23290.91,8600.0
+Madhya Pradesh,Sehore,Sehore(F&V) APMC,22,22,2913.64,977.27
+Tamil Nadu,Tiruvarur,Muthupettai(Uzhavar Sandhai ),22,22,5086.36,0.0
+Tamil Nadu,Tiruvarur,Needamangalam(Uzhavar Sandhai ),21,21,4614.29,0.0
+Tamil Nadu,Pudukkottai,Alangudi(Uzhavar Sandhai ),21,21,4428.57,666.67
+Madhya Pradesh,Jabalpur,Jabalpur APMC,21,14,6738.19,1103.9
+Tamil Nadu,Pudukkottai,Aranthangi(Uzhavar Sandhai ),21,21,4535.71,642.86
+Telangana,Ranga Reddy,Gaddiannaram APMC,21,18,8618.57,8617.86
+Keralam,Kozhikode(Calicut),Thamarassery Market,21,21,4385.71,285.71
+Gujarat,Rajkot,Gondal(Veg.market Gondal) APMC,21,21,3694.05,3673.81
+Tamil Nadu,Thiruvallur,Tiruvallur(Uzhavar Sandhai ),21,21,5047.62,0.0
+Punjab,Ludhiana,Doraha APMC,21,21,3598.81,821.43
+Maharashtra,Pune,Khed(Chakan),21,21,3466.67,2000.0
+Punjab,Ludhiana,Jagraon APMC,21,21,3487.14,0.0
+Meghalaya,East Khasi Hills,Shillong APMC,21,21,5711.9,1604.76
+Gujarat,Amreli,The Agricultural Produce Market Committee-Amreli,20,17,8680.0,2600.0
+Assam,Kamrup,Fancy Bazaar APMC,20,13,12190.83,3097.5
+Maharashtra,Pune,Junnar(Narayangaon),20,20,3026.0,3337.5
+Maharashtra,Pune,Pune(Khadiki),20,20,1196.05,390.1
+Tamil Nadu,Chengalpet,Madhuranthagam(Uzhavar Sandhai ),20,20,4625.0,150.0
+Maharashtra,Jalgaon,APMC Bhusaval,20,20,3030.0,520.0
+Maharashtra,Dharashiv,APMC Dharashiv,20,20,2635.0,2175.0
+Telangana,Ranga Reddy,L B Nagar APMC,20,20,2435.0,900.0
+Maharashtra,Ahilyanagar,APMC Shrirampur,20,20,2989.35,1055.75
+Haryana,Yamuna Nagar,Jagadhri APMC,19,19,4155.26,1450.79
+Uttarakhand,Haridwar,Haridwar Union APMC,19,19,2528.95,700.0
+Haryana,Sonipat,Gohana APMC,19,19,4768.42,1576.32
+Tamil Nadu,Chengalpet,Medavakkam(Uzhavar Sandhai ),19,19,7052.63,1105.26
+Keralam,Thiruvananthapuram,Neyyatinkara Market,19,19,5021.05,1257.89
+Gujarat,Morbi,Morbi APMC,19,19,5640.26,2016.84
+Uttarakhand,Dehradoon,Rishikesh APMC,19,19,2310.53,1005.26
+Tamil Nadu,Salem,Mecheri(Uzhavar Sandhai),19,19,4084.21,494.74
+Madhya Pradesh,Morena,Kailaras APMC,19,19,4008.32,540.58
+Chattisgarh,Bilaspur,Tiphra APMC,19,19,3031.58,705.26
+Punjab,Bhatinda,Rampuraphul(Nabha Mandi) APMC,19,19,2832.16,1089.47
+Himachal Pradesh,Mandi,SMY Jogindernagar,19,19,4442.11,1094.74
+Karnataka,Bengaluru Rural,Doddaballapur APMC,19,19,5451.53,1809.79
+Tamil Nadu,Thanjavur,Tirukattupalli(Uzhavar Sandhai ),19,19,4952.63,0.0
+Madhya Pradesh,Satna,Satna APMC,19,15,5725.79,702.42
+Maharashtra,Nagpur,APMC Kamthi,19,19,4600.0,605.26
+Gujarat,Banaskanth,Dhanera APMC,18,17,8815.83,756.11
+Keralam,Kottayam,Ettumanoor Market,18,18,4316.67,450.0
+Punjab,Hoshiarpur,Garh Shankar APMC,18,18,3686.72,0.0
+Punjab,Tarntaran,Patti APMC,18,18,627.53,0.0
+Punjab,Fazilka,Fazilka APMC,18,18,4538.89,0.0
+Madhya Pradesh,Sagar,Sagar(F&V) APMC,18,18,1277.78,444.44
+Odisha,Mayurbhanja,Karanjia APMC,18,17,4813.39,372.22
+Assam,Tinsukia,Tinsukia Market,18,18,4400.0,1869.44
+Madhya Pradesh,Sheopur,Sheopurkalan APMC,18,9,5017.89,677.94
+Maharashtra,Mumbai,APMC Mumbai,18,17,8686.11,3083.33
+Madhya Pradesh,Mandsaur,Shamgarh APMC,18,12,5827.5,2658.28
+Tamil Nadu,Tiruvarur,Valangaiman RM,18,18,4644.44,244.44
+Uttarakhand,Haridwar,Manglaur APMC,18,18,1652.78,763.89
+Madhya Pradesh,Sehore,Sehore APMC,18,7,5874.83,2246.0
+Karnataka,Chamarajanagar,Chamarajanagar APMC,17,16,4444.12,1047.06
+Karnataka,Gadag,Gadag APMC,17,17,6832.29,2518.47
+Gujarat,Sabarkantha,Himatnagar(Veg.Market Himatnagar) APMC,17,17,2997.06,470.59
+Punjab,Sangrur,Lehra Gaga APMC,17,17,4829.74,361.76
+Gujarat,Bharuch,Bharuch APMC,17,17,1664.71,802.94
+Madhya Pradesh,Raisen,Begamganj APMC,17,10,4985.29,504.71
+Keralam,Thirssur,Chavakkad Market,17,17,6217.65,988.24
+Haryana,Jhajar,Bahadurgarh APMC,17,17,4300.0,670.59
+Madhya Pradesh,Raisen,Obedullaganj APMC,16,4,3767.56,716.19
+Tripura,Khowai,Kalyanpur APMC,16,15,7128.12,281.25
+Maharashtra,Jalna,APMC Jalana,16,11,5832.88,853.25
+Keralam,Pathanamthitta,Kuttoor Market,16,14,10512.5,593.75
+Gujarat,Junagarh,Visavadar APMC,16,15,7636.88,1439.38
+NCT of Delhi,Delhi,"Flower Market,Gazipur APMC",15,15,11479.33,4052.0
+Jammu and Kashmir,Udhampur,Fruit and Vegetable Market Udhampur,15,15,4906.67,0.0
+Himachal Pradesh,Chamba,PMY Chamba,15,15,3956.67,713.33
+Uttarakhand,Dehradoon,Vikasnagar APMC,15,15,1226.67,340.0
+West Bengal,Dakshin Dinajpur,Gangarampur(Dakshin Dinajpur) APMC,15,15,3125.33,496.67
+Gujarat,Rajkot,Jetpur(Dist.Rajkot) APMC,15,13,8949.33,3100.33
+Telangana,Siddipet,Siddipet(Rythu Bazar),15,15,3293.33,880.0
+Madhya Pradesh,Dewas,Dewas APMC,15,11,6030.33,2113.47
+Madhya Pradesh,Harda,Harda(F&V) APMC,15,15,2596.67,566.67
+Madhya Pradesh,Ujjain,Ujjain(F&V) APMC,15,15,1486.87,1802.8
+Maharashtra,Chandrapur,Chandrapur(Ganjwad),15,15,3566.67,1253.33
+Karnataka,Dharwad,APMC Hubballi,15,14,10841.33,3684.67
+Punjab,Jalandhar,Goraya APMC,15,15,1860.0,0.0
+Odisha,Bolangir,Bolangir APMC,15,15,3566.67,546.67
+Karnataka,Vijayapura,Vijayapura APMC,15,15,6851.07,2382.27
+Karnataka,Davangere,Honnali APMC,14,13,6898.86,514.29
+Karnataka,Chikkamagaluru,Kadur APMC,14,11,9707.5,2163.0
+Madhya Pradesh,Dhar,Kukshi(F&V) APMC,14,14,2128.57,1214.29
+Gujarat,Jamnagar,Jamnagar APMC,14,14,8387.5,2462.14
+Maharashtra,Pune,APMC Khed,14,14,2319.29,2235.71
+Tamil Nadu,Thiruvannamalai,Keelpennathur(Uzhavar Sandhai ),14,14,10910.71,750.0
+Madhya Pradesh,Mandsaur,Piplya APMC,14,11,6327.0,4539.29
+Madhya Pradesh,Neemuch,Manasa APMC,14,9,5643.79,2645.29
+Punjab,Hoshiarpur,Mukerian(Talwara) APMC,14,14,3985.71,1728.57
+Keralam,Wayanad,Mananthavady Market,14,14,10982.14,100.0
+Keralam,Wayanad,Pulpally Market,14,14,12045.0,187.14
+Bihar,Khagaria,Khagaria APMC,14,14,2322.62,249.76
+Karnataka,Belagavi,Belgaum APMC,14,14,2859.29,832.14
+Karnataka,Bellary,Ballari APMC,14,14,7008.57,4862.43
+Karnataka,Chikkaballapur,Bagepalli APMC,14,14,1479.29,901.43
+Haryana,Yamuna Nagar,Sadhaura APMC,13,13,2219.23,330.77
+Odisha,Sonepur,Dungurapalli APMC,13,13,3366.92,382.31
+West Bengal,Paschim Bardhaman,Asansol APMC,13,13,6011.15,214.23
+Maharashtra,Ahilyanagar,APMC Ahilyanagar,13,12,6800.0,1523.08
+Madhya Pradesh,Vidisha,Ganjbasoda APMC,13,10,4577.0,1412.46
+Karnataka,Chikkaballapur,Chintamani APMC,13,13,2038.46,1207.69
+Madhya Pradesh,Shajapur,Shajapur APMC,13,10,5893.3,1633.64
+Madhya Pradesh,Sehore,Bherunda (Nasrullaganj) APMC,13,7,4415.46,776.0
+Punjab,Ropar (Rupnagar),Chamkaur Sahib APMC,13,13,5369.23,0.0
+Haryana,Faridabad,Ballabhgarh APMC,13,13,2315.38,700.0
+Madhya Pradesh,Narsinghpur,Gadarwada APMC,13,7,5545.46,634.15
+Tamil Nadu,Thiruvallur,Naravarikuppam(Uzhavar Sandhai ),13,13,4307.69,0.0
+Telangana,Hyderabad,"Alwal,RBZ",13,13,3292.31,0.0
+Punjab,Fatehgarh,Sirhind APMC,13,13,3815.38,861.54
+Tripura,Unokoti,Pabiacherra APMC,13,13,6107.69,0.0
+Telangana,Nalgonda,Venkateswarnagar APMC,13,13,1753.85,300.0
+Haryana,Panipat,Panipat APMC,13,12,2876.92,1439.31
+Punjab,Gurdaspur,Dinanagar APMC,13,13,3581.62,388.46
+Maharashtra,Akola,APMC Akola,13,11,7681.92,1876.15
+Maharashtra,Buldhana,APMC Malkapur,13,9,5611.15,326.15
+Madhya Pradesh,Shajapur,Agar APMC,13,13,7139.77,2684.15
+Bihar,Luckeesarai,Lakhisarai APMC,13,13,4900.0,0.0
+Gujarat,Mehsana,Mehsana(Mehsana Veg) APMC,13,13,3057.69,1896.15
+Chattisgarh,Khairagarh Chhuikhadan Gandai,Gandai APMC,13,13,2246.15,676.92
+Gujarat,Bhavnagar,Bhavnagar APMC,13,10,8280.0,0.0
+Gujarat,Botad,Botad APMC,13,12,9475.0,2813.46
+West Bengal,Hooghly,Kalipur(Arambagh Krishak Bazar)APMC,12,11,4241.67,236.67
+Gujarat,Bhavnagar,Mahuva(Station Road) APMC,12,10,6182.08,2818.75
+Madhya Pradesh,Narmadapuram,Pipariya(F&V) APMC,12,12,3433.33,2337.5
+Madhya Pradesh,Narmadapuram,Pipariya APMC,12,8,5603.0,1343.25
+Madhya Pradesh,Mandsaur,Daloda APMC,12,10,6605.17,5102.17
+Madhya Pradesh,Khandwa,Khandwa(F&V) APMC,12,12,795.42,612.5
+West Bengal,Hooghly,Champadanga APMC,12,12,4478.33,224.17
+Madhya Pradesh,Indore,Sanwer(F&V) APMC,12,12,1383.33,566.67
+West Bengal,Kolkata,Sealdah Koley Market APMC,12,12,4400.0,841.67
+Madhya Pradesh,Harda,Khirkiya APMC,12,6,5888.5,1632.5
+Madhya Pradesh,Dhar,Badnawar APMC,12,8,4755.83,2724.58
+Gujarat,Anand,"Anand(Veg,Yard,Anand) APMC",12,12,2631.25,612.5
+Madhya Pradesh,Badwani,Sendhwa(F&V) APMC,12,12,1566.67,308.33
+Gujarat,Amreli,Savarkundla APMC,12,9,9281.25,1532.08
+Tamil Nadu,Thiruvallur,Perambakkam(Uzhavar Sandhai ),12,12,10166.67,0.0
+Madhya Pradesh,Rajgarh,Sarangpur APMC,12,5,5378.25,772.92
+Keralam,Kozhikode(Calicut),Vengeri(Kozhikode) Market,12,12,3675.0,300.0
+Haryana,Gurgaon,Sohna APMC,12,12,2050.0,916.67
+Manipur,Kakching,Kakching Market APMC,12,12,9987.5,541.67
+Haryana,Ambala,Shahzadpur APMC,12,12,2080.08,258.33
+Manipur,Imphal East,Lamlong Bazaar APMC,12,12,9570.83,708.33
+Rajasthan,Kota,Kota APMC,12,12,7875.08,0.0
+Gujarat,Dahod,Dahod APMC,12,12,5745.42,297.92
+West Bengal,Dakshin Dinajpur,Balurghat APMC,12,12,3348.33,445.83
+Madhya Pradesh,Ujjain,Ujjain APMC,12,9,5324.25,3669.43
+Uttarakhand,Udhamsinghnagar,Jaspur(UC) APMC,12,12,1736.33,58.33
+Rajasthan,Baran,Baran APMC,12,12,6724.83,2952.17
+Haryana,Rohtak,Meham,12,12,3216.67,250.0
+Maharashtra,Nagpur,APMC Kalmeshwar,12,12,2088.75,434.58
+Maharashtra,Nagpur,APMC Ramtek,12,12,3733.33,800.0
+Gujarat,Gandhinagar,Mansa(Manas Veg Yard) APMC,11,11,2377.27,463.64
+West Bengal,Darjeeling,Siliguri APMC,11,11,5605.45,347.27
+Keralam,Alappuzha,Harippad Market,11,11,5018.18,509.09
+Gujarat,Amreli,Damnagar APMC,11,11,4136.36,0.0
+Gujarat,Bhavnagar,Palitana APMC,11,10,7069.09,1650.0
+Uttar Pradesh,Kanpur,Baripaal APMC,11,11,2209.09,300.0
+Uttar Pradesh,Shamli,Kairana APMC,11,11,1922.73,100.0
+Uttar Pradesh,Mathura,Kosikalan APMC,11,11,2124.55,136.36
+Uttar Pradesh,Mirzapur,Ahirora APMC,11,11,2154.55,354.55
+Gujarat,Bhavnagar,Taleja APMC,11,9,8438.64,2264.09
+West Bengal,Sounth 24 Parganas,Baruipur(Canning) APMC,11,10,4522.73,245.45
+Madhya Pradesh,Badwani,Badwani(F&V) APMC,11,11,1263.64,0.0
+Madhya Pradesh,Bhopal,Bhopal APMC,11,7,4822.55,2766.45
+Odisha,Mayurbhanja,Baripada APMC,11,11,3918.18,909.09
+Maharashtra,Satara,APMC Vai,11,11,2636.36,745.45
+Punjab,Hoshiarpur,Mukerian APMC,11,11,3463.64,945.45
+Maharashtra,Mumbai,Mumbai- Fruit Market,11,11,6168.18,3300.0
+Maharashtra,Buldhana,APMC Khamgaon,11,10,12531.73,10309.09
+Maharashtra,Amarawati,APMC Amarawati,11,11,6665.91,468.18
+Madhya Pradesh,Ujjain,Badnagar APMC,11,9,5307.45,3926.27
+Madhya Pradesh,Shivpuri,Pohari APMC,11,10,8232.73,915.91
+Madhya Pradesh,Shajapur,Shujalpur APMC,11,9,5967.55,3547.36
+Rajasthan,Tonk,Malpura APMC,11,11,6448.36,305.36
+Madhya Pradesh,Sagar,Bina APMC,11,11,4730.55,2623.82
+Madhya Pradesh,Ratlam,Ratlam APMC,11,8,5510.27,3940.64
+Assam,Hailakandi,Harbartganj Daily Market APMC,11,11,4804.55,863.64
+Tamil Nadu,Cuddalore,Chidambaram(Uzhavar Sandhai ),11,11,4522.73,227.27
+Madhya Pradesh,Narsinghpur,Kareli APMC,11,9,6013.18,1390.27
+Madhya Pradesh,Morena,Morena APMC,11,9,4118.82,285.0
+Madhya Pradesh,Mandla,Mandla APMC,11,5,3143.18,36.36
+Madhya Pradesh,Harda,Timarni APMC,11,6,4683.91,1090.27
+Madhya Pradesh,Damoh,Damoh APMC,11,10,5904.55,3572.27
+Madhya Pradesh,Jabalpur,Sehora APMC,11,7,4186.27,1647.0
+Odisha,Bolangir,Tusura APMC,11,11,3990.91,600.0
+West Bengal,Medinipur(W),Ghatal APMC,11,11,4071.82,151.82
+West Bengal,Howrah,Nimdhighi Market,11,10,3965.45,567.27
+West Bengal,Howrah,Ramkrishanpur(Howrah),11,10,5283.64,603.64
+Gujarat,Rajkot,Rajkot(Veg.Sub Yard) APMC,11,11,4234.55,2566.82
+Haryana,Faridabad,Faridabad APMC,11,11,3527.27,0.0
+Gujarat,Jamnagar,Jam Jodhpur APMC,11,10,9450.0,2699.55
+Punjab,Ferozpur,Zira APMC,10,10,3030.0,0.0
+Maharashtra,Jalgaon,APMC Pachora,10,6,3729.5,678.5
+West Bengal,Purba Bardhaman,Kalna APMC,10,9,3342.0,92.0
+Madhya Pradesh,Mandsaur,Sitamau APMC,10,7,5191.3,1724.3
+Gujarat,Navsari,Bilimora APMC,10,10,1920.0,750.0
+Gujarat,Amreli,Rajula APMC,10,9,7952.4,2119.0
+Punjab,Ferozpur,Mamdot APMC,10,10,3440.0,0.0
+Uttar Pradesh,Shamli,Khandhla APMC,10,10,2059.8,53.6
+Uttar Pradesh,Siddharth Nagar,Naugarh APMC,10,10,3745.0,46.0
+Telangana,Ranga Reddy,Shadnagar APMC,10,10,1952.1,357.8
+Uttarakhand,Haridwar,Roorkee APMC,10,10,1565.0,650.0
+Punjab,Amritsar,Rayya APMC,10,10,1570.7,0.0
+Maharashtra,Pune,Pune(Pimpri),10,10,1796.6,110.3
+Punjab,Mohali,Kharar APMC,10,10,2800.0,1640.0
+Telangana,Siddipet,Vantamamidi APMC,10,10,2085.0,570.0
+Punjab,Mohali,Lalru APMC,10,10,5850.0,0.0
+West Bengal,Nadia,Kalyani APMC,10,8,3954.0,424.0
+Madhya Pradesh,Sagar,Rahatgarh APMC,10,6,4787.9,709.3
+Madhya Pradesh,Sagar,Sagar APMC,10,10,4918.0,1757.0
+Madhya Pradesh,Sehore,Ashta APMC,10,9,7157.2,3638.0
+Madhya Pradesh,Ratlam,Sailana APMC,10,9,6266.1,2816.2
+West Bengal,Paschim Bardhaman,Durgapur APMC,10,10,5665.5,302.5
+Madhya Pradesh,Shivpuri,Kolaras APMC,10,6,5829.0,1248.5
+Rajasthan,Kota,Ramganjmandi APMC,10,10,7710.8,952.2
+Madhya Pradesh,Rajgarh,Jeerapur APMC,10,7,4998.0,539.0
+Madhya Pradesh,Vidisha,Vidisha APMC,10,9,5247.1,2130.0
+Madhya Pradesh,Panna,Panna APMC,10,7,3992.3,333.8
+Rajasthan,Jaipur,Bassi APMC,10,10,4533.2,499.7
+Maharashtra,Amarawati,Amrawati(Frui & Veg. Market),10,10,5790.0,1660.0
+Karnataka,Gadag,Laxmeshwar APMC,10,9,5939.8,3664.6
+Keralam,Kannur,Payyannur Market,10,10,14020.0,560.0
+Punjab,Sangrur,Dhuri APMC,10,10,4107.0,655.0
+Telangana,Nalgonda,Miryalguda(Rythu Bazar),10,10,3750.0,0.0
+Madhya Pradesh,Khargone,Sanawad(F&V) APMC,10,10,1880.0,250.0
+Madhya Pradesh,Sagar,Khurai APMC,10,10,4788.0,2010.4
+Madhya Pradesh,Ashoknagar,Ashoknagar APMC,10,9,4445.5,1052.0
+Madhya Pradesh,Chhatarpur,Chhatarpur APMC,10,8,6323.1,553.0
+Odisha,Kalahandi,Kesinga APMC,10,10,3330.0,410.0
+Odisha,Dhenkanal,Dhenkanal APMC,10,10,4430.0,410.0
+Telangana,Hanumakonda,"Excise Colony,RBZ",10,10,4380.0,0.0
+Tamil Nadu,Tirunelveli,Kandiyaperi(Uzhavar Sandhai ),10,10,3415.0,570.0
+Haryana,Kaithal,Siwan APMC,10,10,1986.1,210.0
+West Bengal,Bankura,Khatra APMC,10,10,2862.1,457.0
+Madhya Pradesh,Dhar,Dhamnod APMC,10,8,7782.2,20193.7
+Odisha,Mayurbhanja,Udala APMC,10,10,3850.0,730.0
+Odisha,Dhenkanal,Hindol APMC,10,10,3700.0,370.0
+Telangana,Nagarkurnool,Kalwakurthy APMC,10,10,3085.0,0.0
+Madhya Pradesh,Guna,Guna APMC,10,9,6245.0,1833.5
+Odisha,Boudh,Khunthabandha APMC,10,10,4120.0,860.0
+Odisha,Boudh,Boudh APMC,10,10,4070.0,860.0
+Gujarat,Morbi,APMC HALVAD,10,9,10590.0,1797.0
+West Bengal,North 24 Parganas,Habra APMC,9,9,3488.89,40.0
+Gujarat,Banaskanth,Deesa APMC,9,9,9228.89,635.0
+Keralam,Kannur,Kannur Market,9,9,15211.11,655.56
+Tripura,Dhalai,Gondatwisa APMC,9,9,5900.0,677.78
+Madhya Pradesh,Sagar,Khurai(F&V) APMC,9,9,1711.11,466.67
+Karnataka,Haveri,Ranebennur APMC,9,9,4997.56,793.22
+Maharashtra,Beed,APMC Gevrai,9,8,7351.33,843.78
+Odisha,Deogarh,Deogarh APMC,9,9,3200.0,400.0
+Rajasthan,Jalore,Jalore APMC,9,9,1511.11,255.56
+West Bengal,Murshidabad,Jangipur APMC,9,9,4765.0,131.67
+Assam,Darrang,Balugaon APMC,9,9,2600.0,422.22
+Gujarat,Banaskanth,Tharad APMC,9,9,8655.44,2980.0
+Odisha,Bargarh,Attabira APMC,9,9,2533.33,322.22
+Madhya Pradesh,Agar Malwa,Soyatkalan APMC,9,7,4751.11,3971.33
+Gujarat,Jamnagar,Dhrol APMC,9,9,8797.78,1565.0
+Tripura,Sepahijala,Bishalgarh APMC,9,8,4477.78,677.78
+Madhya Pradesh,Satna,Nagod APMC,9,8,4539.56,167.44
+Maharashtra,Dharashiv,APMC Murum,9,7,7671.56,78.56
+Madhya Pradesh,Sagar,Bamora APMC,9,8,4968.78,815.22
+Assam,Darrang,Besimari APMC,9,9,2633.33,444.44
+Tripura,Sepahijala,Melaghar APMC,9,8,9866.67,788.89
+Madhya Pradesh,Rajgarh,Sarangpur(F&V) APMC,9,9,833.33,0.0
+Madhya Pradesh,Shajapur,Kalapipal APMC,9,8,5035.78,3360.67
+Odisha,Bargarh,Godbhaga APMC,9,9,2577.78,305.56
+Madhya Pradesh,Shajapur,Akodiya APMC,9,6,6443.33,4731.89
+Tamil Nadu,Thiruvallur,Ambattur(Uzhavar Sandhai ),9,9,4333.33,0.0
+Odisha,Nuapada,Khariar Road APMC,9,9,5222.22,0.0
+Keralam,Kannur,Thalasserry Market,9,8,6988.89,955.56
+West Bengal,Jhargram,Jhargram APMC,9,9,3644.44,494.44
+West Bengal,Bankura,Bishnupur(Bankura) APMC,9,8,4317.78,581.11
+Punjab,Bhatinda,Maur APMC,9,9,3005.56,711.11
+Madhya Pradesh,Dewas,Dewas(F&V) APMC,9,9,1188.89,1911.11
+Uttarakhand,Haridwar,Bhagwanpur(Naveen Mandi Sthal) APMC,9,9,1022.22,322.22
+West Bengal,Birbhum,Birbhum APMC,9,9,7622.22,103.33
+Madhya Pradesh,Khandwa,Khandwa APMC,9,8,5376.78,1132.44
+Madhya Pradesh,Datia,Datia APMC,9,4,4608.0,562.22
+Haryana,Jind,Narwana APMC,9,9,2516.67,988.89
+Madhya Pradesh,Khandwa,Harsood APMC,9,5,4076.11,1284.22
+Maharashtra,Solapur,APMC Dudhani,9,7,7339.22,1024.44
+Madhya Pradesh,Damoh,Patharia APMC,9,8,4912.89,1094.11
+Uttarakhand,Nanital,Haldwani APMC,9,9,1944.44,1011.11
+West Bengal,Puruliya,Balarampur APMC,9,9,6115.56,827.78
+Madhya Pradesh,Jhabua,Petlawad APMC,9,4,4594.44,761.0
+Punjab,Sangrur,Ahmedgarh APMC,9,9,2612.33,324.44
+Madhya Pradesh,Jabalpur,Paatan APMC,9,8,4433.89,953.33
+Maharashtra,Raigad,APMC Panvel,9,9,4611.11,888.89
+Madhya Pradesh,Jhabua,Thandla APMC,8,5,4902.62,307.38
+Madhya Pradesh,Khargone,Khargone APMC,8,5,6301.38,894.38
+Madhya Pradesh,Dindori,Dindori APMC,8,7,3581.25,159.38
+Keralam,Malappuram,Thirurrangadi Market,8,8,3500.0,237.5
+Gujarat,Banaskanth,Lakhani APMC,8,8,8377.12,0.0
+Madhya Pradesh,Sagar,Banda APMC,8,6,4260.75,216.25
+Madhya Pradesh,Khargone,Bhikangaon APMC,8,6,5333.12,1261.0
+Madhya Pradesh,Dhar,Rajgarh APMC,8,3,4211.12,800.88
+Madhya Pradesh,Dhar,Dhar APMC,8,7,4733.12,2262.75
+Madhya Pradesh,Narmadapuram,Itarsi(F&V) APMC,8,8,1862.5,75.0
+Madhya Pradesh,Khargone,Sanawad APMC,8,7,6334.0,1048.12
+Tripura,Dhalai,Masli,8,8,6450.0,1075.0
+Madhya Pradesh,Gwalior,Lashkar APMC,8,6,5300.62,445.62
+Madhya Pradesh,Narmadapuram,Itarsi APMC,8,7,5326.38,1862.25
+Keralam,Kannur,Taliparamba Market,8,7,4937.5,200.0
+Andhra Pradesh,Chittor,Palamaner APMC,8,8,2212.5,775.0
+West Bengal,Nadia,Ranaghat APMC,8,8,4680.0,261.25
+Madhya Pradesh,Narmadapuram,Banapura APMC,8,6,4835.38,2104.5
+West Bengal,North 24 Parganas,Barasat APMC,8,8,4250.0,0.0
+Madhya Pradesh,Narsinghpur,Tendukheda APMC,8,5,3918.5,182.75
+Gujarat,Banaskanth,Thara APMC,8,8,8172.19,2128.12
+Tamil Nadu,Dindigul,Vedasandur(Uzhavar Sandhai ),8,8,3375.0,450.0
+Keralam,Kottayam,Kottayam Market,8,6,6937.5,1075.0
+Andhra Pradesh,Kurnool,Kurnool APMC,8,8,7475.38,2047.0
+Gujarat,Sabarkantha,APMCKHEDBRAHMA,8,8,6900.0,200.0
+Madhya Pradesh,Mandsaur,Mandsaur(F&V) APMC,8,8,3201.25,1054.38
+Madhya Pradesh,Burhanpur,Burhanpur APMC,8,4,4181.38,494.5
+Madhya Pradesh,Dewas,Haatpipliya (F&V) APMC,8,8,2187.5,925.0
+West Bengal,Nadia,Karimpur APMC,8,8,5077.5,315.0
+West Bengal,Hooghly,Pandua APMC,8,8,4543.12,296.88
+Maharashtra,Nashik,APMC Malegaon,8,8,5109.88,1291.5
+Uttar Pradesh,Khiri (Lakhimpur),Maigalganj APMC,8,8,1070.0,40.0
+Punjab,Muktsar,Malout APMC,8,8,3069.38,0.0
+Maharashtra,Kolhapur,APMC Kolhapur,8,8,3562.5,3050.0
+Gujarat,Mehsana,Unjha APMC,8,8,14368.75,6858.75
+Punjab,Hoshiarpur,GarhShankar (Kotfatuhi) APMC,8,8,2307.62,0.0
+Punjab,Gurdaspur,Batala APMC,8,8,2856.25,397.5
+Madhya Pradesh,Sagar,Gadakota APMC,8,8,4883.12,965.62
+Odisha,Sundergarh,Sargipali APMC,8,8,2875.0,337.5
+Odisha,Sonepur,Pandkital APMC,8,8,3093.75,307.5
+Maharashtra,Ratnagiri,APMC Ratnagiri (Nachane),8,8,3887.5,975.0
+West Bengal,Bankura,Bankura Sadar APMC,8,8,4210.0,335.62
+Haryana,Yamuna Nagar,Mustafabad APMC,8,8,1875.0,125.0
+Maharashtra,Sangli,"Sangli(Phale, Bhajipala Market)",8,8,6318.75,5187.5
+Maharashtra,Solapur,APMC Mangal Wedha,8,8,3025.0,2712.5
+Gujarat,Gandhinagar,Mansa APMC,8,8,6845.62,699.38
+Odisha,Koraput,Koraput(Semilguda) APMC,8,8,2700.0,837.5
+West Bengal,Birbhum,Bolpur APMC,8,8,5955.0,153.75
+Odisha,Khurda,Balugaon APMC,8,8,4756.25,0.0
+West Bengal,Birbhum,Sainthia APMC,8,8,6891.25,103.75
+West Bengal,Puruliya,Purulia APMC,8,8,5756.25,702.5
+Meghalaya,West Jaintia Hills,Jowai APMC,8,8,4837.5,1075.0
+Haryana,Karnal,Gharaunda APMC,8,7,4080.0,745.12
+Odisha,Balasore,Jaleswar APMC,8,8,6500.0,512.5
+Haryana,Kaithal,Pundri APMC,8,8,2050.0,150.0
+Karnataka,Davangere,Davangere APMC,8,8,6047.12,547.0
+Gujarat,Patan,Siddhpur APMC,8,8,6883.12,1190.62
+Karnataka,Mysuru,Hunsur APMC,8,8,12215.62,138.38
+Rajasthan,Hanumangarh,Bhadara APMC,8,8,5525.38,200.5
+Punjab,Tarntaran,Tarantaran APMC,8,8,2247.62,0.0
+Karnataka,Uttara Kannada,Yellapur APMC,8,3,38494.5,11722.62
+Karnataka,Uttara Kannada,Kumta APMC,8,4,34196.88,5517.5
+Rajasthan,Pratapgarh,Pratapgarh APMC,8,8,6395.25,2388.62
+Uttar Pradesh,Bulandshahar,Gulavati APMC,8,8,1875.0,200.0
+Madhya Pradesh,Vidisha,Sironj APMC,8,8,5276.88,802.5
+Madhya Pradesh,Shivpuri,Badarwas APMC,7,5,5157.86,1237.14
+Gujarat,Rajkot,Upleta APMC,7,7,7932.14,915.0
+Madhya Pradesh,Dewas,Khategaon APMC,7,7,5827.57,735.0
+West Bengal,Nadia,Chakdah APMC,7,7,4575.71,252.86
+Odisha,Mayurbhanja,Betnoti APMC,7,7,3057.14,400.0
+Maharashtra,Washim,APMC Karanja,7,7,9875.71,664.29
+Odisha,Koraput,Koraput APMC,7,7,2771.43,871.43
+Madhya Pradesh,Dhar,Dhar(F&V) APMC,7,7,2557.14,857.14
+Odisha,Nuapada,Khariar APMC,7,7,5428.57,0.0
+Madhya Pradesh,Guna,Binaganj APMC,7,6,6741.43,755.0
+Madhya Pradesh,Sheopur,Sheopurbadod APMC,7,7,6873.71,431.43
+Bihar,East Champaran/ Motihari,Madhuban APMC,7,7,2542.86,257.14
+Rajasthan,Tonk,Uniyara APMC,7,7,5202.57,118.43
+Madhya Pradesh,Chhatarpur,Rajnagar APMC,7,5,7100.0,960.0
+Madhya Pradesh,Shivpuri,Shivpuri APMC,7,7,3902.14,1057.86
+Madhya Pradesh,Sehore,Rehati APMC,7,3,2377.86,884.91
+Madhya Pradesh,Bhind,Lahar APMC,7,7,5661.43,254.71
+Madhya Pradesh,Bhind,Gohad APMC,7,5,5405.71,794.29
+Madhya Pradesh,Rewa,Rewa APMC,7,5,5218.14,122.86
+Nagaland,Dimapur,Dimapur APMC,7,7,4785.71,1357.14
+Tamil Nadu,Ariyalur,Jeyankondam (Uzhavar Sandhai ),7,7,4892.86,642.86
+Odisha,Balasore,Barikpur APMC,7,7,2600.0,0.0
+Madhya Pradesh,Badwani,Anjad APMC,7,5,5915.71,1010.71
+Madhya Pradesh,Ashoknagar,Mungawali APMC,7,5,4609.29,782.14
+Bihar,Bhojpur,Piro APMC,7,3,2257.14,0.0
+Gujarat,Patan,Radhanpur APMC,7,7,11017.86,3339.29
+Rajasthan,Kota,Itawa APMC,7,7,7464.14,1099.86
+Maharashtra,Nashik,APMC Devala,7,7,4580.71,706.43
+Rajasthan,Bundi,Bundi APMC,7,7,5283.57,937.57
+Punjab,Patiala,Rajpura APMC,7,6,5857.14,1028.57
+Rajasthan,Ganganagar,Padampur APMC,7,6,6680.14,545.71
+Punjab,Ludhiana,Samrala APMC,7,7,2278.57,585.71
+Madhya Pradesh,Mandsaur,Suvasra APMC,7,5,4048.43,784.14
+Rajasthan,Ganganagar,Raisingh Nagar APMC,7,6,6735.14,355.0
+Bihar,Luckeesarai,Surjyagarha APMC,7,7,4142.86,0.0
+West Bengal,Purba Bardhaman,Burdwan APMC,7,7,3494.29,291.43
+Madhya Pradesh,Mandsaur,Garoth APMC,7,5,4686.71,823.43
+Maharashtra,Nandurbar,APMC Nandurbar,7,7,4700.0,601.0
+Madhya Pradesh,Mandla,Nainpur APMC,7,2,2356.43,34.29
+Maharashtra,Amarawati,APMC Morshi,7,7,6809.0,627.86
+Punjab,Tarntaran,Harike APMC,7,7,1771.57,171.43
+Bihar,Siwan,Maharjganj APMC,7,7,2928.57,0.0
+Madhya Pradesh,Khargone,Badwaha APMC,7,6,5873.57,483.0
+Punjab,Fatehgarh,Khamano APMC,7,7,3680.14,0.0
+Punjab,Bhatinda,Bhagta Bhai Ka APMC,7,7,2842.86,0.0
+Punjab,Bhatinda,Bathinda APMC,7,7,5378.57,2628.57
+Maharashtra,Ahilyanagar,APMC Jamkhed,7,6,6207.14,1328.57
+Odisha,Sundergarh,Panposh APMC,7,7,3414.29,842.86
+Odisha,Rayagada,Rayagada APMC,7,7,3685.71,100.0
+Madhya Pradesh,Indore,Mhow (Ambedkar Nagar) APMC,7,4,4803.86,1016.0
+Andhra Pradesh,Palnadu,Narasaraopet APMC,7,7,7714.29,0.0
+Odisha,Rayagada,Gunpur APMC,7,7,6050.0,1428.57
+Madhya Pradesh,Sagar,Deori APMC,7,5,2900.0,165.0
+Chattisgarh,Raipur,Raipur APMC,7,5,3917.14,40.86
+Uttar Pradesh,Bareilly,Anwala APMC,7,7,1371.43,314.29
+West Bengal,Medinipur(E),Kolaghat APMC,7,6,13228.57,691.43
+Tripura,West District,Kamalghat,7,7,5328.57,200.0
+Tripura,West District,Mohanpur APMC,7,7,4914.29,200.0
+Karnataka,Uttara Kannada,Siddapur APMC,7,2,40437.57,6627.0
+Uttar Pradesh,Agra,Khairagarh APMC,7,7,3096.43,107.14
+Telangana,Sangareddy,Sangareddy APMC,7,7,3357.14,0.0
+Karnataka,Bidar,Basava Kalayana APMC,7,6,6400.0,1004.43
+Telangana,Mahabubabad,Kesamudram APMC,7,6,7116.0,662.86
+Karnataka,Bengaluru South,Channapatna APMC,7,6,2842.86,1028.57
+Karnataka,Shivamogga,Sagar APMC,7,2,39038.0,12366.29
+Karnataka,Bidar,Bidar APMC,7,7,7687.57,2571.71
+Tamil Nadu,Tirunelveli,Ambasamudram(Uzhavar Sandhai ),7,7,3050.0,442.86
+Karnataka,Bagalkot,Bagalkot APMC,7,7,5021.0,440.57
+Telangana,Vikarabad,Tanduru APMC,7,7,21695.71,15658.57
+Gujarat,Amreli,Babra APMC,7,6,12732.86,1580.71
+West Bengal,Jalpaiguri,Jalpaiguri Sadar APMC,7,7,3195.71,174.29
+Gujarat,Devbhumi Dwarka,Jam Khambalia APMC,7,7,9428.57,1725.71
+West Bengal,Jalpaiguri,Dhupguri APMC,7,7,2877.14,174.29
+Tripura,Unokoti,Machmara,7,7,4771.43,0.0
+Punjab,Jalandhar,Lohian Khas APMC,6,6,1100.0,366.67
+Bihar,Madhubani,Madhubani APMC,6,6,2483.33,191.67
+Gujarat,Mehsana,Kadi APMC,6,6,5616.67,944.17
+Maharashtra,Nagpur,APMC Katol,6,6,6187.5,1060.0
+Maharashtra,Nagpur,APMC Savner,6,5,6162.67,360.0
+Maharashtra,Nagpur,APMC Umared,6,6,7448.33,960.0
+Bihar,Madhubani,Benipatti APMC,6,6,2500.0,125.0
+West Bengal,Purba Bardhaman,Memari APMC,6,6,2926.67,223.33
+Madhya Pradesh,Narmadapuram,Narmadapuram APMC,6,3,3865.83,285.06
+Bihar,Muzaffarpur,Bhagwanpur Mandi APMC,6,5,2691.67,0.0
+Madhya Pradesh,Ujjain,Khachrod APMC,6,5,3950.5,999.0
+Madhya Pradesh,Khandwa,Pandhana APMC,6,4,4894.33,300.83
+Madhya Pradesh,Gwalior,Dabra APMC,6,1,4131.67,957.0
+Madhya Pradesh,Indore,Gautampura APMC,6,5,4588.67,1851.83
+Gujarat,Sabarkantha,Vadali APMC,6,6,6136.5,355.83
+Gujarat,Dahod,Jhalod APMC,6,6,4001.39,0.0
+Maharashtra,Nashik,Lasalgaon(Niphad),6,6,5341.83,1142.0
+Maharashtra,Nashik,APMC Sinner,6,6,4467.5,895.0
+Maharashtra,Nashik,APMC Satana,6,4,3009.5,1121.67
+Keralam,Kozhikode(Calicut),Kallachi Market,6,6,4783.33,400.0
+Uttar Pradesh,Sant Kabir Nagar,Khalilabad APMC,6,6,1508.33,150.0
+Maharashtra,Nashik,APMC Lasalgaon,6,4,3971.33,1496.67
+Madhya Pradesh,Maihar,Maihar(F&V) APMC,6,6,1466.67,0.0
+Madhya Pradesh,Mandla,Krishi Upaj Mandi Samiti Bichhiya,6,5,4171.83,9.67
+Gujarat,Amreli,Dhari APMC,6,6,7926.67,663.33
+Maharashtra,Latur,APMC  Latur,6,6,8275.0,1073.33
+Madhya Pradesh,Narsinghpur,Narsinghpur APMC,6,3,3204.33,144.17
+Bihar,East Champaran/ Motihari,Raxaul APMC,6,6,2333.33,200.0
+Karnataka,Chamarajanagar,Gundlupet APMC,6,6,5750.0,33.33
+Uttar Pradesh,Badaun,Shahaswan APMC,6,6,2533.33,276.67
+Karnataka,Koppal,Gangavathi APMC,6,2,4015.67,923.67
+Maharashtra,Ahilyanagar,APMC Karjat,6,4,3141.67,1030.0
+Karnataka,Shivamogga,APMC THIRTHAHALLI,6,3,27332.0,3970.17
+Madhya Pradesh,Sheopur,Vijaypur APMC,6,4,5451.67,130.83
+Karnataka,Raichur,Sindhanur APMC,6,4,9854.0,564.33
+Madhya Pradesh,Shivpuri,Barad APMC,6,6,5703.0,710.17
+Karnataka,Mandya,Mandya APMC,6,3,7141.67,2065.0
+Rajasthan,Tonk,Todaraisingh APMC,6,6,5604.67,288.5
+Rajasthan,Jhalawar,Khanpur APMC,6,6,5652.5,1830.83
+Bihar,Buxar,Buxur APMC,6,6,2138.67,10.0
+Karnataka,Mysuru,Santhesargur APMC,6,5,8110.0,273.0
+Karnataka,Mysuru,Nanjangud APMC,6,6,3703.0,1628.33
+Madhya Pradesh,Ujjain,Mahidpur APMC,6,5,5700.83,1691.33
+Madhya Pradesh,Tikamgarh,Tikamgarh APMC,6,6,7143.5,639.17
+Madhya Pradesh,Seoni,Seoni APMC,6,3,2461.33,147.33
+Madhya Pradesh,Seoni,Keolari APMC,6,1,2443.33,55.0
+West Bengal,Kolkata,Bara Bazar (Posta Bazar) APMC,6,4,7690.0,475.83
+Karnataka,Vijayanagara,Kottur APMC,6,6,4568.17,914.33
+Maharashtra,Jalgaon,APMC Chalisgaon,6,6,4475.33,361.67
+Madhya Pradesh,Guna,Kumbhraj APMC,6,6,6591.67,860.0
+Maharashtra,Chattrapati Sambhajinagar,APMC Gangapur,6,6,5917.83,720.83
+Madhya Pradesh,Rewa,Baikunthpur APMC,6,3,4325.83,54.17
+Rajasthan,Dausa,Mandawar APMC,6,6,7112.67,427.33
+Madhya Pradesh,Sagar,Deori (F&V) APMC,6,6,525.0,0.0
+Karnataka,Hassan,Arasikere APMC,6,5,7466.67,1066.67
+Gujarat,Banaskanth,Thara(Shihori) APMC,6,6,9794.17,545.0
+Karnataka,Uttara Kannada,Sirsi APMC,6,2,43504.17,8687.17
+Madhya Pradesh,Sagar,Malthone APMC,6,6,3427.5,165.0
+Uttar Pradesh,Jalaun (Orai),Jalaun APMC,6,6,1837.5,83.33
+Maharashtra,Buldhana,APMC Lonar,6,6,5270.83,216.67
+Rajasthan,Ganganagar,Suratgarh APMC,6,6,6200.0,188.33
+Madhya Pradesh,Sehore,Shyampur APMC,6,2,4871.67,969.17
+Maharashtra,Sangli,APMC Sangli,6,5,7573.83,2956.33
+Gujarat,Patan,Sami APMC,6,6,10354.17,1179.17
+Madhya Pradesh,Chhatarpur,LavKush Nagar(Laundi) APMC,6,4,6495.83,465.0
+Keralam,Pathanamthitta,Ranniangadi Market,6,6,5233.33,550.0
+Gujarat,Mehsana,Visnagar APMC,6,6,6414.33,505.83
+Madhya Pradesh,Dhar,Manawar APMC,6,5,5675.0,845.17
+Madhya Pradesh,Badwani,Badwani APMC,6,4,4322.5,360.0
+Madhya Pradesh,Dhar,Kukshi APMC,6,4,5469.17,809.17
+West Bengal,Nadia,Bethuadahari APMC,6,6,5038.33,386.67
+Telangana,Mahbubnagar,Mahabubnagar(Rythu Bazar),6,6,3666.67,0.0
+Madhya Pradesh,Badwani,Khetia APMC,6,4,4960.67,654.17
+Madhya Pradesh,Badwani,Sendhwa APMC,6,4,5647.5,524.17
+Madhya Pradesh,Chhindwara,Chhindwara APMC,6,4,4033.67,669.67
+West Bengal,Bankura,Indus(Bankura Sadar) APMC,6,6,3411.0,229.17
+Gujarat,Jamnagar,Kalawad APMC,6,6,8429.17,1110.0
+Andhra Pradesh,Bapatla,Parchur APMC,6,6,8108.33,683.33
+Andhra Pradesh,Dr.B.R.A.Konaseema,Ravulapalem (Kothapeta APMC),6,1,2833.33,850.0
+Odisha,Ganjam,Bhanjanagar APMC,6,6,2700.0,200.0
+Odisha,Mayurbhanja,Narasinghpur APMC,6,6,4833.33,2000.0
+Odisha,Mayurbhanja,Saraskana APMC,6,6,4266.67,833.33
+Maharashtra,Solapur,Kurdwadi(Modnimb),6,6,5503.5,601.33
+Odisha,Balasore,Balasore APMC,6,6,2416.67,0.0
+Maharashtra,Sangli,APMC Vita,6,6,2983.33,616.67
+Haryana,Jhajar,Jhajjar APMC,6,6,3150.0,0.0
+Madhya Pradesh,Agar Malwa,Nalkheda APMC,6,6,5703.0,1222.83
+West Bengal,Darjeeling,Darjeeling APMC,6,6,3400.0,200.0
+West Bengal,Darjeeling,Karsiyang(Matigara) APMC,6,6,3083.33,200.0
+West Bengal,Birbhum,Rampurhat APMC,6,6,3681.67,85.0
+Madhya Pradesh,Agar Malwa,Susner APMC,6,5,5021.67,1382.17
+Madhya Pradesh,Alirajpur,Jobat APMC,6,4,4933.33,230.83
+Telangana,Adilabad,Adilabad (Rythu Bazar),6,6,6333.33,200.0
+Keralam,Ernakulam,Koovapadi VFPCK Market,5,2,4180.0,440.0
+Madhya Pradesh,Bhind,Mow APMC,5,4,3724.0,277.0
+Punjab,Mohali,Dera Bassi APMC,5,5,2760.0,0.0
+Bihar,Aurangabad,Daunagar APMC,5,5,4020.0,380.0
+Rajasthan,Ganganagar,Kesarisinghpur APMC,5,5,7046.8,339.2
+Odisha,Kalahandi,Kalahandi(Dharamagarh) APMC,5,5,3680.0,520.0
+Keralam,Alappuzha,Aroor Market,5,5,5480.0,200.0
+Bihar,Kaimur/Bhabhua,Kaimur APMC,5,5,5195.0,0.0
+Madhya Pradesh,Panna,Ajaygarh APMC,5,5,7146.0,276.0
+Gujarat,Banaskanth,Deesa(Bhildi) APMC,5,5,7990.0,1291.0
+Maharashtra,Sangli,APMC Tasgaon,5,5,4606.0,394.0
+Gujarat,Banaskanth,Diyodar APMC,5,5,6034.4,777.0
+Madhya Pradesh,Raisen,Raisen APMC,5,4,4195.4,646.0
+Punjab,Tarntaran,Khadur Sahib(Fetehabad) APMC,5,5,1060.0,0.0
+Rajasthan,Bikaner,Lunkaransar APMC,5,5,7911.4,1194.2
+Madhya Pradesh,Rajgarh,Khilchipur APMC,5,4,4232.0,417.8
+Gujarat,Kachchh,Anjar APMC,5,5,11456.4,1205.0
+Bihar,East Champaran/ Motihari,Chakia APMC,5,5,1860.0,80.0
+Tripura,South Tripura,Barpathari APMC,5,5,6300.0,200.0
+Bihar,Aurangabad,Kutumba APMC,5,5,3040.0,20.0
+Madhya Pradesh,Guna,Maksudangarh APMC,5,3,4355.8,718.6
+Odisha,Kalahandi,Junagarh APMC,5,5,2400.0,400.0
+Gujarat,Gir Somnath,Veraval APMC,5,5,6810.0,832.0
+Madhya Pradesh,Ujjain,Nagda APMC,5,3,4215.0,1576.0
+Madhya Pradesh,Umariya,Umariya APMC,5,4,3262.0,51.8
+Gujarat,Rajkot,Dhoraji APMC,5,5,8207.0,1570.0
+Odisha,Cuttack,Banki APMC,5,5,3000.0,880.0
+Madhya Pradesh,Vidisha,Shamshabad APMC,5,4,4150.4,823.6
+Madhya Pradesh,Shivpuri,Khaniadhana APMC,5,3,3590.0,826.2
+Haryana,Kaithal,Dhand APMC,5,5,3450.0,860.0
+Odisha,Bargarh,Bargarh(Barapalli) APMC,5,5,3500.0,1000.0
+Odisha,Bargarh,Bargarh APMC,5,5,4000.0,1000.0
+Rajasthan,Jhalawar,Iklera APMC,5,5,5075.0,730.0
+Gujarat,Ahmedabad,Ahmedabad(Chimanbhai Patal Market Vasana) APMC,5,2,3270.0,1040.0
+Maharashtra,Ahilyanagar,APMC Kopargaon,5,4,4028.6,1145.0
+Rajasthan,Sikar,Sikar APMC,5,5,3240.0,480.0
+Madhya Pradesh,Shajapur,Momanbadodiya APMC,5,4,5675.6,2238.0
+Karnataka,Shivamogga,Bhadravathi APMC,5,4,9520.0,300.0
+Bihar,Chhapra,Chhapra APMC,5,5,5030.0,1938.0
+Uttar Pradesh,Ballia,Chitwadagaon APMC,5,5,1996.0,80.0
+Nagaland,Kohima,Kohima APMC,5,5,4100.0,0.0
+Maharashtra,Akola,APMC Telhara,5,5,5824.0,347.0
+Uttar Pradesh,Balrampur,Tulsipur APMC,5,5,4406.0,60.0
+Uttar Pradesh,Etawah,Jasvantnagar APMC,5,5,2355.0,100.0
+Maharashtra,Beed,APMC Beed,5,5,5600.6,1233.2
+Punjab,Ludhiana,Sahnewal APMC,5,5,3332.2,0.0
+Maharashtra,Beed,APMC Majalgaon,5,5,5800.0,2596.2
+Maharashtra,Bhandara,APMC Tumsar,5,4,3528.4,119.8
+Andhra Pradesh,Anakapally,Payakaraopeta APMC,5,5,5142.2,216.0
+Madhya Pradesh,Betul,Betul APMC,5,2,2549.6,332.6
+Meghalaya,South West Khasi Hills,Mawkyrwat APMC,5,5,3650.0,500.0
+Uttar Pradesh,Khiri (Lakhimpur),Tikonia APMC,5,5,2366.0,296.0
+Andhra Pradesh,Guntur,Guntur APMC,5,1,24400.0,10340.0
+Gujarat,Surendranagar,Dhragradhra APMC,5,4,9561.0,576.0
+Madhya Pradesh,Morena,Porsa APMC,5,5,2465.0,9.0
+Andhra Pradesh,Parvathipuram Manyam,Palakonda APMC,5,5,5472.0,0.0
+Madhya Pradesh,Damoh,Javera APMC,5,3,3350.0,89.0
+Gujarat,Surendranagar,Dasada Patadi APMC,5,5,12615.0,990.0
+Gujarat,Sabarkantha,Talod(Harsol) APMC,5,5,5373.6,721.0
+Haryana,Rewari,Rewari APMC,5,5,4820.0,4800.0
+Maharashtra,Wardha,APMC Wardha,5,5,7195.0,322.0
+Madhya Pradesh,Datia,Sevda APMC,5,4,3859.6,351.6
+Telangana,Karimnagar,Choppadandi APMC,5,4,3842.2,352.0
+Maharashtra,Nanded,APMC Loha,5,4,8160.6,2630.8
+Madhya Pradesh,Dewas,Haatpipliya APMC,5,4,4320.2,1165.6
+Odisha,Nowarangpur,Nabarangpur(Umerkote) APMC,5,5,2780.0,60.0
+Madhya Pradesh,Dewas,Loharda APMC,5,3,3525.0,523.2
+Gujarat,Sabarkantha,Modasa APMC,5,5,6274.0,1290.0
+Madhya Pradesh,Dewas,Sonkatch APMC,5,4,5221.2,1226.2
+Bihar,Supaul,Supaul APMC,5,5,5000.0,760.0
+Bihar,Sheikhpura,Barbigha APMC,5,5,4020.0,137.8
+Bihar,Sheikhpura,Shekhpura APMC,5,5,4048.0,143.2
+Punjab,Gurdaspur,Dhariwal APMC,5,5,1256.0,0.0
+Gujarat,Sabarkantha,Modasa(Tintoi) APMC,5,5,6132.0,1259.0
+Uttar Pradesh,Sambhal,Sambhal APMC,5,5,2760.0,140.0
+Madhya Pradesh,Khargone,Karhi APMC,5,5,5779.0,768.2
+Haryana,Sirsa,Ellanabad APMC,5,5,5628.8,421.0
+Madhya Pradesh,Morena,Sabalgarh APMC,5,5,6653.0,281.6
+Maharashtra,Solapur,APMC Barshi,5,5,8310.0,848.0
+Karnataka,Belagavi,Ramdurga APMC,5,5,6310.4,1421.2
+Gujarat,Sabarkantha,Himatnagar APMC,5,5,7300.0,745.0
+Tripura,Dhalai,Halahali,5,5,4120.0,200.0
+West Bengal,Alipurduar,Alipurduar APMC,5,5,4640.0,980.0
+West Bengal,Purba Bardhaman,Katwa APMC,5,5,3170.0,310.0
+Gujarat,Amreli,APMC Bagasara,5,5,7846.0,1166.0
+Madhya Pradesh,Harda,Sirali APMC,5,4,4267.2,538.4
+Odisha,Rayagada,Rayagada(Muniguda) APMC,5,5,8860.0,2156.0
+Punjab,Kapurthala,Bhulath APMC,5,5,2570.0,70.0
+Madhya Pradesh,Harda,Harda APMC,5,2,5036.0,131.0
+Punjab,Kapurthala,Bhulath (Nadala) APMC,5,5,2160.0,70.0
+Tripura,Gomati,Silachhari APMC,5,5,4740.0,640.0
+Madhya Pradesh,Chhindwara,Chaurai APMC,5,2,3420.2,157.0
+Maharashtra,Satara,APMC Vaduj,5,5,3203.6,1041.0
+Madhya Pradesh,Dindori,Shahpura Niwas APMC,5,5,3224.8,145.6
+Odisha,Sambalpur,Rairakhol APMC,5,5,2740.0,580.0
+Madhya Pradesh,Chhatarpur,Naugaon APMC,5,5,5386.4,96.0
+Gujarat,Gandhinagar,Dehgam(Rekhiyal) APMC,4,4,4087.25,275.0
+Maharashtra,Solapur,APMC Karmala,4,4,5963.0,327.75
+Gujarat,Gandhinagar,"Kalol(Veg,Market,Kalol) APMC",4,4,3062.5,1437.5
+Gujarat,Gandhinagar,Dehgam APMC,4,4,4164.25,288.75
+Maharashtra,Nashik,Lasalgaon(Vinchur),4,3,4515.0,1639.5
+Haryana,Karnal,Asandh APMC,4,2,3802.5,409.75
+Madhya Pradesh,Ujjain,Tarana APMC,4,3,4868.25,1760.25
+Odisha,Bhadrak,Chandabali APMC,4,4,3270.0,420.0
+Gujarat,Gandhinagar,Kalol APMC,4,4,4268.75,448.75
+Maharashtra,Ahilyanagar,APMC Sangamner,4,3,3143.75,4437.5
+Punjab,Bhatinda,Bhucho APMC,4,4,3050.0,0.0
+Maharashtra,Pune,APMC Dound,4,3,3987.5,75.0
+Uttarakhand,Udhamsinghnagar,Bazpur APMC,4,4,5702.25,13.75
+Gujarat,Patan,Chansama APMC,4,2,9268.5,413.75
+Jammu and Kashmir,Kupwara,Bumhama Kupwara (F&V),4,1,52500.0,15000.0
+Madhya Pradesh,Vidisha,Lateri APMC,4,3,4530.0,371.25
+Haryana,Hissar,Hissar APMC,4,4,6367.5,342.0
+Uttar Pradesh,Baghpat,Khekda APMC,4,4,1325.0,300.0
+Maharashtra,Akola,APMC Murtizapur,4,4,6448.75,718.75
+Odisha,Sambalpur,Sambalpur APMC,4,4,1550.0,85.0
+Gujarat,Dahod,Zalod(Sanjeli) APMC,4,4,2806.25,0.0
+Maharashtra,Jalna,APMC Ambad (Vadigodri),4,4,3044.0,951.0
+West Bengal,Coochbehar,Toofanganj APMC,4,4,6325.0,205.0
+Gujarat,Panchmahals,Morva Hafad APMC,4,4,2275.0,425.0
+Haryana,Mewat,Punhana APMC,4,4,5625.0,0.0
+Punjab,Jalandhar,Noor Mehal APMC,4,4,1825.0,0.0
+Maharashtra,Washim,APMC Washim,4,4,6887.5,957.5
+Maharashtra,Chattrapati Sambhajinagar,APMC Paithan,4,4,3975.5,329.25
+Punjab,Tarntaran,Naushera Pannuan APMC,4,4,852.5,0.0
+Maharashtra,Dharashiv,APMC Tuljapur,4,4,6087.5,1172.5
+Gujarat,Valsad,Chikli(Khorgam) APMC,4,4,2218.75,562.5
+Maharashtra,Latur,APMC Udgir,4,4,8835.0,174.5
+Bihar,Jamui,Jamui APMC,4,4,2387.5,0.0
+Haryana,Palwal,Palwal APMC,4,3,4637.5,825.0
+Karnataka,Dakshina Kannada,Sulya APMC,4,3,40625.0,19375.0
+Karnataka,Dakshina Kannada,Puttur APMC,4,3,29350.0,15000.0
+Odisha,Khurda,Damana Hat APMC,4,4,2050.0,112.5
+Karnataka,Chitradurga,Hosadurga APMC,4,3,18250.0,750.0
+Maharashtra,Yavatmal,APMC Digras,4,4,9110.0,116.25
+Gujarat,Banaskanth,Vadgam APMC,4,4,4035.0,560.0
+Rajasthan,Baran,Nahargarh APMC,4,4,4474.25,1573.75
+Rajasthan,Bikaner,Pugal Road Grain APMC,4,2,8071.0,590.0
+Odisha,Khurda,Jatni APMC,4,4,2962.5,100.0
+Maharashtra,Nashik,APMC Kalvan,4,3,3969.0,1249.0
+West Bengal,Coochbehar,Mekhliganj APMC,4,4,6325.0,205.0
+West Bengal,Coochbehar,Mathabhanga APMC,4,4,6325.0,205.0
+West Bengal,Coochbehar,Haldibari APMC,4,4,6325.0,205.0
+West Bengal,Coochbehar,Dinhata APMC,4,4,6325.0,205.0
+Odisha,Nowarangpur,Nawarangpur APMC,4,4,2350.0,50.0
+Maharashtra,Buldhana,APMC Chikali,4,3,7344.0,988.25
+Karnataka,Gadag,Rona APMC,4,4,8014.75,402.25
+Karnataka,Haveri,Haveri APMC,4,4,5601.25,1733.0
+West Bengal,Coochbehar,Baxirhat APMC,4,4,6325.0,205.0
+Odisha,Jharsuguda,Jharsuguda APMC,4,4,5675.0,575.0
+Punjab,Jalandhar,Mehatpur APMC,4,4,2575.0,200.0
+Maharashtra,Yavatmal,APMC Yavatmal,4,4,5383.5,300.0
+Punjab,Jalandhar,Nakodar APMC,4,4,1477.75,0.0
+Uttar Pradesh,Raebarelli,Lalganj APMC,4,4,1250.0,125.0
+Karnataka,Raichur,Manvi APMC,4,3,4872.0,292.5
+Madhya Pradesh,Dindori,Gorakhpur APMC,4,4,3925.0,180.0
+Telangana,Mahbubnagar,Mahbubnagar APMC,4,4,4223.0,386.5
+Telangana,Sangareddy,APMC PATANCHERU,4,4,2600.0,1000.0
+Uttar Pradesh,Amroha,Dhanaura APMC,4,4,1875.0,95.0
+Gujarat,Banaskanth,Bhabhar APMC,4,4,12311.25,2430.0
+Madhya Pradesh,Sehore,Ichhawar APMC,4,4,4550.0,1302.5
+Bihar,Bhagalpur,Bhagalpur APMC,4,4,2148.33,50.0
+Madhya Pradesh,Datia,Bhander APMC,4,3,4645.0,517.5
+Madhya Pradesh,Raisen,Bareli APMC,4,2,4087.5,331.0
+Telangana,Ranga Reddy,Shankarapally APMC,4,4,3500.0,750.0
+Telangana,Mahabubabad,Mahabubabad APMC,4,4,5410.0,2193.0
+Telangana,Mahbubnagar,Badepally APMC,4,4,4807.0,321.25
+Madhya Pradesh,Dhar,Gandhwani APMC,4,4,5262.5,1231.25
+Andhra Pradesh,Palnadu,Durgi APMC,4,4,4550.0,517.5
+Madhya Pradesh,Khandwa,Mundi APMC,4,4,5189.75,1503.0
+Gujarat,Mehsana,Mehsana APMC,4,4,5656.25,181.25
+Madhya Pradesh,Seoni,Chhpara APMC,4,1,2450.0,208.5
+Telangana,Suryapet,Suryapeta APMC,4,2,3822.25,832.5
+Madhya Pradesh,Guna,Aron APMC,4,4,4728.75,700.5
+Madhya Pradesh,Ratlam,Taal APMC,4,3,4605.25,1193.25
+Madhya Pradesh,Gwalior,Bhitarwar APMC,4,1,4088.75,541.25
+Odisha,Bolangir,Kantabaji APMC,4,4,2425.0,850.0
+Telangana,Nagarkurnool,Nagarkurnool APMC,4,4,6756.25,31.0
+Gujarat,Surat,Bardoli(Kadod) APMC,4,4,2975.0,1925.0
+Madhya Pradesh,Raisen,Silvani APMC,4,3,3752.5,121.25
+Tripura,North Tripura,Dasda APMC,4,4,3300.0,200.0
+Madhya Pradesh,Rajgarh,Chhapiheda APMC,4,4,4724.25,1610.75
+Assam,Karimganj,Santar Bazaar APMC,4,4,3712.5,362.5
+Madhya Pradesh,Ratlam,A lot APMC,4,4,3737.5,4323.5
+Tamil Nadu,Ramanathapuram,Kamuthi(Uzhavar Sandhai ),4,4,4662.5,425.0
+Gujarat,Anand,Khambhat(Grain Market) APMC,4,3,2937.5,750.0
+Madhya Pradesh,Rajgarh,Narsinghgarh APMC,4,2,3911.0,1240.0
+Gujarat,Surat,Vyra APMC,4,4,9137.5,2525.0
+Rajasthan,Swai Madhopur,Gangapur City APMC,4,4,7256.25,693.25
+Keralam,Wayanad,Sultan bathery Market,4,4,26075.0,5.0
+Madhya Pradesh,Alirajpur,Alirajpur APMC,4,4,5825.0,102.5
+Keralam,Kottayam,Ettumanoor VFPCK Market,4,4,4800.0,200.0
+Madhya Pradesh,Ashoknagar,Chanderi APMC,4,2,4421.25,232.5
+Rajasthan,Phalodi,Phalodi APMC,4,4,13600.0,2050.0
+Karnataka,Raichur,Raichur APMC,4,4,6819.75,1353.0
+Madhya Pradesh,Shivpuri,Karera APMC,4,2,4457.5,427.5
+Telangana,Sangareddy,Sadasivpet APMC,4,4,5313.0,0.0
+West Bengal,Murshidabad,Beldanga APMC,4,4,3737.5,115.0
+Madhya Pradesh,Seoni,Ghansour APMC,4,2,3011.25,146.25
+Madhya Pradesh,Bhind,Alampur APMC,4,3,3327.75,259.75
+Madhya Pradesh,Maihar,Ramnagar APMC,4,4,3955.0,6.25
+Tamil Nadu,Dindigul,Kodaikkanal(Uzhavar Sandhai),4,4,5187.5,875.0
+Andhra Pradesh,NTR,Tiruvuru APMC,4,4,8750.0,0.0
+Madhya Pradesh,Seoni,Lakhnadon APMC,4,1,2362.5,141.25
+Andhra Pradesh,NTR,Nandigama APMC,4,4,6650.0,0.0
+Madhya Pradesh,Khargone,Segaon APMC,4,4,6325.0,754.44
+Bihar,Nalanda,Harnaut APMC,3,3,8333.33,0.0
+Maharashtra,Nashik,Shivsiddha Govind Producer Company Ltd Sanchalit Khajgi Krushi Utpann Bajar Samati-Abhona-Kalwan,3,3,4533.33,1620.0
+Gujarat,Surendranagar,Chotila APMC,3,3,6250.0,483.33
+Madhya Pradesh,Narmadapuram,Babai (Makhan Nagar) APMC,3,1,4366.67,300.0
+Madhya Pradesh,Morena,Ambaha APMC,3,1,2361.67,66.67
+Andhra Pradesh,Ananthapuramu,Guntakal APMC,3,3,8233.33,833.33
+Andhra Pradesh,Ananthapuramu,Gooti APMC,3,3,7770.0,3716.67
+Telangana,Rajanna Siricilla,Vemulawada APMC,3,3,4512.67,264.0
+Andhra Pradesh,Sri Sathya Sai,Hindupur APMC,3,2,15033.33,10666.67
+Punjab,Gurdaspur,Kalanaur APMC,3,3,2466.67,0.0
+Rajasthan,Kota,Khatauli APMC,3,3,9411.67,1469.0
+Gujarat,Junagarh,Bhesan APMC,3,3,7666.67,3116.67
+Madhya Pradesh,Khargone,Bedia APMC,3,1,21100.0,6000.0
+Telangana,Ranga Reddy,Ibrahimpatnam APMC,3,3,4000.0,0.0
+Maharashtra,Nashik,APMC Nandgaon,3,3,6733.33,1484.0
+Punjab,Fazilka,Abohar APMC,3,2,6622.0,1089.67
+Madhya Pradesh,Mandsaur,Bhanpura APMC,3,2,2538.33,33.33
+Andhra Pradesh,Prakasam,Addanki APMC,3,3,4016.67,66.67
+Madhya Pradesh,Khargone,Kasrawad APMC,3,2,2363.33,360.0
+Karnataka,Mandya,Srirangapattana APMC,3,3,16166.67,2100.0
+Maharashtra,Pune,APMC Indapur,3,3,3200.0,12433.33
+Gujarat,Surat,Mandvi APMC,3,3,5245.67,758.33
+Madhya Pradesh,Chhindwara,Amarwda APMC,3,1,2500.33,383.67
+Andhra Pradesh,Nandyal,Banaganapalli APMC,3,3,2716.67,233.33
+Andhra Pradesh,Bapatla,Bapatla APMC,3,3,4916.67,400.0
+Madhya Pradesh,Bhind,Mehgaon APMC,3,3,4440.0,166.67
+Andhra Pradesh,Bapatla,Kuchinapudi APMC,3,3,5500.0,200.0
+Andhra Pradesh,NTR,Mylavaram APMC,3,3,4230.33,0.0
+Andhra Pradesh,Kurnool,Adoni APMC,3,3,7775.33,2937.0
+Andhra Pradesh,Krishna,Penamaluru (HQ-Kankipadu) APMC,3,3,4797.0,0.0
+Keralam,Thiruvananthapuram,Kovilnada  VFPCK Market,3,3,6100.0,0.0
+Madhya Pradesh,Ashoknagar,Piprai APMC,3,3,7020.0,96.67
+Odisha,Balasore,Nilagiri APMC,3,3,3716.67,83.33
+Keralam,Thiruvananthapuram,Neyyattinkara  VFPCK Market,3,1,4833.33,933.33
+Madhya Pradesh,Anupur,Jaithari APMC,3,2,2370.0,0.0
+Keralam,Thiruvananthapuram,Pappanchani VFPCK Market,3,3,5666.67,0.0
+Odisha,Cuttack,Kendupatna APMC,3,3,1971.67,240.0
+Haryana,Panipat,Madlauda APMC,3,3,2300.0,66.67
+Maharashtra,Washim,APMC Malegaon(Washim),3,3,7750.0,400.0
+Madhya Pradesh,Jabalpur,Shahpura Bhitoni (F&V) APMC,3,1,2133.33,46.67
+Telangana,Bhadradri Kothagudem,Bhadrachalam APMC,3,2,5033.33,0.0
+Pondicherry,Pondicherry,Thattanchavady APMC,3,2,2889.44,113.33
+Gujarat,Dahod,Limkheda APMC,3,3,2231.67,308.33
+Chattisgarh,Janjgeer-Champa,Champa APMC,3,1,2000.0,66.67
+Odisha,Sonepur,Birmaharajpur APMC,3,3,3233.33,500.0
+Haryana,Faridabad,"New Grain Market , Faridabad APMC",3,3,2033.33,666.67
+Andhra Pradesh,Palnadu,Macharla APMC,3,3,6633.33,0.0
+Chattisgarh,Bilaspur,Kota APMC,3,2,2316.67,0.0
+Gujarat,Ahmedabad,Viramgam APMC,3,3,4818.33,458.33
+Madhya Pradesh,Dewas,Kannod APMC,3,2,4984.0,1008.0
+Odisha,Nayagarh,Sarankul APMC,3,3,2466.67,233.33
+Telangana,Karimnagar,Karimnagar APMC,3,3,4735.0,57.0
+Haryana,Rohtak,Rohtak APMC,3,2,3491.0,590.0
+Madhya Pradesh,Dewas,Bagli APMC,3,2,3816.67,456.33
+Chattisgarh,Balrampur,Kusmee APMC,3,2,2680.33,0.0
+Maharashtra,Wardha,Sindi (Selu),3,3,4730.0,345.0
+Madhya Pradesh,Narmadapuram,Bankhedi APMC,3,2,3197.33,50.0
+Andhra Pradesh,Prakasam,Maddipadu APMC,3,3,3900.0,0.0
+Madhya Pradesh,Shehdol,Beohari APMC,3,2,2600.0,62.67
+Maharashtra,Chattrapati Sambhajinagar,APMC Sillod,3,3,4150.0,168.33
+Madhya Pradesh,Sehore,Jawar APMC,3,3,4176.67,2379.33
+Karnataka,Davangere,Harihara APMC,3,3,9433.33,66.67
+Bihar,Bhojpur,Aarah APMC,3,3,5166.67,0.0
+Bihar,Gaya,Tekari APMC,3,3,3200.0,0.0
+Rajasthan,Hanumangarh,Goluwala APMC,3,3,2300.0,333.33
+Maharashtra,Dharashiv,APMC Paranda,3,3,6066.67,37.0
+Rajasthan,Sikar,Palsana APMC,3,3,5450.0,773.33
+Rajasthan,Churu,Sadulpur APMC,3,3,4983.33,833.33
+Bihar,Aurangabad,Aurangabad APMC,3,3,4933.33,1600.0
+Madhya Pradesh,Rewa,Chaakghat APMC,3,2,4276.67,13.33
+West Bengal,Kolkata,Mechua APMC,3,3,10000.0,1533.33
+Madhya Pradesh,Rajgarh,Machalpur APMC,3,3,5460.0,681.67
+Keralam,Ernakulam,Kanjoor VFPCK Market,3,1,3666.67,200.0
+Uttar Pradesh,Hathras,Shadabad APMC,3,3,650.0,100.0
+Rajasthan,Hanumangarh,Rawatsar APMC,3,3,1466.67,833.33
+Maharashtra,Amarawati,APMC Achalpur,3,3,3998.33,236.67
+Rajasthan,Baran,Anta APMC,3,3,5442.33,234.33
+Gujarat,Mehsana,Mehsana(Jornang) APMC,3,3,4453.33,201.67
+West Bengal,Purba Bardhaman,Guskara APMC,3,3,3773.33,73.33
+Maharashtra,Ahilyanagar,APMC Rahuri,3,3,4141.67,216.67
+Maharashtra,Ahilyanagar,APMC Shevgaon,3,1,3166.67,1266.67
+Rajasthan,Jhalawar,Choumahla APMC,3,3,3964.0,328.33
+Keralam,Alappuzha,Madhavapuram Market,3,2,4933.33,400.0
+Maharashtra,Ahilyanagar,Karjat(Rashin),3,3,3650.0,1616.67
+Madhya Pradesh,Shajapur,Badod APMC,3,3,4043.33,1825.0
+Karnataka,Shivamogga,Shikaripura APMC,3,3,12826.0,6250.0
+Madhya Pradesh,Sagar,Rehli APMC,3,3,3785.0,221.67
+Keralam,Ernakulam,Thiruvaniyoor  VFPCK Market,3,2,3766.67,2166.67
+Madhya Pradesh,Shehdol,Shahdol APMC,3,3,4033.33,108.33
+Madhya Pradesh,Shivpuri,Magroni APMC,3,3,4461.33,1200.0
+Madhya Pradesh,Tikamgarh,Jatara APMC,3,1,2645.0,59.0
+Bihar,Begusarai,Teghra APMC,3,3,2533.33,200.0
+Punjab,Kapurthala,Sultanpur APMC,3,3,1166.67,0.0
+Karnataka,Mandya,Pandavapura APMC,3,3,10133.33,666.67
+Madhya Pradesh,Narsinghpur,Gotegaon APMC,3,2,2600.0,255.0
+Andhra Pradesh,Tirupathi,Venkatagiri APMC,3,3,5533.33,866.67
+Karnataka,Raichur,Lingasugur APMC,3,3,6770.0,0.0
+Madhya Pradesh,Ujjain,Unhel APMC,3,2,5354.0,1506.67
+Tripura,Khowai,Bachaibari APMC,3,3,12066.67,5200.0
+Rajasthan,Nagaur,Degana APMC,3,3,6008.33,150.0
+Madhya Pradesh,Niwadi,Niwadi APMC,3,3,4001.67,606.33
+Rajasthan,Jhalawar,Manohararthana APMC,3,3,3810.67,495.0
+Maharashtra,Buldhana,APMC Deoulgaon Raja,3,3,3866.67,33.33
+Madhya Pradesh,Pandhurna,Pandhurna APMC,3,2,4673.33,195.33
+Andhra Pradesh,YSR Kadapa,Kadapa,3,2,15621.0,2785.33
+Andhra Pradesh,YSR Kadapa,Proddatur APMC,3,3,5766.67,0.0
+Madhya Pradesh,Sagar,Rehli(F&V) APMC,3,3,1133.33,200.0
+Maharashtra,Hingoli,APMC Hingoli,3,3,12129.67,1340.0
+Rajasthan,Rajsamand,Rajsamand APMC,3,3,1816.67,633.33
+Maharashtra,Jalgaon,APMC  Yawal,3,3,2270.0,800.0
+Bihar,Banka,Amarpur APMC,3,3,4100.0,1000.0
+Chattisgarh,Surguja,Ambikapur APMC,3,2,2247.33,0.0
+Madhya Pradesh,Pandhurna,Saunsar APMC,3,1,2439.17,36.67
+Karnataka,Chitradurga,Hiriyur APMC,3,2,16266.67,0.0
+Maharashtra,Jalgaon,APMC Parola,3,3,3700.0,100.0
+Chattisgarh,Korba,Katghora APMC,3,1,2006.67,0.0
+Telangana,Adilabad,Boath APMC,2,2,4900.0,50.0
+Telangana,Bhadradri Kothagudem,Yellandu APMC,2,2,5600.0,200.0
+Rajasthan,Hanumangarh,Sangriya APMC,2,2,2300.0,1400.0
+Andhra Pradesh,Nandyal,Nandikotkur APMC,2,2,4025.0,267.5
+Telangana,Wanaparthy,Wanaparthy town APMC,2,2,5053.5,1421.0
+Odisha,Keonjhar,Anandapur APMC,2,2,2300.0,0.0
+Odisha,Jagatsinghpur,Rahama APMC,2,2,4250.0,1500.0
+Andhra Pradesh,Eluru,Polavaram APMC,2,2,2430.0,0.0
+Andhra Pradesh,Guntur,Mangalagiri APMC,2,2,2540.0,0.0
+Rajasthan,Jhunjhunu,Surajgarh APMC,2,2,5550.0,0.0
+Andhra Pradesh,Krishna,Divi (HQ-Avanigadda) APMC,2,2,7050.0,550.0
+Odisha,Cuttack,Kendupatna(Niali) APMC,2,2,2550.0,550.0
+Tamil Nadu,Thiruppur,Thiruppur RM,2,2,2900.0,400.0
+Andhra Pradesh,East Godavari,Nidadavolu APMC,2,2,2427.5,0.0
+Andhra Pradesh,Krishna,Gannavaram APMC,2,2,5520.5,0.0
+Andhra Pradesh,Krishna,Pedana APMC,2,2,6225.0,979.5
+Odisha,Gajapati,Parlakhemundi APMC,2,2,1150.0,200.0
+Andhra Pradesh,Nandyal,Nandyal APMC,2,2,2440.0,0.0
+Andhra Pradesh,Kurnool,Yemmiganur APMC,2,2,7416.5,2392.5
+Odisha,Jagatsinghpur,Jagatsinghpur APMC,2,2,2875.0,350.0
+Andhra Pradesh,Markapuram,Cumbum APMC,2,2,7100.0,200.0
+Andhra Pradesh,NTR,Jaggayyapeta APMC,2,2,1480.0,0.0
+Bihar,Darbhanga,Darbhanga APMC,2,2,2675.0,150.0
+Andhra Pradesh,Ananthapuramu,Urvakonda APMC,2,2,7250.0,1000.0
+Bihar,Begusarai,Begusarai APMC,2,2,2400.0,200.0
+Andhra Pradesh,Anakapally,Chodavaram APMC,2,2,6150.0,2100.0
+Andhra Pradesh,Anakapally,Madugula APMC,2,2,6150.0,2100.0
+Bihar,West Chambaran,Ramnagar APMC,2,2,2000.0,300.0
+Punjab,Sangrur,Dirba APMC,2,2,3658.0,0.0
+Andhra Pradesh,Ananthapuramu,RAYADURG APMC,2,2,3150.0,725.0
+Andhra Pradesh,YSR Kadapa,Siddavatam APMC,2,2,1600.0,200.0
+Punjab,Patiala,Samana APMC,2,1,3230.5,989.5
+Uttarakhand,Dehradoon,Chakrata APMC,2,2,2800.0,700.0
+Bihar,Kaimur/Bhabhua,Mohana APMC,2,2,2550.0,0.0
+Punjab,Patiala,Dudhansadhan APMC,2,2,4730.5,0.0
+Andhra Pradesh,YSR Kadapa,Kamalapuram APMC,2,2,5675.0,0.0
+Uttar Pradesh,Sambhal,Bhehjoi APMC,2,2,1727.5,405.0
+Andhra Pradesh,Prakasam,Darsi APMC,2,2,5400.0,100.0
+Punjab,Mansa,Bareta APMC,2,2,3430.5,382.5
+Andhra Pradesh,YSR Kadapa,Jammalamadugu APMC,2,2,5050.0,200.0
+Andhra Pradesh,Visakhapatnam,Visakhapatnam APMC,2,2,32350.0,0.0
+Andhra Pradesh,Prakasam,Santhamaguluru APMC,2,2,2700.0,80.0
+Andhra Pradesh,Sri Sathya Sai,Dharmavaram APMC,2,2,4800.0,200.0
+Uttar Pradesh,Prayagraj,Sirsa APMC,2,2,2496.0,165.0
+Andhra Pradesh,Sri Sathya Sai,Penukonda APMC,2,2,5175.0,150.0
+Andhra Pradesh,Sri Sathya Sai,Puttaparthi  APMC,2,2,4525.0,250.0
+Andhra Pradesh,Tirupathi,Srikalahasti APMC,2,2,4650.0,300.0
+Telangana,Rajanna Siricilla,Sircilla APMC,2,2,2475.0,550.0
+Andhra Pradesh,Anakapally,Anakapally APMC,2,1,5375.0,0.0
+Odisha,Nayagarh,Bahadajholla APMC,2,2,2450.0,350.0
+Telangana,Nizamabad,Nizamabad APMC,2,1,21593.0,4395.5
+Bihar,Banka,Barahat APMC,2,2,3450.0,700.0
+Rajasthan,Ganganagar,Sadulshahar APMC,2,2,5693.0,0.0
+Tripura,South Tripura,Santir Bazar APMC,2,2,3150.0,300.0
+Tripura,South Tripura,Kalsi APMC,2,2,10325.0,125.0
+Rajasthan,Deeg,Sikri APMC,2,2,5405.0,755.5
+Telangana,Mancherial,Bellampally APMC,2,2,6000.0,0.0
+Andhra Pradesh,Srikakulam,Hiramandalam APMC,2,2,2360.0,0.0
+Andhra Pradesh,Palnadu,Gurazala APMC,2,1,22000.0,8250.0
+Andhra Pradesh,Palnadu,Ipur APMC,2,2,5975.0,225.0
+Rajasthan,Bharatpur,Bhusawar Bair APMC,2,2,5470.0,90.0
+Odisha,Puri,Nimapara APMC,2,2,3300.0,0.0
+Andhra Pradesh,Palnadu,Krosuru APMC,2,2,5250.0,650.0
+Rajasthan,Beawar,Jaitaran APMC,2,2,7825.0,187.5
+Rajasthan,Beawar,Bijaynagar APMC,2,2,5600.0,1712.5
+Rajasthan,Beawar,Beawar APMC,2,2,3275.0,0.0
+Andhra Pradesh,Palnadu,Rompicherla APMC,2,2,2500.0,100.0
+Uttarakhand,Udhamsinghnagar,Gadarpur APMC,2,2,2800.0,0.0
+Telangana,Narayanpet,Narayanpet APMC,2,1,3052.0,22.0
+Chattisgarh,Balodabazar,Balodabazar APMC,2,1,2075.0,0.0
+Andhra Pradesh,Palnadu,Sattenapalli APMC,2,2,5037.5,275.0
+Tripura,South Tripura,Biokhora,2,2,4200.0,160.0
+Andhra Pradesh,Srikakulam,Etcherla APMC,2,2,2425.5,0.0
+Gujarat,Mehsana,Vijapur APMC,2,2,8850.0,820.0
+Chattisgarh,Bastar,Bastar APMC,2,2,6250.0,300.0
+Goa,North Goa,Mapusa APMC,2,2,4400.0,0.0
+Madhya Pradesh,Rajgarh,Biaora APMC,2,2,4775.0,225.0
+Madhya Pradesh,Neemuch,Javad APMC,2,2,4512.5,265.0
+Madhya Pradesh,Narmadapuram,Semriharchand APMC,2,1,4700.0,125.0
+Madhya Pradesh,Morena,Banmorkalan APMC,2,2,3050.0,615.0
+Odisha,Bhadrak,Sahidngar APMC,2,2,2700.0,225.0
+Madhya Pradesh,Maihar,Maihar APMC,2,2,2375.0,50.0
+Madhya Pradesh,Maihar,Amarpatan APMC,2,2,2450.0,52.5
+Madhya Pradesh,Jhabua,Jhabua APMC,2,2,7750.0,211.5
+Madhya Pradesh,Indore,Sanwer APMC,2,2,4900.0,2802.5
+Madhya Pradesh,Gwalior,Dabra(F&V) APMC,2,2,4000.0,1500.0
+Madhya Pradesh,Guna,Guna(F&V) APMC,2,2,1250.0,150.0
+Madhya Pradesh,Chhatarpur,Harpalpur APMC,2,2,5149.5,53.0
+Madhya Pradesh,Chhatarpur,Badamalhera APMC,2,2,4575.0,175.0
+Madhya Pradesh,Bhind,Bhind APMC,2,2,2572.0,147.5
+Madhya Pradesh,Betul,Multai APMC,2,1,2617.5,178.0
+Madhya Pradesh,Betul,Bhensdehi APMC,2,1,2663.0,150.0
+Madhya Pradesh,Balaghat,Mohgaon APMC,2,2,2490.0,42.5
+Madhya Pradesh,Balaghat,Balaghat APMC,2,1,2055.5,185.5
+Madhya Pradesh,Badwani,Balwadi APMC,2,2,4500.0,170.0
+Madhya Pradesh,Ashoknagar,Shadora APMC,2,1,2357.5,410.0
+Madhya Pradesh,Anupur,Anuppur APMC,2,2,2900.0,0.0
+Madhya Pradesh,Rajgarh,Pachaur APMC,2,2,4500.0,1175.0
+Chattisgarh,Manendragarh Chirmiri Bhartpur,Manendragarh APMC,2,2,275.0,0.0
+Madhya Pradesh,Rewa,Rewa(F&V) APMC,2,2,5600.0,0.0
+Maharashtra,Ahilyanagar,Shevgaon(Bodhegaon),2,2,3000.0,50.0
+Maharashtra,Gondiya,APMC Gondiya,2,1,2472.0,194.0
+Maharashtra,Gondiya,APMC Amgaon,2,1,2540.0,108.0
+Maharashtra,Gadchiroli,Armori(Desaiganj),2,1,3089.0,900.5
+Maharashtra,Dhule,Dondaicha (Sindhkheda),2,2,2500.0,345.0
+Maharashtra,Dharashiv,APMC Umarga,2,2,8125.0,450.0
+Maharashtra,Chandrapur,APMC Varora,2,2,8000.0,200.0
+Maharashtra,Chandrapur,APMC Bhadrawati,2,2,8031.0,62.5
+Maharashtra,Chandrapur,APMC  Chimur,2,2,4150.0,950.0
+Maharashtra,Buldhana,Buldhana(Dhad),2,2,7550.0,850.0
+Maharashtra,Ahilyanagar,Rahuri(Vambori),2,1,4000.0,4700.0
+Madhya Pradesh,Sagar,Jaisinagar APMC,2,1,1987.5,830.0
+Madhya Pradesh,Vidisha,Kurwai APMC,2,2,3120.0,152.5
+Madhya Pradesh,Tikamgarh,Palera APMC,2,2,4540.0,220.0
+Madhya Pradesh,Tikamgarh,Khargapur APMC,2,2,7335.5,1005.0
+Madhya Pradesh,Singroli,Singroli APMC,2,1,2200.0,0.0
+Madhya Pradesh,Shivpuri,Pichhour APMC,2,2,4422.5,1600.0
+Madhya Pradesh,Shajapur,Berachha APMC,2,2,4858.0,851.0
+Madhya Pradesh,Sehore,Baktara APMC,2,2,3720.0,245.0
+Madhya Pradesh,Sagar,Shahagarh APMC,2,2,4662.5,64.0
+Madhya Pradesh,Sagar,Kesli APMC,2,2,2585.0,320.0
+Madhya Pradesh,Agar Malwa,Soyatkalan(F&V) APMC,2,2,5900.0,11927.5
+Keralam,Thiruvananthapuram,Maranelloor VFPCK Market,2,1,5110.0,750.0
+Maharashtra,Mumbai,Mumbai-Onion & Potato Market,2,2,2225.0,1350.0
+Keralam,Palakad,Vaniyamkulam  VFPCK Market,2,2,4550.0,200.0
+Jammu and Kashmir,Ganderbal,Market Administrative Committee Zazna,2,1,5937.5,1250.0
+Jammu and Kashmir,Budgam,Zaloosa-Chararishrief (F&V),2,1,2703.12,375.0
+Jammu and Kashmir,Baramulla,Sopore (Nowpora) (F&V),2,1,5600.0,0.0
+Himachal Pradesh,Mandi,SMY Chail Chowk,2,2,4300.0,2150.0
+Haryana,Panipat,Panipat(Babarpur) APMC,2,1,4601.0,200.0
+Haryana,Panipat,Bapauli APMC,2,1,4350.0,780.5
+Haryana,Palwal,Hodal APMC,2,2,950.0,500.0
+Gujarat,Gir Somnath,Una APMC,2,2,7850.0,315.0
+Haryana,Karnal,Nilokheri APMC,2,2,3190.5,0.0
+Haryana,Jind,Uchana APMC,2,2,3575.0,500.5
+Haryana,Jind,Pillukhera APMC,2,2,3675.5,650.0
+Haryana,Jind,Jullana APMC,2,1,4655.0,745.0
+Haryana,Hissar,Narnaund APMC,2,2,3710.0,204.5
+Gujarat,Kachchh,Bhuj APMC,2,2,2800.0,700.0
+Gujarat,Kachchh,Rapar APMC,2,2,14905.0,150.0
+Gujarat,Surat,Songadh(Umrada) APMC,2,2,5350.0,1250.0
+Gujarat,Surat,Songadh(Badarpada) APMC,2,2,5350.0,1250.0
+Gujarat,Surat,Songadh APMC,2,2,5350.0,1250.0
+Gujarat,Sabarkantha,Bayad APMC,2,2,8130.0,575.0
+Gujarat,Panchmahals,Gogamba APMC,2,2,2475.0,0.0
+Gujarat,Panchmahals,Godhra APMC,2,2,2542.5,62.5
+Jammu and Kashmir,Pulwama,Pachar Pulwama (F&V),2,1,5550.0,0.0
+Jammu and Kashmir,Pulwama,Prichoo Pulwama (F&V),2,1,5450.0,0.0
+Jammu and Kashmir,Shopian,APMC/MAC Shopian,2,1,4531.25,1250.0
+Karnataka,Udupi,Kundapura APMC,2,1,38500.0,27982.0
+Keralam,Kottayam,Thrikkodithanam  VFPCK Market,2,2,6000.0,500.0
+Keralam,Kottayam,Mannackanad  VFPCK Market,2,2,4750.0,500.0
+Keralam,Kottayam,Kurichy VFPCK Market,2,2,4500.0,500.0
+Keralam,Alappuzha,Thazhakkara  VFPCK Market,2,2,5900.0,550.0
+Keralam,Alappuzha,Nooranad VFPCK Market,2,2,6250.0,500.0
+Karnataka,Vijayapura,Talikot APMC,2,2,9420.5,2805.0
+Karnataka,Vijayanagara,Hoovinahadagali APMC,2,2,3455.0,420.0
+Karnataka,Uttara Kannada,Honnavar APMC,2,1,38500.0,2000.0
+Karnataka,Uttara Kannada,Haliyala APMC,2,2,14922.0,100.0
+Karnataka,Koppal,Koppal APMC,2,2,3070.0,634.0
+Karnataka,Belagavi,Bailahongal APMC,2,2,8046.0,2225.0
+Karnataka,Koppal,Kanakagiri APMC,2,2,6759.0,735.5
+Gujarat,Banaskanth,Tharad(Rah) APMC,2,2,5543.5,437.5
+Karnataka,Kodagu,Gonikappal APMC,2,2,27000.0,19050.0
+Karnataka,Haveri,Savanur APMC,2,2,8075.0,3575.0
+Karnataka,Haveri,Hanagal APMC,2,2,2900.0,465.0
+Karnataka,Davangere,HarappanaHalli APMC,2,2,3270.0,112.5
+Karnataka,Davangere,Channagiri APMC,2,2,25924.0,4439.0
+Karnataka,Chitradurga,Holalkere APMC,2,2,24570.0,3000.0
+Gujarat,Chhota Udaipur,Bodeliu APMC,2,1,8705.0,100.0
+Maharashtra,Hingoli,APMC Basmat,2,2,13698.5,5597.5
+Maharashtra,Parbhani,APMC Gangakhed,2,2,4725.0,75.0
+Maharashtra,Thane,APMC Ulhasnagar,2,2,4150.0,600.0
+Maharashtra,Pune,APMC Junnar,2,2,2750.0,1800.0
+Maharashtra,Yavatmal,"Mahesh Krushi Utpanna Bazar, Digras, Dist Yeotmal",2,2,6606.5,1475.0
+Maharashtra,Raigad,APMC Karjat(Raigad),2,2,4000.0,1054.5
+Maharashtra,Nanded,APMC Kinwat,2,2,7615.0,360.0
+Maharashtra,Pune,APMC Shirur,2,2,4750.0,300.0
+Chattisgarh,Janjgeer-Champa,Naila APMC,2,1,2025.0,0.0
+Maharashtra,Nashik,APMC Manmad,2,1,3900.0,1180.5
+Maharashtra,Yavatmal,APMC Umarkhed,2,2,4500.0,200.0
+Meghalaya,East Khasi Hills,Mawiong Regulated Market APMC,2,2,5850.0,1000.0
+Maharashtra,Yavatmal,APMC Ghatanji,2,2,7900.0,327.5
+Maharashtra,Washim,"Krushna Krishi Bazar, Washim",2,2,8936.0,50950.0
+Maharashtra,Yavatmal,"Jagdamba Agrocare Pvt Ltd, Pandharkawada, Dist Yeotmal",2,2,7662.5,525.0
+Chattisgarh,Bastar,Karpawand APMC,2,2,2200.0,115.0
+Maharashtra,Solapur,APMC Pandharpur,2,2,3700.0,8050.0
+Maharashtra,Yavatmal,KISAN MARKET YARD,2,2,8219.0,245.0
+Maharashtra,Nashik,APMC Pimpalgaon Baswant,2,2,7125.0,8840.0
+Chattisgarh,Dhamtari,Dhamtari APMC,2,1,3885.0,50.0
+Odisha,Bargarh,Padampur APMC,2,2,1450.0,300.0
+Odisha,Bhadrak,Bhadrak APMC,2,2,2600.0,475.0
+Maharashtra,Nanded,APMC Bhokar,2,2,6360.0,165.5
+Maharashtra,Wardha,APMC Pulgaon,2,2,8100.0,335.5
+Odisha,Bargarh,Sohela APMC,2,2,1400.0,400.0
+Andhra Pradesh,Annamayya,Piler APMC,1,1,11600.0,1000.0
+Telangana,Khammam,Kallur APMC,1,1,3000.0,1000.0
+Telangana,Khammam,Enkoor APMC,1,1,8700.0,200.0
+Telangana,Karimnagar,V.Saidapur APMC,1,1,2461.0,0.0
+Telangana,Asifabad,Kagaznagar APMC,1,1,9000.0,0.0
+Gujarat,Ahmedabad,Dhandhuka APMC,1,1,9150.0,235.0
+Keralam,Thirssur,Kuzhur  VFPCK Market,1,1,5200.0,1600.0
+Telangana,Karimnagar,Husnabad APMC,1,1,2800.0,1500.0
+Telangana,Bhadradri Kothagudem,Nuguru Charla APMC,1,1,3005.0,10.0
+Telangana,Karimnagar,Gangadhara APMC,1,1,2461.0,0.0
+Andhra Pradesh,Annamayya,Mulakalacheruvu APMC,1,1,2100.0,1400.0
+Keralam,Thirssur,Chelakkara VFPCK Market,1,1,5000.0,500.0
+Telangana,Jogulamba Gadwal,Gadwal APMC,1,1,6578.0,3921.0
+Telangana,Jogulamba Gadwal,Alampur APMC,1,1,3500.0,1000.0
+Keralam,Thirssur,Kodassery VFPCK Market,1,1,6500.0,0.0
+Telangana,Jagtial,Medipally APMC,1,1,2500.0,0.0
+Keralam,Thirssur,Karuvannur VFPCK Market,1,1,6500.0,1000.0
+Andhra Pradesh,Annamayya,B.Kothakota H/Q Angallu,1,1,2400.0,1300.0
+Telangana,Hanumakonda,Kamalapur APMC,1,1,2461.0,0.0
+Andhra Pradesh,Annamayya,Kalikiri APMC,1,1,2700.0,800.0
+Andhra Pradesh,Annamayya,Lakkireddipally APMC,1,1,11100.0,200.0
+Andhra Pradesh,Annamayya,Madanapalli APMC,1,1,3100.0,800.0
+Andhra Pradesh,Annamayya,Guramkonda Sub-yard of AMC Valmikipuram,1,1,2400.0,1260.0
+Chattisgarh,Kabirdham,Kawardha APMC,1,1,6500.0,500.0
+Telangana,Khammam,Khammam APMC,1,1,6450.0,950.0
+Keralam,Palakad,Kottayi VFPCK Market,1,1,2300.0,0.0
+Telangana,Rajanna Siricilla,Veernapalli APMC,1,1,2500.0,139.0
+Keralam,Palakad,Elevancheri VFPCK Market,1,1,5000.0,0.0
+Telangana,Rajanna Siricilla,Rudrangi APMC,1,1,2461.0,59.0
+Telangana,Rajanna Siricilla,Racharla Boppapur APMC,1,1,3000.0,700.0
+Telangana,Rajanna Siricilla,Pothgal APMC,1,1,2500.0,139.0
+Telangana,Rajanna Siricilla,Konaraopet APMC,1,1,2461.0,59.0
+Telangana,Rajanna Siricilla,Ellanthakunta APMC,1,1,2500.0,139.0
+Telangana,Peddapalli,Dharmaram APMC,1,1,3000.0,0.0
+Keralam,Palakad,Karimpuzha VFPCK Market,1,1,5300.0,400.0
+Telangana,Nirmal,Khanapur APMC,1,1,2410.0,0.0
+Keralam,Palakad,Kizhakkancheri VFPCK Market,1,1,2500.0,0.0
+Andhra Pradesh,Ananthapuramu,Singanamala APMC,1,1,8000.0,2000.0
+Telangana,Nalgonda,Nakrekal APMC,1,1,3000.0,6000.0
+Keralam,Palakad,Malampuzha VFPCK Market,1,1,1500.0,0.0
+Telangana,Khammam,Nelakondapally APMC,1,1,2470.0,620.0
+Keralam,Palakad,Paliyamangalam  VFPCK Market,1,1,4000.0,0.0
+Keralam,Palakad,Vadakarapathy VFPCK Market,1,1,5500.0,0.0
+Telangana,Medak,Narsapur APMC,1,1,2461.0,0.0
+Telangana,Mancherial,Jannaram APMC,1,1,3000.0,0.0
+Chattisgarh,Gourela Pendra Marwahi,Pendraroad APMC,1,1,1900.0,0.0
+Keralam,Pathanamthitta,Kodumon VFPCK Market,1,1,7500.0,500.0
+Keralam,Pathanamthitta,Mezhuveli  VFPCK Market,1,1,4000.0,2000.0
+Keralam,Thirssur,Alengad  VFPCK Market,1,1,2600.0,1300.0
+Keralam,Thirssur,Amballur  VFPCK Market,1,1,7000.0,0.0
+Gujarat,Ahmedabad,Mandal APMC,1,1,24800.0,2995.0
+Telangana,Adilabad,Jainath APMC,1,1,2100.0,200.0
+Telangana,Khammam,"Sattupalli (Ramalayam),RBZ",1,1,3000.0,1200.0
+Telangana,Khammam,"Pavilion Ground,Khammam,RBZ",1,1,3000.0,0.0
+Telangana,Khammam,Sattupally APMC,1,1,2900.0,500.0
+Keralam,Thirssur,Nooluvally  VFPCK Market,1,1,6500.0,1100.0
+Keralam,Thirssur,Mala VFPCK Market,1,1,1500.0,1500.0
+Andhra Pradesh,Kakinada,Sampara (Kakinada Rural) APMC,1,1,2420.0,41.0
+Andhra Pradesh,Eluru,Ungatur APMC,1,1,2445.0,0.0
+Andhra Pradesh,Guntur,Ponnur APMC,1,1,9900.0,200.0
+Andhra Pradesh,Guntur,Tadikonda APMC,1,1,5000.0,0.0
+Andhra Pradesh,Guntur,Tenali APMC,1,1,5000.0,2000.0
+Andhra Pradesh,Kakinada,Jaggampet APMC,1,1,2420.0,41.0
+Andhra Pradesh,Kakinada,Kakinada (Urban) APMC,1,1,2550.0,0.0
+Andhra Pradesh,Kakinada,Karapa APMC,1,1,2440.0,6.0
+Andhra Pradesh,Kakinada,Peddapuram APMC,1,1,2441.0,4.0
+Andhra Pradesh,Kakinada,Pithapuram APMC,1,1,2445.0,9.0
+Chattisgarh,Jashpur,Kotba APMC,1,1,1800.0,0.0
+Andhra Pradesh,Kakinada,Prattipadu APMC,1,1,2379.0,20.0
+Andhra Pradesh,Kakinada,Samalkot APMC,1,1,2340.0,10.0
+Madhya Pradesh,Ashoknagar,Isagarh APMC,1,1,2375.0,785.0
+Andhra Pradesh,Kakinada,Tuni APMC,1,1,13000.0,0.0
+Telangana,Adilabad,Adilabad APMC,1,1,9120.0,912.0
+Punjab,Amritsar,Attari APMC,1,1,4400.0,0.0
+Punjab,Amritsar,Chogawan APMC,1,1,1270.0,0.0
+Punjab,Amritsar,Gehri APMC,1,1,5000.0,0.0
+Andhra Pradesh,Krishna,Ghantsala (HQ-Kodali) APMC,1,1,2400.0,200.0
+Andhra Pradesh,Krishna,Gudiwada APMC,1,1,9200.0,200.0
+Tamil Nadu,Thiruppur,Alangiam RM,1,1,2809.0,18.0
+Andhra Pradesh,Krishna,Gudlavalleru APMC,1,1,9600.0,0.0
+Tamil Nadu,Thirupathur,Vaniyambadi RM,1,1,1850.0,300.0
+Andhra Pradesh,Krishna,Machilipatnam APMC,1,1,2920.0,264.0
+Andhra Pradesh,Krishna,Movva (HQ-Kuchipudi) APMC,1,1,9000.0,0.0
+Andhra Pradesh,Krishna,Pamarru APMC,1,1,2471.0,40.0
+Madhya Pradesh,Balaghat,Katangi APMC,1,1,1965.0,35.0
+Madhya Pradesh,Balaghat,Lalbarra APMC,1,1,2151.0,0.0
+Keralam,Thiruvananthapuram,Vamanapuram Market,1,1,3500.0,500.0
+Maharashtra,Pune,Junnar(Alephata),1,1,60000.0,90000.0
+Keralam,Thiruvananthapuram,Kallara  VFPCK Market,1,1,7100.0,200.0
+Andhra Pradesh,Eluru,Kalidindi APMC,1,1,2440.0,0.0
+Keralam,Thirssur,Marottichal  VFPCK Market,1,1,6500.0,1000.0
+Andhra Pradesh,Annamayya,Punganur APMC,1,1,1870.0,1060.0
+Andhra Pradesh,Annamayya,Valmikipuram APMC,1,1,2400.0,1260.0
+Keralam,Thirssur,Muriyad  VFPCK Market,1,1,6500.0,1000.0
+Andhra Pradesh,Bapatla,Chirala APMC,1,1,3300.0,200.0
+Telangana,Ranga Reddy,Chevella APMC,1,1,1200.0,0.0
+Keralam,Thirssur,Pananchery VFPCK Market,1,1,2200.0,1100.0
+Andhra Pradesh,Bapatla,Repalli APMC,1,1,3700.0,400.0
+Andhra Pradesh,Chittor,Bangarupalyam APMC,1,1,1100.0,200.0
+Andhra Pradesh,Chittor,Chittoor APMC,1,1,3200.0,300.0
+Andhra Pradesh,Chittor,Kuppam APMC,1,1,1212.0,312.0
+Andhra Pradesh,Chittor,Nagari APMC,1,1,1950.0,100.0
+Keralam,Thirssur,Pariyaram VFPCK Market,1,1,6500.0,1000.0
+Andhra Pradesh,Chittor,Penumuru APMC,1,1,2000.0,750.0
+Andhra Pradesh,Chittor,S.R.Puram APMC,1,1,1600.0,350.0
+Andhra Pradesh,Chittor,V. Kota Sub-yard of AMC Palamaneru,1,1,2300.0,600.0
+Andhra Pradesh,Dr.B.R.A.Konaseema,Alamuru APMC,1,1,2369.0,20.0
+Andhra Pradesh,Dr.B.R.A.Konaseema,Amalapuram APMC,1,1,2441.0,27.0
+Andhra Pradesh,Dr.B.R.A.Konaseema,Ramachandrapuram APMC,1,1,2441.0,9.0
+Keralam,Thirssur,Pazhayannur VFPCK Market,1,1,5500.0,700.0
+Andhra Pradesh,Dr.B.R.A.Konaseema,Razole APMC,1,1,17000.0,500.0
+Andhra Pradesh,East Godavari,Anaparthy APMC,1,1,2441.0,139.0
+Andhra Pradesh,East Godavari,Gopalapuram APMC,1,1,2405.0,0.0
+Andhra Pradesh,East Godavari,Kovvur APMC,1,1,2400.0,0.0
+Keralam,Thirssur,Varandarappilly  VFPCK Market,1,1,2500.0,2200.0
+Andhra Pradesh,East Godavari,Rajahmundry APMC,1,1,2441.0,0.0
+Andhra Pradesh,Eluru,Kaikaluru APMC,1,1,2440.0,0.0
+Keralam,Palakad,Alenellur  VFPCK Market,1,1,5100.0,400.0
+Chattisgarh,Bilaspur,Takhatpur APMC,1,1,2200.0,0.0
+Andhra Pradesh,Ananthapuramu,Rapthadu APMC,1,1,13000.0,2000.0
+Uttarakhand,Udhamsinghnagar,Nanakmatta APMC,1,1,2441.0,0.0
+Haryana,Kaithal,Rajound APMC,1,1,2461.0,0.0
+Haryana,Karnal,Jundla APMC,1,1,2451.0,20.0
+Haryana,Karnal,Kunjpura APMC,1,1,2461.0,0.0
+Haryana,Karnal,Nissing APMC,1,1,3900.0,200.0
+Haryana,Kurukshetra,Babain APMC,1,1,2461.0,0.0
+Haryana,Kurukshetra,Pehowa APMC,1,1,1300.0,200.0
+Haryana,Panchkula,Barwala APMC,1,1,2461.0,0.0
+Maharashtra,Yavatmal,APMC Vani,1,1,6700.0,255.0
+Odisha,Kalahandi,Mukhiguda APMC,1,1,2000.0,400.0
+Haryana,Rohtak,Rohtak(Kalanaur) APMC,1,1,2300.0,0.0
+Haryana,Sirsa,Ding APMC,1,1,8500.0,276.0
+Haryana,Yamuna Nagar,Yamuna Nagar APMC,1,1,1200.0,1400.0
+Himachal Pradesh,Solan,SMY Parwanoo,1,1,12500.0,19500.0
+Haryana,Kaithal,Pai APMC,1,1,4590.0,0.0
+Maharashtra,Yavatmal,APMC Ralegaon,1,1,6700.0,305.0
+Maharashtra,Yavatmal,APMC Pusad,1,1,6900.0,165.0
+Maharashtra,Washim,Washim(Ansing),1,1,7200.0,750.0
+Uttarakhand,Haridwar,Lakshar APMC,1,1,2600.0,15.0
+Maharashtra,Washim,APMC Risod,1,1,21000.0,2000.0
+Gujarat,Dahod,Devgadhbaria APMC,1,1,1650.0,100.0
+Gujarat,Dahod,Davgadbaria(Piplod) APMC,1,1,1630.0,80.0
+Andhra Pradesh,Anakapally,Narsipatnam APMC,1,1,2400.0,60.0
+Maharashtra,Wardha,"Sai Agro Infratrade Pvt Agri Market, Dist Wardha",1,1,6529.0,100.0
+Karnataka,Belagavi,Kudchi APMC,1,1,3100.0,160.0
+Gujarat,Chhota Udaipur,Modasar APMC,1,1,8725.0,175.0
+Karnataka,Bellary,Kampli APMC,1,1,3335.0,1270.0
+Andhra Pradesh,Alluri Sitharama Raju,Paderu APMC,1,1,7300.0,0.0
+Haryana,Kaithal,Cheeka APMC,1,1,650.0,100.0
+Gujarat,Chhota Udaipur,Hadad     APMC,1,1,8650.0,150.0
+Nagaland,Tsemenyu,Tsemenyu APMC,1,1,4000.0,0.0
+Gujarat,Mehsana,Vijapur(Kukarvada) APMC,1,1,9025.0,1005.0
+Gujarat,Mehsana,Vijapur(Vegetable) APMC,1,1,925.0,350.0
+Gujarat,Mehsana,Unava APMC,1,1,8525.0,200.0
+Gujarat,Panchmahals,Godhra(Timbaroad) APMC,1,1,2470.0,35.0
+Gujarat,Panchmahals,Gogamba(Similiya) APMC,1,1,2050.0,0.0
+Gujarat,Rajkot,Jasdan(Vichhiya) APMC,1,1,8800.0,800.0
+Andhra Pradesh,Alluri Sitharama Raju,Chintapally APMC,1,1,2400.0,100.0
+Gujarat,Mehsana,Kadi(Kadi cotton Yard) APMC,1,1,9300.0,445.0
+Gujarat,Sabarkantha,Dhansura APMC,1,1,6650.0,300.0
+Gujarat,Sabarkantha,Meghraj(Rellavada) APMC,1,1,2500.0,275.0
+Gujarat,Surat,Bardoli(Madhi) APMC,1,1,2250.0,300.0
+Gujarat,Surat,Mahuva(Anaval) APMC,1,1,2500.0,100.0
+Chattisgarh,Bastar,Jagdalpur APMC,1,1,4600.0,5500.0
+Maharashtra,Yavatmal,Umarked(Danki),1,1,6600.0,200.0
+Chattisgarh,Bastar,Tokapal APMC,1,1,2500.0,0.0
+Gujarat,Surendranagar,Lakhtar APMC,1,1,9395.0,530.0
+Odisha,Gajapati,Kasinagar APMC,1,1,1900.0,200.0
+Gujarat,Vadodara(Baroda),Savli APMC,1,1,3103.62,1050.0
+Gujarat,Valsad,Valsad APMC,1,1,1430.0,350.0
+Haryana,Ambala,Barara APMC,1,1,2461.0,0.0
+Haryana,Ambala,Mullana APMC,1,1,2461.0,0.0
+Haryana,Ambala,Mullana(saha) APMC,1,1,2461.0,0.0
+Gujarat,Junagarh,Manavdar APMC,1,1,9625.0,350.0
+Chattisgarh,Bijapur,Bharamgarh APMC,1,1,1800.0,500.0
+Chattisgarh,Bijapur,Bhopalpattnam APMC,1,1,1800.0,500.0
+Haryana,Jind,Safidon APMC,1,1,4850.0,1150.0
+Gujarat,Chhota Udaipur,Kalediya APMC,1,1,8750.0,200.0
+Gujarat,Botad,Botad(Haddad) APMC,1,1,9350.0,1100.0
+Keralam,Palakad,Agali VFPCK Market,1,1,4950.0,400.0
+Keralam,Kollam,Inchakkad VFPCK Market,1,1,7800.0,0.0
+Keralam,Idukki,Kamakshi VFPCK Market,1,1,5300.0,200.0
+Keralam,Idukki,Kannakunnu VFPCK Market,1,1,6000.0,200.0
+Keralam,Idukki,Melechinnar VFPCK Market,1,1,10000.0,1100.0
+Keralam,Kannur,Irityy Market,1,1,6900.0,200.0
+Andhra Pradesh,Ananthapuramu,Anantapur APMC,1,1,1300.0,700.0
+Telangana,Warangal,Nekkonda APMC,1,1,9090.0,0.0
+Telangana,Warangal,Narsampet APMC,1,1,3102.0,12.0
+Telangana,Warangal,Cherial APMC,1,1,2800.0,400.0
+Keralam,Kannur,Maloor VFPCK Market,1,1,6400.0,200.0
+Keralam,Kollam,Anchal VFPCK Market,1,1,7500.0,0.0
+Telangana,Vikarabad,Marapally APMC,1,1,7300.0,0.0
+Telangana,Suryapet,Tirumalagiri APMC,1,1,2441.0,0.0
+Telangana,Suryapet,Neredcherla APMC,1,1,3200.0,0.0
+Andhra Pradesh,Anakapally,Yellamanchili APMC,1,1,2400.0,60.0
+Keralam,Kollam,Valakom  VFPCK Market,1,1,3500.0,0.0
+Maharashtra,Raigad,APMC Alibagh,1,1,4250.0,500.0
+Telangana,Siddipet,Siddipet APMC,1,1,2960.0,0.0
+Telangana,Siddipet,Gajwel APMC,1,1,2800.0,0.0
+Telangana,Siddipet,Dubbak APMC,1,1,2500.0,0.0
+Telangana,Siddipet,Bejjenki APMC,1,1,2350.0,0.0
+Keralam,Malappuram,Athanikkal VFPCK Market,1,1,6200.0,0.0
+Keralam,Malappuram,Elamkur  VFPCK Market,1,1,6200.0,0.0
+Keralam,Malappuram,Kalikavu VFPCK Market,1,1,6000.0,200.0
+Keralam,Malappuram,Koorad Wandoor VFPCK Market,1,1,6000.0,200.0
+Andhra Pradesh,Ananthapuramu,Kalyandurg APMC,1,1,8300.0,500.0
+Keralam,Malappuram,Othayi  VFPCK Market,1,1,6200.0,0.0
+Keralam,Idukki,Errattayar VFPCK Market,1,1,10000.0,1100.0
+Keralam,Ernakulam,Puthenvelikkara  VFPCK Market,1,1,7000.0,200.0
+Gujarat,Botad,Botad(Bhabarkot) APMC,1,1,9250.0,900.0
+Karnataka,Kolar,Malur APMC,1,1,6250.0,2000.0
+Uttar Pradesh,Prayagraj,Lediyari APMC,1,1,2585.0,200.0
+Karnataka,Chikkamagaluru,Koppa APMC,1,1,30000.0,0.0
+Maharashtra,Wardha,APMC Ashti,1,1,6650.0,355.0
+Maharashtra,Wardha,APMC Arvi,1,1,9150.0,150.0
+Karnataka,Davangere,Jagalur APMC,1,1,2400.0,0.0
+Maharashtra,Solapur,"Perfect Krushi Market Yard, Tal Madha, Dist Solapur",1,1,10450.0,13925.0
+Maharashtra,Solapur,Barshi(Vairag),1,1,7000.0,50.0
+Karnataka,Kalaburagi,Chincholi APMC,1,1,7800.0,700.0
+Chattisgarh,Bijapur,Bijapur APMC,1,1,1800.0,500.0
+Karnataka,Kodagu,Madikeri APMC,1,1,5000.0,0.0
+Maharashtra,Solapur,APMC Sangola,1,1,9000.0,12800.0
+Uttar Pradesh,Balrampur,Panchpedwa APMC,1,1,1400.0,200.0
+Maharashtra,Sangli,Sangli(Miraj),1,1,3200.0,200.0
+Keralam,Ernakulam,Kurumassery VFPCK Market,1,1,6400.0,200.0
+Uttar Pradesh,Badaun,Dataganj APMC,1,1,3000.0,300.0
+Karnataka,Tumakuru,Gubbi APMC,1,1,30000.0,500.0
+Karnataka,Tumakuru,Tiptur APMC,1,1,31131.0,2500.0
+Karnataka,Tumakuru,Turvekere APMC,1,1,30500.0,1000.0
+Odisha,Puri,Dumal APMC,1,1,5000.0,0.0
+Maharashtra,Sangli,APMC Aatpadi,1,1,9200.0,16500.0
+Odisha,Puri,Sakhigopal APMC,1,1,25800.0,18500.0
+Maharashtra,Raigad,APMC Murud,1,1,4250.0,500.0
+Maharashtra,Raigad,APMC Mangaon,1,1,3800.0,2900.0
+Odisha,Sambalpur,Kuchinda APMC,1,1,3200.0,500.0
+Keralam,Ernakulam,Edackattuvayal  VFPCK Market,1,1,4220.0,270.0
+Tripura,Sepahijala,Jampuijala APMC,1,1,4200.0,400.0
+Andhra Pradesh,Krishna,Vuyyur APMC,1,1,9400.0,200.0
+Madhya Pradesh,Balaghat,Paraswada APMC,1,1,2369.0,0.0
+Andhra Pradesh,Kurnool,Alur APMC,1,1,3930.0,300.0
+Chattisgarh,Mahasamund,Bhavarpur APMC,1,1,11429.0,0.0
+Maharashtra,Amarawati,APMC Daryapur,1,1,35400.0,13200.0
+Maharashtra,Amarawati,Varud(Rajura Bazar),1,1,2500.0,0.0
+Maharashtra,Beed,APMC Ambejogai,1,1,6850.0,100.0
+Maharashtra,Beed,APMC Patoda,1,1,7000.0,300.0
+Chattisgarh,Kanker,Sambalpur APMC,1,1,2000.0,0.0
+Maharashtra,Buldhana,"Acf Agro Marketing, Malkapur, Dist Buldhana",1,1,9048.0,100.0
+Punjab,Gurdaspur,Kahnuwan APMC,1,1,2461.0,0.0
+Maharashtra,Buldhana,"Deulgaon Raja Balaji Agro Marketing Pvt Market, Deulgaon Raja, Dist Buldhana",1,1,9325.0,300.0
+Maharashtra,Buldhana,"Jaykissan Krushi Uttpan Khajgi Bazar, Khamgaon, Dist Buldhana",1,1,6796.0,3375.0
+Maharashtra,Nanded,Mukhed(Mukkambad),1,1,6900.0,150.0
+Maharashtra,Chandrapur,APMC  Rajura,1,1,6685.0,0.0
+Rajasthan,Chittorgarh,Kapasan APMC,1,1,2200.0,400.0
+Rajasthan,Chittorgarh,Begu APMC,1,1,2500.0,0.0
+Maharashtra,Nanded,Hadgaon(Tamsa),1,1,6900.0,200.0
+Rajasthan,Bikaner,Sridungargarh APMC,1,1,7620.0,0.0
+Maharashtra,Chandrapur,APMC Brahmpuri,1,1,4000.0,200.0
+Maharashtra,Chandrapur,APMC Chandrapur,1,1,6500.0,200.0
+Maharashtra,Chandrapur,APMC Gondpimpri,1,1,4100.0,200.0
+Maharashtra,Chandrapur,APMC Mul,1,1,4450.0,884.0
+Maharashtra,Chandrapur,APMC Nagbhid,1,1,3750.0,0.0
+Maharashtra,Chandrapur,APMC Pombhurna,1,1,4420.0,200.0
+Rajasthan,Barmer,Dhorimanna APMC,1,1,36182.18,363.64
+Maharashtra,Chandrapur,APMC Savali,1,1,4120.0,390.0
+Maharashtra,Chandrapur,APMC Sindevahi,1,1,2600.0,50.0
+Maharashtra,Nanded,APMC Naigaon,1,1,6900.0,200.0
+Chattisgarh,Kanker,Narharpur APMC,1,1,2200.0,0.0
+Chattisgarh,Kanker,Lakhanpuri APMC,1,1,2230.0,0.0
+Maharashtra,Chattrapati Sambhajinagar,APMC Vaijpur,1,1,3600.0,2925.0
+Maharashtra,Dharashiv,APMC Bhoom,1,1,6000.0,0.0
+Maharashtra,Amarawati,APMC Chandur Railway,1,1,6750.0,375.0
+Maharashtra,Akola,APMC Barshi Takli,1,1,6850.0,500.0
+Chattisgarh,Kanker,Sarona APMC,1,1,2000.0,0.0
+Madhya Pradesh,Sidhi,Sidhi APMC,1,1,2480.0,95.0
+Chattisgarh,Koriya,Baikunthpur APMC,1,1,2000.0,0.0
+Madhya Pradesh,Seoni,Barghat APMC,1,1,2470.0,80.0
+Madhya Pradesh,Seoni,Palari APMC,1,1,2450.0,30.0
+Bihar,Sheohar,Sheohar APMC,1,1,2400.0,300.0
+Madhya Pradesh,Shajapur,Maksi APMC,1,1,6800.0,5000.0
+Chattisgarh,Kondagaon,Vishrampur APMC,1,1,2200.0,50.0
+Madhya Pradesh,Shehdol,Budhar APMC,1,1,2400.0,0.0
+Chattisgarh,Kondagaon,Keshkal APMC,1,1,2200.0,50.0
+Madhya Pradesh,Shivpuri,Khatora APMC,1,1,2265.0,485.0
+Maharashtra,Nashik,APMC Nampur,1,1,3600.0,3250.0
+Rajasthan,Pali,Sojat City APMC,1,1,14500.0,0.0
+Rajasthan,Pali,Rani APMC,1,1,7636.4,150.0
+Madhya Pradesh,Shivpuri,Rannod APMC,1,1,2350.0,690.0
+Punjab,Ferozpur,Talwandi Bhai APMC,1,1,2461.0,0.0
+Maharashtra,Nanded,Naigaon(Kuntur),1,1,6800.0,1250.0
+Punjab,Ferozpur,Talwandi Bhai(Mudki) APMC,1,1,2461.0,0.0
+Chattisgarh,Kondagaon,Gamhari APMC,1,1,2200.0,50.0
+Chattisgarh,Kondagaon,Dhanora APMC,1,1,2500.0,50.0
+Rajasthan,Jhunjhunu,Nawalgarh APMC,1,1,2400.0,0.0
+Madhya Pradesh,Vidisha,Gulabganj APMC,1,1,6650.0,100.0
+Maharashtra,Nashik,APMC Chandwad,1,1,3780.0,2765.0
+Chattisgarh,Khairagarh Chhuikhadan Gandai,Kheragarh APMC,1,1,6200.0,200.0
+Chattisgarh,Kanker,UPMANDI  BHANUPRATAPPUR  APMC,1,1,225.0,0.0
+Rajasthan,Jalore,Raniwara APMC,1,1,6550.0,500.0
+Maharashtra,Nanded,"Shetkari Khajgi Bajar Parisar, Tal Bhokar, Dist Nanded",1,1,9115.0,250.0
+Rajasthan,Jalore,Bhinmal APMC,1,1,1000.0,100.0
+Rajasthan,Jaisalmer,Mohangarh APMC,1,1,8800.0,400.0
+Rajasthan,Jaisalmer,Jaisalmer APMC,1,1,1050.0,400.0
+Punjab,Tarntaran,Khemkaran (Amarkot) APMC,1,1,2461.0,0.0
+Punjab,Tarntaran,Khem karan APMC,1,1,2461.0,0.0
+Chattisgarh,Kanker,Korar APMC,1,1,2000.0,0.0
+Punjab,Ludhiana,Sidhwan Bet (Lodhiwala) APMC,1,1,2461.0,0.0
+Punjab,Moga,Badhni Kallan (Bilaspur) APMC,1,1,2461.0,0.0
+Punjab,Moga,Badhni Kalan APMC,1,1,2461.0,0.0
+Punjab,Moga,Ajitwal (Dala) APMC,1,1,2461.0,0.0
+Punjab,Moga,Ajitwal (Chogawan) APMC,1,1,2461.0,0.0
+Punjab,Mansa,Mansa(Ubha Buraj Dhilwan) APMC,1,1,2461.0,0.0
+Punjab,Mansa,Mansa (Khiala kalan) APMC,1,1,2461.0,0.0
+Punjab,Mansa,Mansa (Bhamekalan) APMC,1,1,2461.0,0.0
+Punjab,Mansa,Boha APMC,1,1,2461.0,0.0
+Punjab,Mansa,Bhikhi APMC,1,1,2461.0,0.0
+Maharashtra,Jalgaon,Jamner(Neri),1,1,2100.0,200.0
+Punjab,Ludhiana,lakhowal APMC,1,1,2461.0,0.0
+Punjab,Ludhiana,kum Kalan APMC,1,1,2461.0,0.0
+Punjab,Ludhiana,Sidhwan Bet APMC,1,1,2461.0,0.0
+Maharashtra,Jalgaon,PACHORA(BHADGAON),1,1,2551.0,385.0
+Maharashtra,Jalgaon,Jalgaon(Masawat),1,1,2675.0,150.0
+Chattisgarh,Kanker,Dudhawa APMC,1,1,2000.0,0.0
+Punjab,Ludhiana,Maloud APMC,1,1,2461.0,0.0
+Punjab,Ludhiana,Malaoud (Siar) APMC,1,1,2461.0,0.0
+Bihar,Khagaria,Mansi Mandi APMC,1,1,1200.0,0.0
+Maharashtra,Jalna,APMC Partur,1,1,6800.0,137.0
+Punjab,Ludhiana,Hathur APMC,1,1,2461.0,0.0
+Maharashtra,Latur,Latur(Murud),1,1,6900.0,200.0
+Chattisgarh,Kanker,Charama APMC,1,1,2250.0,0.0
+Punjab,Kapurthala,Dhilwan APMC,1,1,2461.0,0.0
+Chattisgarh,Kanker,Bardewri APMC,1,1,2000.0,0.0
+Chattisgarh,Kanker,Amoda APMC,1,1,2000.0,0.0
+Punjab,Jalandhar,Nakodar(Sarih) APMC,1,1,2461.0,0.0
+Maharashtra,Nagpur,APMC Mandhal,1,1,6650.0,150.0
+Punjab,Mohali,Banur APMC,1,1,2461.0,0.0
+Maharashtra,Jalgaon,APMC Jamner,1,1,2100.0,200.0
+Maharashtra,Nanded,APMC Mukhed,1,1,6750.0,0.0
+Punjab,Jalandhar,Bilga (Talwan ) APMC,1,1,2461.0,0.0
+Punjab,Tarntaran,Bhikhiwind APMC,1,1,3300.0,0.0
+Punjab,Sangrur,Sulargharat APMC,1,1,2461.0,0.0
+Punjab,Sangrur,Sherpur APMC,1,1,2461.0,0.0
+Punjab,Sangrur,Moonak APMC,1,1,4500.0,890.0
+Maharashtra,Dhule,APMC Dhule,1,1,4010.0,1080.0
+Maharashtra,Nanded,APMC Mudkhed,1,1,6850.0,0.0
+Maharashtra,Gadchiroli,APMC Armori,1,1,3570.0,650.0
+Maharashtra,Gadchiroli,APMC Chamorshi,1,1,4251.0,450.0
+Maharashtra,Gadchiroli,APMC Gadchiroli,1,1,3570.0,650.0
+Punjab,Sangrur,Amargarh APMC,1,1,2461.0,0.0
+Maharashtra,Nanded,APMC Hadgaon,1,1,6900.0,200.0
+Punjab,Patiala,Samana(Kakrala) APMC,1,1,2461.0,20.0
+Punjab,Patiala,Samana(Gajewas) APMC,1,1,2461.0,20.0
+Maharashtra,Hingoli,APMC Akhadabalapur,1,1,7200.0,200.0
+Maharashtra,Jalgaon,APMC Dharangaon,1,1,2380.0,0.0
+Punjab,Patiala,Patran(Ghagga Mandi) APMC,1,1,2461.0,0.0
+Punjab,Jalandhar,Bilga APMC,1,1,2461.0,0.0
+Punjab,Patiala,Patiala(New Anaj Mandi) APMC,1,1,2461.0,0.0
+Punjab,Patiala,Patiala(Anaj Mandi Sanaur Road) APMC,1,1,2461.0,0.0
+Maharashtra,Hingoli,APMC Sengoan,1,1,6800.0,200.0
+Punjab,Patiala,Bhadson APMC,1,1,2461.0,0.0
+Punjab,Pathankot,Pathankot (Kanwa) APMC,1,1,2461.0,0.0
+Punjab,Pathankot,Narot J Singh APMC,1,1,2461.0,0.0
+Punjab,Nawanshahr,Nawanshahar APMC,1,1,2461.0,0.0
+Punjab,Nawanshahr,Nawan Shahar(MandiRaho) APMC,1,1,2461.0,0.0
+Punjab,Nawanshahr,Nawan Shahar(Mandi Jadla) APMC,1,1,2461.0,0.0
+Punjab,Nawanshahr,Nawan Shahar(Mandi Aur) APMC,1,1,2461.0,0.0
+Chattisgarh,Kanker,KRISHI UPAJ MANDI SAMITI (APMC) KANKER,1,1,2000.0,0.0
+Chattisgarh,Mahasamund,Basana APMC,1,1,2260.0,30.0
+Chattisgarh,Jashpur,Pathalgaon APMC,1,1,1800.0,0.0
+Andhra Pradesh,Kurnool,Kodumur APMC,1,1,8500.0,2600.0
+Madhya Pradesh,Satna,Satna(F&V) APMC,1,1,4500.0,0.0
+Chattisgarh,Sakti,Jaijaipur APMC,1,1,1600.0,0.0
+Maharashtra,Palghar,APMC Palghar,1,1,4850.0,0.0
+Andhra Pradesh,Palnadu,Vinukonda APMC,1,1,2400.0,200.0
+Andhra Pradesh,Parvathipuram Manyam,Kurupam APMC,1,1,2400.0,0.0
+Chattisgarh,Sakti,Amandula APMC,1,1,1900.0,100.0
+Andhra Pradesh,Parvathipuram Manyam,Parvathipuram APMC,1,1,2400.0,0.0
+Andhra Pradesh,Parvathipuram Manyam,Saluru APMC,1,1,2550.0,0.0
+Andhra Pradesh,Polavaram,Rampachodvaram APMC,1,1,2379.0,20.0
+Punjab,Bhatinda,Rampura Phul APMC,1,1,2461.0,0.0
+Punjab,Bhatinda,Rampuraphul(Bhai Rupan) APMC,1,1,2461.0,0.0
+Punjab,Bhatinda,Rampuraphul(Chowke) APMC,1,1,2461.0,0.0
+Andhra Pradesh,Prakasam,Kandukur APMC,1,1,2500.0,100.0
+Andhra Pradesh,Prakasam,Kondapi APMC,1,1,5600.0,400.0
+Madhya Pradesh,Mandsaur,Garoth(F&V) APMC,1,1,1000.0,60.0
+Andhra Pradesh,Prakasam,Ongole APMC,1,1,2600.0,0.0
+Chattisgarh,Raipur,Neora APMC,1,1,2250.0,0.0
+Andhra Pradesh,SPSR Nellore,Gudur APMC,1,1,2470.0,80.0
+Punjab,Bhatinda,Rampuraphul(Dhapali) APMC,1,1,2461.0,0.0
+Andhra Pradesh,SPSR Nellore,Kovur APMC,1,1,2441.0,131.0
+Andhra Pradesh,SPSR Nellore,Nellore APMC,1,1,2454.0,27.0
+Andhra Pradesh,SPSR Nellore,Rapur APMC,1,1,5800.0,400.0
+Andhra Pradesh,SPSR Nellore,Sarvepalli APMC,1,1,5000.0,4000.0
+Andhra Pradesh,SPSR Nellore,Udayagiri APMC,1,1,2454.0,20.0
+Chattisgarh,Raipur,Kharora APMC,1,1,2338.0,0.0
+Andhra Pradesh,Sri Sathya Sai,Gorantla  APMC,1,1,2300.0,300.0
+Chattisgarh,Raipur,Arang APMC,1,1,2135.0,0.0
+Andhra Pradesh,Sri Sathya Sai,Kadiri APMC,1,1,17200.0,4000.0
+Madhya Pradesh,Mauganj,Hanumana APMC,1,1,2500.0,165.0
+Tamil Nadu,Madurai,Usilampatti RM,1,1,1690.5,181.0
+Andhra Pradesh,Palnadu,Rajupalem APMC,1,1,2100.0,0.0
+Andhra Pradesh,Palnadu,Pidugurala APMC,1,1,2700.0,0.0
+Chattisgarh,Sakti,Kotmi APMC,1,1,4000.0,0.0
+Madhya Pradesh,Chhatarpur,Bijawar APMC,1,1,3800.0,15.0
+Maharashtra,Nagpur,APMC Mauda,1,1,7075.0,250.0
+Andhra Pradesh,Kurnool,Pattikonda APMC,1,1,2500.0,1500.0
+Madhya Pradesh,Balaghat,Varaseoni APMC,1,1,4000.0,2950.0
+Punjab,Barnala,Bhadaur APMC,1,1,2461.0,0.0
+Andhra Pradesh,Markapuram,Giddalur APMC,1,1,6000.0,150.0
+Andhra Pradesh,Markapuram,Kanigiri APMC,1,1,8500.0,200.0
+Andhra Pradesh,Markapuram,Markapur APMC,1,1,8000.0,0.0
+Andhra Pradesh,Markapuram,Podili APMC,1,1,8400.0,200.0
+Andhra Pradesh,Markapuram,Yerragondapalem APMC,1,1,8300.0,0.0
+Punjab,Barnala,Bhadaur(Sehna) APMC,1,1,2461.0,0.0
+Andhra Pradesh,NTR,Kanchekacherla APMC,1,1,2400.0,0.0
+Punjab,Barnala,Mehal Kalan APMC,1,1,2461.0,0.0
+Punjab,Barnala,Tapa(Tapa Mandi) APMC,1,1,2461.0,0.0
+Andhra Pradesh,NTR,Vijayawada APMC,1,1,2441.0,0.0
+Chattisgarh,Sarangarh Bilaigarh,Baramkela APMC,1,1,1900.0,0.0
+Andhra Pradesh,Nandyal,Allagadda APMC,1,1,2100.0,250.0
+Andhra Pradesh,Nandyal,Atmakur (Nandyal District) APMC,1,1,2370.0,161.0
+Maharashtra,Parbhani,Bori,1,1,6535.0,475.0
+Andhra Pradesh,Nandyal,Dhone APMC,1,1,7250.0,500.0
+Andhra Pradesh,Nandyal,Koilkunta APMC,1,1,3700.0,400.0
+Madhya Pradesh,Damoh,Hata APMC,1,1,2500.0,0.0
+Chattisgarh,Surajpur,Surajpur APMC,1,1,1800.0,0.0
+Andhra Pradesh,Nandyal,Panyam APMC,1,1,2400.0,0.0
+Andhra Pradesh,Palnadu,Chilakaluripet APMC,1,1,8400.0,1200.0
+Chattisgarh,Surajpur,Pratappur APMC,1,1,2400.0,0.0
+Maharashtra,Parbhani,APMC Pathari,1,1,6700.0,500.0
+Madhya Pradesh,Guna,Raghogarh APMC,1,1,2345.0,715.0
+Gujarat,Mehsana,Vijapur(Gojjariya) APMC,1,1,8300.0,125.0
+Punjab,Bhatinda,Rampuraphul(Mehraj) APMC,1,1,2461.0,0.0
+Tamil Nadu,Madurai,Thirumangalam RM,1,1,2850.0,100.0
+Andhra Pradesh,Sri Sathya Sai,Tenakallu APMC,1,1,16000.0,3400.0
+Andhra Pradesh,YSR Kadapa,Pulivendala APMC,1,1,1400.0,1100.0
+Chattisgarh,Raigarh,Gharghoda APMC,1,1,1700.0,0.0
+Madhya Pradesh,Neemuch,Neemuch(F&V) APMC,1,1,5600.0,7200.0
+Andhra Pradesh,West Godavari,Akiveedu APMC,1,1,2450.0,0.0
+Andhra Pradesh,West Godavari,Attili APMC,1,1,2369.0,20.0
+Andhra Pradesh,West Godavari,Palakole APMC,1,1,2450.0,0.0
+Andhra Pradesh,West Godavari,Tadepalligudem APMC,1,1,2450.0,0.0
+Andhra Pradesh,West Godavari,Tanuku APMC,1,1,2445.0,0.0
+Andhra Pradesh,YSR Kadapa,Badvel APMC,1,1,2440.0,100.0
+Madhya Pradesh,Niwadi,Prithvipur APMC,1,1,2714.0,40.0
+Madhya Pradesh,Panna,Devandranagar APMC,1,1,2615.0,20.0
+Madhya Pradesh,Panna,Pawai APMC,1,1,2600.0,0.0
+Andhra Pradesh,YSR Kadapa,Mydukur APMC,1,1,3800.0,400.0
+Madhya Pradesh,Panna,Simariya APMC,1,1,2730.0,80.0
+Chattisgarh,Raigarh,Dharamjaygarh APMC,1,1,1700.0,0.0
+Andhra Pradesh,Visakhapatnam,Pendurthi APMC,1,1,2441.0,0.0
+Andhra Pradesh,YSR Kadapa,Rajampet APMC,1,1,1500.0,200.0
+Chattisgarh,Narayanpur,Narayanpur APMC,1,1,1950.0,100.0
+Andhra Pradesh,YSR Kadapa,Simhadhripuram APMC,1,1,2450.0,300.0
+Andhra Pradesh,YSR Kadapa,Yerraguntla APMC,1,1,3200.0,400.0
+Punjab,Fatehgarh,Amloh(Gobind Garh Mandi) APMC,1,1,2461.0,0.0
+Maharashtra,Nashik,"Perfect Krishi Market Yard Pvt Ltd, Dist Nashik",1,1,9200.0,12275.0
+Madhya Pradesh,Rajgarh,Suthalia APMC,1,1,2800.0,5.0
+Punjab,Fatehgarh,Chanarthal APMC,1,1,2461.0,0.0
+Punjab,Fatehgarh,Khamano (Sanghol) APMC,1,1,2461.0,0.0
+Maharashtra,Nashik,APMC Yeola,1,1,3800.0,2209.0
+Bihar,Supaul,Birpur APMC,1,1,1800.0,400.0
+Chattisgarh,Mahasamund,Saraypali APMC,1,1,1995.0,15.0
+Chattisgarh,Mahasamund,Pithoura APMC,1,1,2100.0,0.0
+Chattisgarh,Raigarh,Kharsiya APMC,1,1,1800.0,5.0
+Andhra Pradesh,Visakhapatnam,Bhimunipatnam APMC,1,1,5000.0,0.0
+Andhra Pradesh,Srikakulam,Amadalavalasa APMC,1,1,2369.0,0.0
+Andhra Pradesh,Tirupathi,Naidupet APMC,1,1,3240.0,90.0
+Tamil Nadu,Madurai,Madurai RM,1,1,4800.0,400.0
+Chattisgarh,Raipur,Abhanpur APMC,1,1,2275.0,50.0
+Maharashtra,Nashik,Pimpalgaon Baswant(Saykheda),1,1,3850.0,1350.0
+Andhra Pradesh,Srikakulam,Ichapuram APMC,1,1,2441.0,0.0
+Andhra Pradesh,Srikakulam,Jalumuru APMC,1,1,2441.0,0.0
+Andhra Pradesh,Srikakulam,Kanchili APMC,1,1,2400.0,0.0
+Andhra Pradesh,Srikakulam,Kothabommali APMC,1,1,3200.0,0.0
+Andhra Pradesh,Srikakulam,Narasannapet APMC,1,1,2369.0,0.0
+Andhra Pradesh,Srikakulam,Pathapatnam APMC,1,1,2461.0,89.0
+Andhra Pradesh,Srikakulam,Ponduru APMC,1,1,2400.0,0.0
+Andhra Pradesh,Srikakulam,Srikakulam APMC,1,1,2400.0,0.0
+Andhra Pradesh,Tirupathi,B.N.Kandriga APMC,1,1,2000.0,0.0
+Andhra Pradesh,Tirupathi,Nagalapuram APMC,1,1,2000.0,0.0
+Andhra Pradesh,Tirupathi,Pakala APMC,1,1,2700.0,0.0
+Andhra Pradesh,Vijayanagaram,Vijayanagaram APMC,1,1,2400.0,0.0
+Andhra Pradesh,Tirupathi,Puttur APMC,1,1,1150.0,100.0
+Chattisgarh,Raigarh,Salihabhata APMC,1,1,1700.0,0.0
+Tamil Nadu,Kancheepuram,Uthiramerur RM,1,1,1900.0,200.0
+Andhra Pradesh,Tirupathi,Sullurpet APMC,1,1,2460.0,40.0
+Andhra Pradesh,Tirupathi,Thiruchanur APMC,1,1,1600.0,1000.0
+Andhra Pradesh,Tirupathi,Vakadu APMC,1,1,2400.0,31.0
+Punjab,Faridkot,Sadiq APMC,1,1,2441.0,0.0
+Andhra Pradesh,Vijayanagaram,Chipurupalli APMC,1,1,4800.0,0.0
+Andhra Pradesh,Vijayanagaram,Gajapathinagaram APMC,1,1,2400.0,0.0
+Andhra Pradesh,Vijayanagaram,Kothavalasa APMC,1,1,2369.0,0.0
+Andhra Pradesh,Vijayanagaram,Merakamudidam APMC,1,1,1950.0,200.0
+Andhra Pradesh,Vijayanagaram,Pusapatirega APMC,1,1,2560.0,60.0
+Andhra Pradesh,Vijayanagaram,Rajam APMC,1,1,4800.0,0.0
+Andhra Pradesh,SPSR Nellore,Kavali APMC,1,1,2500.0,100.0

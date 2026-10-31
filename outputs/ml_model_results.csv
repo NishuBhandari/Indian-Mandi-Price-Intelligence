@@ -1,9 +1,5 @@
-Experiment,Feature_Set,Model,MAE,RMSE,R2,Split
-Market Characteristics (No Prices),Market Characteristics (No Prices),Mean Baseline,3387.9450757859577,6117.3804179064155,-0.0024146084265377343,Test
-Market Characteristics (No Prices),Market Characteristics (No Prices),Linear Regression,1660.296425913985,3835.1754425851013,0.6060084734882887,Test
-Market Characteristics (No Prices),Market Characteristics (No Prices),Polynomial Regression,1595.904389850384,3904.0411378450417,0.5917321510912124,Test
-Market Characteristics (No Prices),Market Characteristics (No Prices),Decision Tree Regressor,2566.874664957314,4261.411746133798,0.5135665776033527,Test
-With Min & Max Prices (Bounds),With Min & Max Prices (Bounds),Mean Baseline,3387.9450757859577,6117.3804179064155,-0.0024146084265377343,Test
-With Min & Max Prices (Bounds),With Min & Max Prices (Bounds),Linear Regression,209.01943042368578,1858.943906634803,0.907434536437035,Test
-With Min & Max Prices (Bounds),With Min & Max Prices (Bounds),Polynomial Regression,202.52856918960734,1981.2481509979682,0.8948536603800996,Test
-With Min & Max Prices (Bounds),With Min & Max Prices (Bounds),Decision Tree Regressor,187.5356576228001,1226.5567988961088,0.9597012348722154,Test
+Model,Train_MAE,Test_MAE,Test_MSE,Test_RMSE,Train_R2,Test_R2,Status
+Mean Prediction Baseline,3247.416722427639,3280.815211311141,37700748.28897655,6140.093508162278,0.0,-0.00011640205283347527,Naive Baseline
+Linear Regression,1532.3241701045208,1485.225796506567,8229089.121280518,2868.6388969824206,0.6758305093474412,0.7817006988544681,Baseline Linear Fit
+Polynomial Regression,1483.6489481039832,1462.0367227347892,8785786.01250345,2964.0826595261224,0.6916826738063984,0.766932777336935,Nonlinear Feature Interactions
+Decision Tree Regressor,1184.290282051067,1387.1489116687865,9869548.974562462,3141.583832171674,0.7865959644795768,0.7381829735933976,Tree-based Non-linear Partitioner

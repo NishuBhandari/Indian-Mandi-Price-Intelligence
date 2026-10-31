@@ -1,0 +1,78 @@
+Commodity,Records,Median_Actual_Price,MAE,Mean_Percentage_Error
+Onion,104,5000.0,894.94,273449.43
+Paddy(Common),103,2461.0,820.35,28.1
+Tomato,102,3000.0,745.39,33.26
+Brinjal,101,3250.0,1101.47,178213.95
+Maize,93,2500.0,527.7,19.32
+Potato,88,1500.0,866.43,79.49
+Cauliflower,81,2850.0,1137.92,53.25
+Bitter gourd,80,4730.0,1166.92,32.13
+Green Chilli,80,4500.0,1426.41,379862.2
+Wheat,80,2834.0,498.73,16.5
+Bhindi(Ladies Finger),74,3500.0,791.65,23.86
+Bottle gourd,74,1900.0,684.45,36.57
+Banana,69,4500.0,1441.4,136734.14
+Soyabean,67,6700.0,693.47,14.31
+Pumpkin,67,1750.0,479.17,33.0
+Cabbage,61,2250.0,783.33,56.79
+Cucumbar(Kheera),61,3000.0,970.15,34.23
+Ginger(Green),53,10500.0,3284.44,41.19
+Banana - Green,52,3000.0,1152.19,40.05
+Raddish,50,2750.0,927.55,627.85
+Coriander(Leaves),49,8500.0,3411.5,44.44
+Cluster beans,47,3750.0,834.25,27.92
+Beetroot,47,3800.0,1038.17,36.92
+Bengal Gram(Gram)(Whole),46,7000.0,663.92,9.58
+Groundnut,42,7058.5,1014.58,14.79
+Ridgeguard(Tori),42,4400.0,998.81,236.04
+Lemon,41,14500.0,4056.71,10822.18
+Coconut,41,5800.0,2342.54,39.5
+Carrot,40,4050.0,1141.29,30.72
+Mint(Pudina),39,5500.0,1374.17,2546.77
+Cotton,39,8765.0,767.46,8.7
+Amaranthus,38,2750.0,737.33,31.1
+Papaya,37,3250.0,907.42,32.33
+Snakeguard,36,3675.0,553.41,17.88
+Drumstick,36,7875.0,1657.69,27.24
+Garlic,35,16000.0,4058.59,13282.33
+Black Gram(Urd Beans)(Whole),35,8400.0,1370.36,15.95
+Ashgourd,33,2000.0,332.23,195.8
+Onion Green,33,9500.0,1861.78,3501.32
+Beans,32,8125.0,1613.67,33.33
+Capsicum,31,6000.0,981.07,28.64
+Apple,30,8000.0,3279.88,53.34
+Elephant Yam(Suran)/Amorphophallus,29,4700.0,701.25,16.42
+Tender Coconut,28,3875.0,3371.16,32.78
+Colacasia,27,5000.0,913.35,32.12
+Sweet Potato,26,4800.0,766.29,17.74
+Chow Chow,26,3775.0,619.27,18.58
+Bajra(Pearl Millet/Cumbu),25,2651.0,673.93,24.73
+Green Avare(W),25,7500.0,1426.55,19.74
+Mustard,25,8280.0,879.87,10.9
+Tapioca,24,3750.0,588.92,15.62
+Mango(Raw-Ripe),24,7650.0,1659.07,24.19
+Thondekai,23,4000.0,838.25,21.71
+Guava,23,7500.0,1609.24,32.7
+Cowpea(Veg),22,4250.0,1119.61,29.2
+Pomegranate,21,11720.0,3572.88,34.47
+Lime,21,4600.0,4683.2,118.2
+Spinach,20,1000.0,635.16,1025.17
+Mousambi(Sweet Lime),20,4250.0,1157.46,21.54
+Green Gram(Moong)(Whole),18,7956.0,801.74,10.59
+Knool Khol,18,5325.0,811.06,20.04
+Rice,17,3800.0,1196.69,32.69
+Amla(Nelli Kai),17,7500.0,2064.75,37.22
+Jowar(Sorghum),16,4920.0,1336.44,35.86
+Lentil(Masur)(Whole),15,6000.0,888.48,14.51
+Yam(Ratalu),14,5650.0,1343.06,31.27
+"Sesamum(Sesame,Gingelly,Til)",14,14690.0,1974.0,14.0
+Red gram/Arhar/Tur(whole),14,9075.0,1462.31,21.33
+Chikoos(Sapota),13,4750.0,1071.07,23.53
+Orange,12,7375.0,2610.02,45.41
+Indian Beans(Seam),11,6500.0,1067.43,17.16
+Sweet Corn,11,3800.0,707.21,17.56
+French Beans(Frasbean),11,6000.0,1548.09,23.56
+Mushroom,10,22000.0,3529.52,21.52
+Pointed gourd(Parval),10,3550.0,1230.13,26.21
+Water Melon,10,1500.0,837.22,53.54
+Arecanut(Betelnut/Supari),10,27449.5,8390.18,68.53

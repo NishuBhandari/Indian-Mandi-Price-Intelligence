@@ -1,6 +1,6 @@
-Model,Feature_Set,Accuracy,Weighted_Precision,Weighted_Recall,Weighted_F1
-Majority Baseline,Market Characteristics Only,0.6071108455333134,0.36858357876417475,0.6071108455333134,0.4586909232659204
-Logistic Regression,Market Characteristics Only,0.846728413504631,0.8456004348582676,0.846728413504631,0.8451385303859216
-Decision Tree Classifier,Market Characteristics Only,0.7666567074992531,0.7834928785074861,0.7666567074992531,0.7492688801810438
-Logistic Regression,With Min & Max Prices (Supplementary),0.9772930982969824,0.9772762125904925,0.9772930982969824,0.9772594358239256
-Decision Tree Classifier,With Min & Max Prices (Supplementary),0.9874514490588587,0.9874714839442458,0.9874514490588587,0.9874463410209583
+Model,Feature_Representation,Accuracy,Precision_Weighted,Recall_Weighted,F1_Weighted,F1_Macro,Status
+Majority Class Baseline,None (Majority Rule),0.6071108455333134,0.36858357876417475,0.6071108455333134,0.4586909232659204,0.25184358926690215,Naive Baseline
+Logistic Regression,One-Hot Encoded Categories,0.846728413504631,0.8456004348582676,0.846728413504631,0.8451385303859216,0.8081535612746208,Linear Decision Boundaries (L2 Regularized)
+Decision Tree Classifier,One-Hot Encoded Categories,0.7666567074992531,0.7834928785074861,0.7666567074992531,0.7492688801810438,0.6729207873979344,Hierarchical Rule Segmentation
+Multinomial Naive Bayes,One-Hot Encoded Indicators (Multinomial),0.8096803107260233,0.8143468816277687,0.8096803107260233,0.8110902695676062,0.7842428679548591,Bayesian Discrete Count Model (Laplace Smoothed)
+Gaussian Naive Bayes,Target Encoded Continuous Means (Gaussian),0.7980280848521064,0.8096543664925496,0.7980280848521064,0.8003414153827125,0.7794632056262394,Continuous Gaussian Likelihood Reference

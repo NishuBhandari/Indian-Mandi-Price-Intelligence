@@ -1,0 +1,8 @@
+Metric,Count,Notes
+Raw Records,16734,Raw government-reported mandi price snapshot (Data.gov.in)
+Clean Modelling Records,16733,"Passed all completeness, positive-price, and range audits"
+Removed Outliers,1,"1 clerical data-entry typo (Max_Price ₹30,002,800 for wheat in Bihar)"
+States Covered,29,29 Indian states & Union Territories
+Districts Covered,476,Districts across India
+APMC Markets Covered,1774,"1,774 unique APMC agricultural mandis"
+Commodities Covered,269,269 distinct agricultural crops
