@@ -18,12 +18,12 @@ if hasattr(sys.stdout, "reconfigure"):
 ROOT_DIR = Path(__file__).resolve().parent
 
 pipeline_steps = [
-    ("Step 1: Data Audit & Hygiene", ROOT_DIR / "src" / "01_data_audit.py"),
-    ("Step 2: Preprocessing & Leakage-Free Splitting", ROOT_DIR / "src" / "02_data_preprocessing.py"),
-    ("Step 3: Exploratory Data Analysis (10 Visual Charts)", ROOT_DIR / "src" / "03_eda.py"),
-    ("Step 4: Regression Models (Linear, Polynomial, Decision Tree)", ROOT_DIR / "src" / "04_regression_models.py"),
-    ("Step 5: Classification Models (Logistic, Decision Tree, Naive Bayes)", ROOT_DIR / "src" / "05_classification_models.py"),
-    ("Step 6: Model Evaluation & Comparison Synthesis", ROOT_DIR / "src" / "06_model_evaluation.py"),
+    ("Step 1: Data Audit & Hygiene", ROOT_DIR / "01_data_audit.py"),
+    ("Step 2: Preprocessing & Leakage-Free Splitting", ROOT_DIR / "02_data_preprocessing.py"),
+    ("Step 3: Exploratory Data Analysis (10 Visual Charts)", ROOT_DIR / "03_eda.py"),
+    ("Step 4: Regression Models (Linear, Polynomial, Decision Tree)", ROOT_DIR / "04_regression_models.py"),
+    ("Step 5: Classification Models (Logistic, Decision Tree, Naive Bayes)", ROOT_DIR / "05_classification_models.py"),
+    ("Step 6: Model Evaluation & Comparison Synthesis", ROOT_DIR / "06_model_evaluation.py"),
     ("Step 7: Build Interactive Web Dashboard", ROOT_DIR / "src" / "build_dashboard.py"),
 ]
 

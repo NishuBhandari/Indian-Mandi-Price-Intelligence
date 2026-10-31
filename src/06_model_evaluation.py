@@ -20,7 +20,10 @@ import pandas as pd
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-ROOT_DIR = Path(__file__).resolve().parent.parent
+ROOT_DIR = Path(__file__).resolve().parent
+if ROOT_DIR.name == "src":
+    ROOT_DIR = ROOT_DIR.parent
+
 METRICS_DIR = ROOT_DIR / "outputs" / "metrics"
 OUTPUTS_DIR = ROOT_DIR / "outputs"
 
@@ -30,13 +33,10 @@ def run_model_evaluation():
     print("FINAL MACHINE LEARNING EVALUATION & SYNTHESIS (ALL 6 MODELS)")
     print("=" * 78)
 
-    # 1. Load Metrics
     reg_df = pd.read_csv(METRICS_DIR / "regression_model_comparison.csv")
     clf_df = pd.read_csv(METRICS_DIR / "classification_model_comparison.csv")
 
-    # ---------------------------------------------------------------------------
     # LEADERBOARD 1: REGRESSION MODELS (MODAL PRICE PREDICTION)
-    # ---------------------------------------------------------------------------
     print("\n" + "=" * 78)
     print("TASK 1: MODAL PRICE PREDICTION LEADERBOARD (₹/QUINTAL)")
     print("=" * 78)
@@ -52,9 +52,7 @@ def run_model_evaluation():
     print("3. Polynomial Regression (Degree 2 + Ridge) achieved strong balance with Test MAE ₹1,462.04/qtl and R² 0.767.")
     print("4. All 3 models drastically outperformed the Mean Baseline (Test MAE ₹3,280.82, R² -0.0001).")
 
-    # ---------------------------------------------------------------------------
     # LEADERBOARD 2: CLASSIFICATION MODELS (COMMODITY PRICE TIER)
-    # ---------------------------------------------------------------------------
     print("\n" + "=" * 78)
     print("TASK 2: COMMODITY PRICE TIER CLASSIFICATION LEADERBOARD")
     print("=" * 78)
@@ -75,9 +73,7 @@ def run_model_evaluation():
     print("4. Decision Tree Classifier achieved 76.67% Accuracy with orthogonal axis-aligned rule splits.")
     print("5. All classifiers comfortably beat the Majority Class Baseline (60.71% Accuracy, 0.4587 F1).")
 
-    # ---------------------------------------------------------------------------
     # RIGOR & DATA LEAKAGE AUDIT VERIFICATION
-    # ---------------------------------------------------------------------------
     print("\n" + "=" * 78)
     print("METHODOLOGICAL RIGOR & DATA LEAKAGE AUDIT")
     print("=" * 78)

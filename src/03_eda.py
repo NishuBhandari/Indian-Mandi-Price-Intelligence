@@ -23,7 +23,10 @@ import seaborn as sns
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-ROOT_DIR = Path(__file__).resolve().parent.parent
+ROOT_DIR = Path(__file__).resolve().parent
+if ROOT_DIR.name == "src":
+    ROOT_DIR = ROOT_DIR.parent
+
 INPUT_PATH = ROOT_DIR / "data" / "processed" / "mandi_preprocessed_full.csv"
 if not INPUT_PATH.exists():
     INPUT_PATH = ROOT_DIR / "outputs" / "audited_mandi_data.csv"
@@ -37,7 +40,6 @@ METRICS_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUTS_DIR = ROOT_DIR / "outputs"
 OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
 
-# Set clean aesthetic styling
 sns.set_theme(style="whitegrid", font="sans-serif")
 plt.rcParams["figure.dpi"] = 300
 plt.rcParams["axes.titlesize"] = 12
@@ -79,18 +81,14 @@ def run_eda():
     df = pd.read_csv(INPUT_PATH)
     print(f"Audited records available: {len(df):,}")
 
-    # Ensure Category column exists
     if "Category" not in df.columns:
         df["Category"] = df["Commodity"].apply(assign_agri_category)
     if "Price_Spread" not in df.columns:
         df["Price_Spread"] = df["Max_Price"] - df["Min_Price"]
 
-    # ---------------------------------------------------------------------------
-    # CHART 1: MODAL PRICE DISTRIBUTION (HISTOGRAM + KDE)
-    # ---------------------------------------------------------------------------
+    # CHART 1: MODAL PRICE DISTRIBUTION
     print("\nGenerating Chart 1: Modal Price Distribution...")
     fig, ax = plt.subplots(figsize=(9, 5))
-    # Filter for main mass for clear visual presentation (< ₹25,000)
     sns.histplot(df["Modal_Price"], kde=True, bins=50, color="#0e7044", edgecolor="white", ax=ax)
     ax.set_title("1. Distribution of Mandi Modal Prices Across India")
     ax.set_xlabel("Modal Settlement Price (₹/Quintal)")
@@ -107,9 +105,7 @@ def run_eda():
     fig.savefig(OUTPUTS_DIR / "modal_price_distribution.png")
     plt.close()
 
-    # ---------------------------------------------------------------------------
-    # CHART 2: MIN, MAX, AND MODAL PRICE COMPARISON ACROSS SECTORS
-    # ---------------------------------------------------------------------------
+    # CHART 2: PRICE BOUNDS COMPARISON ACROSS SECTORS
     print("Generating Chart 2: Price Bounds Comparison across Sectors...")
     sector_prices = df.groupby("Category")[["Min_Price", "Modal_Price", "Max_Price"]].mean().reset_index()
     sector_prices = sector_prices.sort_values("Modal_Price", ascending=False)
@@ -138,9 +134,7 @@ def run_eda():
     fig.savefig(FIG_DIR / "02_price_bounds_comparison.png")
     plt.close()
 
-    # ---------------------------------------------------------------------------
     # CHART 3: STATE-WISE PRICE ANALYSIS
-    # ---------------------------------------------------------------------------
     print("Generating Chart 3: State-Wise Price Comparison...")
     state_agg = df.groupby("State").agg(
         avg_modal=("Modal_Price", "mean"),
@@ -166,15 +160,13 @@ def run_eda():
     fig.savefig(FIG_DIR / "03_state_price_analysis.png")
     plt.close()
 
-    # ---------------------------------------------------------------------------
     # CHART 4: COMMODITY-WISE VOLUME COMPARISON
-    # ---------------------------------------------------------------------------
     print("Generating Chart 4: Top Commodities by Volume...")
     top_vol = df["Commodity"].value_counts().head(12).reset_index()
     top_vol.columns = ["Commodity", "Records"]
 
     fig, ax = plt.subplots(figsize=(10, 5))
-    sns.barplot(data=top_vol, x="Records", y="Commodity", palette="mako", ax=ax)
+    sns.barplot(data=top_vol, x="Records", y="Commodity", color="#0e7044", ax=ax)
     ax.set_title("4. Top 12 Commodities by APMC Market Transaction Volume")
     ax.set_xlabel("Number of APMC Market Transaction Records")
     ax.set_ylabel("Commodity Name")
@@ -189,9 +181,7 @@ def run_eda():
     fig.savefig(OUTPUTS_DIR / "commodity_price_comparison.png")
     plt.close()
 
-    # ---------------------------------------------------------------------------
     # CHART 5: TOP 10 EXPENSIVE COMMODITIES
-    # ---------------------------------------------------------------------------
     print("Generating Chart 5: Top 10 Expensive Commodities...")
     exp_comm = df.groupby("Commodity").agg(
         avg_price=("Modal_Price", "mean"),
@@ -199,7 +189,7 @@ def run_eda():
     ).query("count >= 5").sort_values("avg_price", ascending=False).head(10).reset_index()
 
     fig, ax = plt.subplots(figsize=(10, 5))
-    sns.barplot(data=exp_comm, x="avg_price", y="Commodity", palette="flare", ax=ax)
+    sns.barplot(data=exp_comm, x="avg_price", y="Commodity", color="#e11d48", ax=ax)
     ax.set_title("5. Top 10 Most Expensive Commodities in Indian Mandis (Min 5 Mandis)")
     ax.set_xlabel("Average Modal Settlement Price (₹/Quintal)")
     ax.set_ylabel("Commodity Name")
@@ -216,9 +206,7 @@ def run_eda():
     fig.savefig(OUTPUTS_DIR / "highest_commodity_prices.png")
     plt.close()
 
-    # ---------------------------------------------------------------------------
     # CHART 6: TOP 10 AFFORDABLE COMMODITIES
-    # ---------------------------------------------------------------------------
     print("Generating Chart 6: Top 10 Affordable Commodities...")
     aff_comm = df.groupby("Commodity").agg(
         avg_price=("Modal_Price", "mean"),
@@ -226,7 +214,7 @@ def run_eda():
     ).query("count >= 5").sort_values("avg_price", ascending=True).head(10).reset_index()
 
     fig, ax = plt.subplots(figsize=(10, 5))
-    sns.barplot(data=aff_comm, x="avg_price", y="Commodity", palette="crest", ax=ax)
+    sns.barplot(data=aff_comm, x="avg_price", y="Commodity", color="#059669", ax=ax)
     ax.set_title("6. Top 10 Most Affordable Commodities in Indian Mandis (Min 5 Mandis)")
     ax.set_xlabel("Average Modal Settlement Price (₹/Quintal)")
     ax.set_ylabel("Commodity Name")
@@ -242,9 +230,7 @@ def run_eda():
     fig.savefig(FIG_DIR / "06_top10_affordable_commodities.png")
     plt.close()
 
-    # ---------------------------------------------------------------------------
     # CHART 7: TOP MARKETS BY ACTIVITY
-    # ---------------------------------------------------------------------------
     print("Generating Chart 7: Top Active Markets...")
     top_mkts = df["Market"].value_counts().head(12).reset_index()
     top_mkts.columns = ["Market", "Records"]
@@ -264,9 +250,7 @@ def run_eda():
     fig.savefig(FIG_DIR / "07_top_markets_distribution.png")
     plt.close()
 
-    # ---------------------------------------------------------------------------
     # CHART 8: PRICE SPREAD ANALYSIS
-    # ---------------------------------------------------------------------------
     print("Generating Chart 8: Price Spread Analysis...")
     fig, ax = plt.subplots(figsize=(9, 5))
     sns.histplot(df["Price_Spread"], bins=50, color="#d97706", kde=True, ax=ax)
@@ -284,9 +268,7 @@ def run_eda():
     fig.savefig(FIG_DIR / "08_price_spread_analysis.png")
     plt.close()
 
-    # ---------------------------------------------------------------------------
     # CHART 9: CORRELATION HEATMAP
-    # ---------------------------------------------------------------------------
     print("Generating Chart 9: Correlation Heatmap...")
     corr_cols = ["Min_Price", "Modal_Price", "Max_Price", "Price_Spread"]
     corr_matrix = df[corr_cols].corr()
@@ -305,12 +287,10 @@ def run_eda():
     fig.savefig(FIG_DIR / "09_correlation_heatmap.png")
     plt.close()
 
-    # ---------------------------------------------------------------------------
     # CHART 10: BOXPLOTS FOR OUTLIER DETECTION
-    # ---------------------------------------------------------------------------
     print("Generating Chart 10: Boxplots by Sector...")
     fig, ax = plt.subplots(figsize=(10, 5))
-    sns.boxplot(data=df, x="Category", y="Modal_Price", palette="Set2", ax=ax, showmeans=True,
+    sns.boxplot(data=df, x="Category", y="Modal_Price", color="#10b981", ax=ax, showmeans=True,
                 meanprops={"marker": "o", "markerfacecolor": "red", "markeredgecolor": "black", "markersize": "6"})
     ax.set_yscale("log")
     ax.set_title("10. Outlier Detection: Log-Scale Boxplots Across Commodity Sectors")
@@ -326,12 +306,8 @@ def run_eda():
     fig.savefig(FIG_DIR / "10_price_outliers_boxplot.png")
     plt.close()
 
-    # ---------------------------------------------------------------------------
     # EXPORT CSV SUMMARY TABLES
-    # ---------------------------------------------------------------------------
     print("\nExporting Summary CSV Tables...")
-
-    # State Summary
     state_df = df.groupby("State").agg(
         Total_Records=("Modal_Price", "count"),
         Avg_Modal_Price=("Modal_Price", "mean"),
@@ -344,7 +320,6 @@ def run_eda():
     state_df.to_csv(OUTPUTS_DIR / "state_summary.csv", index=False)
     state_df.to_csv(OUTPUTS_DIR / "state_price_summary.csv", index=False)
 
-    # Commodity Summary
     comm_df = df.groupby(["Commodity", "Category"]).agg(
         Total_Records=("Modal_Price", "count"),
         Avg_Modal_Price=("Modal_Price", "mean"),
@@ -357,7 +332,6 @@ def run_eda():
     comm_df.to_csv(OUTPUTS_DIR / "commodity_summary.csv", index=False)
     comm_df.to_csv(OUTPUTS_DIR / "commodity_price_summary.csv", index=False)
 
-    # APMC Market Summary
     mkt_df = df.groupby(["State", "District", "Market"]).agg(
         Total_Records=("Modal_Price", "count"),
         Distinct_Commodities=("Commodity", "nunique"),
@@ -367,7 +341,6 @@ def run_eda():
     mkt_df.to_csv(METRICS_DIR / "market_summary.csv", index=False)
     mkt_df.to_csv(OUTPUTS_DIR / "market_summary.csv", index=False)
 
-    # Inter-Market Arbitrage
     arb_df = df.groupby(["Commodity", "Category"]).agg(
         Reporting_Mandis=("Market", "nunique"),
         Lowest_Mandi_Price=("Modal_Price", "min"),

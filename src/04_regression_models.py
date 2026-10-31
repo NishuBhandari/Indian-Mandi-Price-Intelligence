@@ -29,8 +29,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import TargetEncoder, PolynomialFeatures, StandardScaler
+from sklearn.preprocessing import TargetEncoder, PolynomialFeatures
 from sklearn.dummy import DummyRegressor
 from sklearn.linear_model import LinearRegression, Ridge
 from sklearn.tree import DecisionTreeRegressor
@@ -39,7 +38,10 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-ROOT_DIR = Path(__file__).resolve().parent.parent
+ROOT_DIR = Path(__file__).resolve().parent
+if ROOT_DIR.name == "src":
+    ROOT_DIR = ROOT_DIR.parent
+
 TRAIN_PATH = ROOT_DIR / "data" / "processed" / "train_data.csv"
 TEST_PATH = ROOT_DIR / "data" / "processed" / "test_data.csv"
 
@@ -61,14 +63,12 @@ def run_regression_models():
     print("PROBLEM A: MANDI MODAL PRICE ESTIMATION (REGRESSION MODELS)")
     print("=" * 78)
 
-    # 1. Load Pre-split Data
     train_df = pd.read_csv(TRAIN_PATH)
     test_df = pd.read_csv(TEST_PATH)
 
     print(f"Loaded Training Set: {len(train_df):,} records")
     print(f"Loaded Test Set:     {len(test_df):,} records")
 
-    # 2. Define Features and Target
     feature_cols = ["State", "District", "Market", "Commodity", "Variety", "Grade"]
     target_col = "Modal_Price"
 
@@ -77,8 +77,7 @@ def run_regression_models():
     X_test_raw = test_df[feature_cols]
     y_test = test_df[target_col]
 
-    # 3. Fit Target Encoder strictly on Training Data (Zero Leakage)
-    print("\nFitting TargetEncoder strictly on training features...")
+    print("\nFitting TargetEncoder strictly on training features (Zero Leakage)...")
     encoder = TargetEncoder(smooth="auto", cv=5, random_state=42)
     X_train_enc = encoder.fit_transform(X_train_raw, y_train)
     X_test_enc = encoder.transform(X_test_raw)
@@ -87,9 +86,7 @@ def run_regression_models():
     models_dict = {}
     preds_dict = {}
 
-    # ---------------------------------------------------------------------------
-    # MODEL 0: MEAN PREDICTION BASELINE
-    # ---------------------------------------------------------------------------
+    # MODEL 0: MEAN BASELINE
     print("\n--- Model 0: Mean Prediction Baseline ---")
     base_model = DummyRegressor(strategy="mean")
     base_model.fit(X_train_enc, y_train)
@@ -108,9 +105,7 @@ def run_regression_models():
         "Status": "Naive Baseline"
     })
 
-    # ---------------------------------------------------------------------------
     # MODEL 1: LINEAR REGRESSION (OLS)
-    # ---------------------------------------------------------------------------
     print("--- Model 1: Linear Regression (OLS) ---")
     lr = LinearRegression()
     lr.fit(X_train_enc, y_train)
@@ -131,9 +126,7 @@ def run_regression_models():
         "Status": "Baseline Linear Fit"
     })
 
-    # ---------------------------------------------------------------------------
     # MODEL 2: POLYNOMIAL REGRESSION (DEGREE 2 + RIDGE)
-    # ---------------------------------------------------------------------------
     print("--- Model 2: Polynomial Regression (Degree 2 with Ridge) ---")
     poly = PolynomialFeatures(degree=2, include_bias=False)
     X_train_poly = poly.fit_transform(X_train_enc)
@@ -158,11 +151,8 @@ def run_regression_models():
         "Status": "Nonlinear Feature Interactions"
     })
 
-    # ---------------------------------------------------------------------------
     # MODEL 3: DECISION TREE REGRESSOR
-    # ---------------------------------------------------------------------------
     print("--- Model 3: Decision Tree Regressor ---")
-    # Using controlled depth (max_depth=12, min_samples_leaf=10) to prevent overfitting
     dt = DecisionTreeRegressor(max_depth=12, min_samples_leaf=10, random_state=42)
     dt.fit(X_train_enc, y_train)
     y_train_pred_dt = dt.predict(X_train_enc)
@@ -182,26 +172,18 @@ def run_regression_models():
         "Status": "Tree-based Non-linear Partitioner"
     })
 
-    # ---------------------------------------------------------------------------
-    # 4. RESULTS DISPLAY & METRICS EXPORT
-    # ---------------------------------------------------------------------------
     res_df = pd.DataFrame(results)
     print("\n" + "=" * 78)
     print("REGRESSION MODEL COMPARISON TABLE (TARGET: MODAL PRICE ₹/QUINTAL)")
     print("=" * 78)
     print(res_df.to_string(index=False))
 
-    # Export comparison metrics
     res_df.to_csv(METRICS_DIR / "regression_model_comparison.csv", index=False)
     res_df.to_csv(OUTPUTS_DIR / "ml_model_results.csv", index=False)
     res_df.to_csv(OUTPUTS_DIR / "model_comparison.csv", index=False)
 
-    # ---------------------------------------------------------------------------
-    # 5. DIAGNOSTIC VISUALIZATIONS & RESIDUALS EXPORT
-    # ---------------------------------------------------------------------------
     best_pred = preds_dict["Polynomial Regression"]
 
-    # Export predictions CSV
     test_pred_df = test_df.copy()
     test_pred_df["Predicted_Modal_Price"] = np.round(best_pred, 2)
     test_pred_df["Absolute_Error"] = np.abs(test_pred_df["Modal_Price"] - test_pred_df["Predicted_Modal_Price"]).round(2)
@@ -209,11 +191,9 @@ def run_regression_models():
     test_pred_df.to_csv(PRED_DIR / "regression_test_predictions.csv", index=False)
     test_pred_df.to_csv(OUTPUTS_DIR / "test_predictions_and_errors.csv", index=False)
 
-    # Diagnostic Chart 1: Actual vs. Predicted
     print("\nGenerating Diagnostic Chart: Actual vs. Predicted Modal Prices...")
     fig, ax = plt.subplots(figsize=(8, 6))
     ax.scatter(test_df["Modal_Price"], best_pred, alpha=0.35, color="#0e7044", edgecolors="none", s=25)
-    max_val = max(test_df["Modal_Price"].max(), best_pred.max())
     ax.plot([0, 35000], [0, 35000], "r--", linewidth=2, label="Ideal Fit Line (y = x)")
     ax.set_title("Actual vs. Predicted Modal Settlement Prices (Polynomial Regression)")
     ax.set_xlabel("Actual Modal Price from APMC (₹/Quintal)")
@@ -232,7 +212,6 @@ def run_regression_models():
     fig.savefig(OUTPUTS_DIR / "actual_vs_predicted.png")
     plt.close()
 
-    # Diagnostic Chart 2: Residual Error Distribution
     print("Generating Diagnostic Chart: Prediction Error Distribution...")
     residuals = test_df["Modal_Price"] - best_pred
     fig, ax = plt.subplots(figsize=(8, 5))
@@ -254,7 +233,6 @@ def run_regression_models():
     fig.savefig(OUTPUTS_DIR / "prediction_error_distribution.png")
     plt.close()
 
-    # Commodity Error Analysis
     comm_err = test_pred_df.groupby("Commodity").agg(
         Records=("Modal_Price", "count"),
         Median_Actual_Price=("Modal_Price", "median"),

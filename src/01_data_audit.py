@@ -21,12 +21,11 @@ import pandas as pd
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-# ---------------------------------------------------------------------------
-# 1. FILE PATH CONFIGURATION
-# ---------------------------------------------------------------------------
-ROOT_DIR = Path(__file__).resolve().parent.parent
+# Path configuration (works whether run from root or src/)
+ROOT_DIR = Path(__file__).resolve().parent
+if ROOT_DIR.name == "src":
+    ROOT_DIR = ROOT_DIR.parent
 
-# Check both data/raw and root directory for the raw dataset
 RAW_DATA_PATH = ROOT_DIR / "data" / "raw" / "mandi_raw_data.csv"
 if not RAW_DATA_PATH.exists():
     RAW_DATA_PATH = ROOT_DIR / "9ef84268-d588-465a-a308-a864a43d0070.csv"
@@ -62,7 +61,7 @@ def run_data_audit():
     print(df_raw.tail())
 
     # ---------------------------------------------------------------------------
-    # 2. COLUMN NAME STANDARDIZATION & TYPE CASTING
+    # 2. COLUMN NAME STANDARDIZATION & TYPE CONVERSION
     # ---------------------------------------------------------------------------
     print("\n" + "=" * 78)
     print("STEP 2: COLUMN NAME STANDARDIZATION & TYPE CONVERSION")
@@ -90,12 +89,12 @@ def run_data_audit():
 
     # Parse single snapshot date
     if "Arrival_Date" in df.columns:
-        df["Arrival_Date"] = pd.to_datetime(df["Arrival_Date"], dayfirst=True, errors="coerce")
+        df["Arrival_Date"] = pd.to_datetime(df["Arrival_Date"], errors="coerce")
 
     print(f"Standardized Columns: {list(df.columns)}")
 
     # ---------------------------------------------------------------------------
-    # 3. MISSING VALUE, DUPLICATE & INTEGRITY CHECKS
+    # 3. MISSING VALUES, DUPLICATES & INTEGRITY CHECKS
     # ---------------------------------------------------------------------------
     print("\n" + "=" * 78)
     print("STEP 3: MISSING VALUES, DUPLICATES & LOGICAL CONSISTENCY AUDIT")
@@ -168,11 +167,6 @@ def run_data_audit():
     print("STEP 5: APPLYING QUALITY FILTERS & EXPORTING CLEAN DATASET")
     print("=" * 78)
 
-    # Valid records must have:
-    # 1. No missing values in required fields
-    # 2. Positive prices > 0
-    # 3. Min_Price <= Modal_Price <= Max_Price
-    # 4. Max_Price <= 500,000 (removes the single clerical typo)
     df_clean = df[
         df[required_cols].notnull().all(axis=1)
         & (~zero_or_negative)
@@ -195,12 +189,10 @@ def run_data_audit():
     # ---------------------------------------------------------------------------
     # 6. EXPORT ARTIFACTS & AUDIT SUMMARY
     # ---------------------------------------------------------------------------
-    # Save clean datasets to processed directory and outputs directory
     df_clean.to_csv(PROCESSED_DIR / "audited_mandi_data.csv", index=False)
     df_clean.to_csv(OUTPUTS_DIR / "audited_mandi_data.csv", index=False)
     df_clean.to_csv(OUTPUTS_DIR / "mandi_data_audited.csv", index=False)
 
-    # Save summary audit CSV
     audit_summary_df = pd.DataFrame([
         {"Metric": "Raw Records", "Count": raw_rows, "Notes": "Raw government-reported mandi price snapshot (Data.gov.in)"},
         {"Metric": "Clean Modelling Records", "Count": clean_rows, "Notes": "Passed all completeness, positive-price, and range audits"},

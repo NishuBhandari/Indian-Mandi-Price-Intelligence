@@ -50,7 +50,10 @@ from sklearn.metrics import (
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-ROOT_DIR = Path(__file__).resolve().parent.parent
+ROOT_DIR = Path(__file__).resolve().parent
+if ROOT_DIR.name == "src":
+    ROOT_DIR = ROOT_DIR.parent
+
 TRAIN_PATH = ROOT_DIR / "data" / "processed" / "train_data.csv"
 TEST_PATH = ROOT_DIR / "data" / "processed" / "test_data.csv"
 
@@ -72,7 +75,6 @@ def run_classification_models():
     print("PROBLEM B: COMMODITY PRICE TIER CLASSIFICATION (6TH MODEL INCLUDED)")
     print("=" * 78)
 
-    # 1. Load Pre-split Data
     train_df = pd.read_csv(TRAIN_PATH)
     test_df = pd.read_csv(TEST_PATH)
 
@@ -87,10 +89,9 @@ def run_classification_models():
     X_test_raw = test_df[feature_cols]
     y_test = test_df[target_col]
 
-    # 2. Categorical Encoders (Fit strictly on Training Data)
     print("\nFitting encoders strictly on training data (Zero Data Leakage)...")
 
-    # One-Hot Encoder with minimum frequency to handle unseen categories cleanly
+    # One-Hot Encoder for categorical indicators
     ohe = OneHotEncoder(handle_unknown="ignore", min_frequency=5, sparse_output=True)
     X_train_ohe = ohe.fit_transform(X_train_raw)
     X_test_ohe = ohe.transform(X_test_raw)
@@ -105,9 +106,7 @@ def run_classification_models():
     results = []
     preds_dict = {}
 
-    # ---------------------------------------------------------------------------
-    # MODEL 0: MAJORITY CLASS BASELINE
-    # ---------------------------------------------------------------------------
+    # MODEL 0: MAJORITY BASELINE
     print("\n--- Model 0: Majority Class Baseline ---")
     base_clf = DummyClassifier(strategy="most_frequent")
     base_clf.fit(X_train_ohe, y_train)
@@ -124,9 +123,7 @@ def run_classification_models():
         "Status": "Naive Baseline"
     })
 
-    # ---------------------------------------------------------------------------
-    # MODEL 4: LOGISTIC REGRESSION (MULTINOMIAL)
-    # ---------------------------------------------------------------------------
+    # MODEL 4: LOGISTIC REGRESSION
     print("--- Model 4: Logistic Regression ---")
     log_reg = LogisticRegression(max_iter=1000, C=1.0, random_state=42)
     log_reg.fit(X_train_ohe, y_train)
@@ -144,9 +141,7 @@ def run_classification_models():
         "Status": "Linear Decision Boundaries (L2 Regularized)"
     })
 
-    # ---------------------------------------------------------------------------
     # MODEL 5: DECISION TREE CLASSIFIER
-    # ---------------------------------------------------------------------------
     print("--- Model 5: Decision Tree Classifier ---")
     dt_clf = DecisionTreeClassifier(max_depth=15, min_samples_leaf=5, random_state=42)
     dt_clf.fit(X_train_ohe, y_train)
@@ -164,9 +159,7 @@ def run_classification_models():
         "Status": "Hierarchical Rule Segmentation"
     })
 
-    # ---------------------------------------------------------------------------
-    # MODEL 6A: NAIVE BAYES (MULTINOMIAL NB - PRIMARY ON ONE-HOT ENCODING)
-    # ---------------------------------------------------------------------------
+    # MODEL 6A: MULTINOMIAL NAIVE BAYES
     print("--- Model 6A: Naive Bayes (MultinomialNB on One-Hot Binary Indicators) ---")
     mnb = MultinomialNB(alpha=1.0)
     mnb.fit(X_train_ohe, y_train)
@@ -184,9 +177,7 @@ def run_classification_models():
         "Status": "Bayesian Discrete Count Model (Laplace Smoothed)"
     })
 
-    # ---------------------------------------------------------------------------
-    # MODEL 6B: NAIVE BAYES (GAUSSIAN NB - ON CONTINUOUS TARGET ENCODING)
-    # ---------------------------------------------------------------------------
+    # MODEL 6B: GAUSSIAN NAIVE BAYES
     print("--- Model 6B: Naive Bayes (GaussianNB on Target Encoded Features) ---")
     gnb = GaussianNB()
     gnb.fit(X_train_te, y_train)
@@ -204,22 +195,15 @@ def run_classification_models():
         "Status": "Continuous Gaussian Likelihood Reference"
     })
 
-    # ---------------------------------------------------------------------------
-    # 4. RESULTS DISPLAY & COMPARISON TABLE EXPORT
-    # ---------------------------------------------------------------------------
     res_df = pd.DataFrame(results)
     print("\n" + "=" * 78)
     print("CLASSIFICATION MODEL COMPARISON TABLE (TARGET: PRICE TIER)")
     print("=" * 78)
     print(res_df[["Model", "Accuracy", "Precision_Weighted", "Recall_Weighted", "F1_Weighted", "F1_Macro", "Status"]].round(4).to_string(index=False))
 
-    # Export comparison metrics
     res_df.to_csv(METRICS_DIR / "classification_model_comparison.csv", index=False)
     res_df.to_csv(OUTPUTS_DIR / "classification_results.csv", index=False)
 
-    # ---------------------------------------------------------------------------
-    # 5. CONFUSION MATRIX & DETAILED CLASSIFICATION REPORT
-    # ---------------------------------------------------------------------------
     best_clf_name = "Logistic Regression"
     best_pred = preds_dict[best_clf_name]
     tier_order = ["Budget", "Standard", "Premium"]
@@ -230,7 +214,6 @@ def run_classification_models():
     print(clf_rep_df)
     clf_rep_df.to_csv(METRICS_DIR / "classification_report.csv")
 
-    # Diagnostic Chart: Confusion Matrix
     print(f"\nGenerating Confusion Matrix for {best_clf_name}...")
     cm = confusion_matrix(y_test, best_pred, labels=tier_order)
     cm_norm = cm.astype("float") / cm.sum(axis=1)[:, np.newaxis]
@@ -253,7 +236,6 @@ def run_classification_models():
     fig.savefig(OUTPUTS_DIR / "confusion_matrix.png")
     plt.close()
 
-    # Export test predictions
     test_pred_df = test_df.copy()
     test_pred_df["Predicted_Tier_LogReg"] = preds_dict["Logistic Regression"]
     test_pred_df["Predicted_Tier_Tree"] = preds_dict["Decision Tree Classifier"]

@@ -21,12 +21,14 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import OneHotEncoder, TargetEncoder, StandardScaler
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-ROOT_DIR = Path(__file__).resolve().parent.parent
+ROOT_DIR = Path(__file__).resolve().parent
+if ROOT_DIR.name == "src":
+    ROOT_DIR = ROOT_DIR.parent
+
 INPUT_PATH = ROOT_DIR / "data" / "processed" / "audited_mandi_data.csv"
 if not INPUT_PATH.exists():
     INPUT_PATH = ROOT_DIR / "outputs" / "audited_mandi_data.csv"
@@ -83,7 +85,7 @@ def run_preprocessing():
     print(f"Loaded {len(df):,} verified clean records.")
 
     # ---------------------------------------------------------------------------
-    # 2. FEATURE ENGINEERING: SECTORS, SPREAD & PRICE TIERS
+    # 2. FEATURE ENGINEERING: SECTOR, PRICE TIERS & SPREADS
     # ---------------------------------------------------------------------------
     print("\n" + "=" * 78)
     print("STEP 2: FEATURE ENGINEERING (SECTOR, PRICE TIERS & SPREADS)")
@@ -142,7 +144,6 @@ def run_preprocessing():
     print("STEP 4: EXPORTING PROCESSED ARTIFACTS")
     print("=" * 78)
 
-    # Save full augmented dataset and splits
     df.to_csv(PROCESSED_DIR / "mandi_preprocessed_full.csv", index=False)
     train_df.to_csv(PROCESSED_DIR / "train_data.csv", index=False)
     test_df.to_csv(PROCESSED_DIR / "test_data.csv", index=False)
