@@ -1,3 +1,15 @@
+"""
+Indian Mandi Price Intelligence - Phase 3: Machine Learning Preparation
+Prepares data transformations, feature sets, and pipelines for the 5 core algorithms:
+Regression:
+  1. Linear Regression
+  2. Polynomial Regression (Degree 2)
+  3. Decision Tree Regressor
+Classification:
+  4. Logistic Regression
+  5. Decision Tree Classifier
+"""
+
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -5,11 +17,11 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import OneHotEncoder, TargetEncoder, PolynomialFeatures, StandardScaler
 from sklearn.impute import SimpleImputer
 from sklearn.dummy import DummyRegressor
-from sklearn.linear_model import Ridge
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.linear_model import LinearRegression
+from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 DATA_PATH = Path("9ef84268-d588-465a-a308-a864a43d0070.csv")
@@ -42,56 +54,79 @@ df = df[
     & (df["Min_Price"] <= df["Max_Price"])
 ].copy()
 
+# -------------------------------------------------------------
+# Target variable assignment
+# -------------------------------------------------------------
 features_A = categorical_cols
 features_B = categorical_cols + ["Min_Price", "Max_Price"]
 target = df["Modal_Price"]
 
+def assign_tier(price):
+    if price < 3000:
+        return "Budget"
+    elif price <= 10000:
+        return "Standard"
+    else:
+        return "Premium"
+
+df["Price_Tier"] = df["Modal_Price"].apply(assign_tier)
+
 train_idx, test_idx = train_test_split(df.index, test_size=0.20, random_state=42)
 y_train, y_test = target.loc[train_idx], target.loc[test_idx]
 
-def make_encoder():
-    try:
-        return OneHotEncoder(handle_unknown="ignore", min_frequency=5, sparse_output=True)
-    except TypeError:
-        return OneHotEncoder(handle_unknown="ignore", min_frequency=5, sparse=True)
+print("=" * 65)
+print("PHASE 3: ML PREPARATION & PIPELINE VALIDATION")
+print("=" * 65)
+print(f"Clean rows available: {len(df):,}")
+print(f"Features (Market Characteristics): {features_A}")
+print(f"Price Tier counts:\n{df['Price_Tier'].value_counts().to_string()}")
 
-def build_pipeline(features, model):
-    cat_features = [col for col in features if col in categorical_cols]
-    num_features = [col for col in features if col not in categorical_cols]
+# -------------------------------------------------------------
+# Benchmark Regression Pipelines for Phase 3 Check
+# -------------------------------------------------------------
+encoder_ohe = OneHotEncoder(handle_unknown="ignore", min_frequency=5)
 
-    transformers = [
-        ("categories", Pipeline([
-            ("imputer", SimpleImputer(strategy="most_frequent")),
-            ("encoder", make_encoder())
-        ]), cat_features)
-    ]
-    if num_features:
-        transformers.append(("numbers", Pipeline([("imputer", SimpleImputer(strategy="median"))]), num_features))
+pipe_linear = Pipeline([
+    ("cat", ColumnTransformer([("ohe", encoder_ohe, categorical_cols)])),
+    ("model", LinearRegression())
+])
 
-    return Pipeline([("preprocessing", ColumnTransformer(transformers)), ("model", model)])
+pipe_poly = Pipeline([
+    ("target_enc", TargetEncoder(smooth="auto", cv=5, random_state=42)),
+    ("scaler", StandardScaler()),
+    ("poly", PolynomialFeatures(degree=2, include_bias=False)),
+    ("model", LinearRegression())
+])
 
-results = []
-experiments = {"A_Product_Market_Only": features_A, "B_With_Min_Max_Prices": features_B}
+pipe_dt = Pipeline([
+    ("cat", ColumnTransformer([("ohe", encoder_ohe, categorical_cols)])),
+    ("model", DecisionTreeRegressor(max_depth=15, min_samples_leaf=5, random_state=42))
+])
+
 models = {
-    "Mean Baseline": DummyRegressor(strategy="mean"),
-    "Ridge Regression": Ridge(alpha=1.0),
-    "Random Forest": RandomForestRegressor(n_estimators=150, min_samples_leaf=3, random_state=42, n_jobs=-1)
+    "Linear Regression": pipe_linear,
+    "Polynomial Regression": pipe_poly,
+    "Decision Tree Regressor": pipe_dt
 }
 
-for exp_name, feats in experiments.items():
-    X_train, X_test = df.loc[train_idx, feats], df.loc[test_idx, feats]
-    for model_name, estimator in models.items():
-        pipeline = build_pipeline(feats, estimator)
-        pipeline.fit(X_train, y_train)
-        preds = pipeline.predict(X_test)
-        results.append({
-            "Experiment": exp_name,
-            "Model": model_name,
-            "MAE": mean_absolute_error(y_test, preds),
-            "RMSE": np.sqrt(mean_squared_error(y_test, preds)),
-            "R2": r2_score(y_test, preds)
-        })
+results = []
+X_train_A, X_test_A = df.loc[train_idx, features_A], df.loc[test_idx, features_A]
 
-results_df = pd.DataFrame(results).sort_values(["Experiment", "MAE"])
+for name, pipe in models.items():
+    pipe.fit(X_train_A, y_train)
+    preds = pipe.predict(X_test_A)
+    results.append({
+        "Model": name,
+        "Feature_Set": "Market Characteristics Only",
+        "MAE": mean_absolute_error(y_test, preds),
+        "RMSE": np.sqrt(mean_squared_error(y_test, preds)),
+        "R2": r2_score(y_test, preds)
+    })
+
+results_df = pd.DataFrame(results).sort_values("MAE")
+print("\nPhase 3 Model Pipeline Benchmark:")
+print(results_df.round(3).to_string(index=False))
+
 results_df.to_csv(OUT / "model_comparison.csv", index=False)
+print(f"\nSaved preparation benchmark to {OUT / 'model_comparison.csv'}")
 print("Phase 3 ML Prep completed successfully.")

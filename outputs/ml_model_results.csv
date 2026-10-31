@@ -1,7 +1,9 @@
-Model,Feature_Set,MAE,RMSE,R2
-Mean Baseline,Market Characteristics (No Prices),3293.723011099506,6012.361050204094,-1.5775625947567207e-05
-Ridge Regression,Market Characteristics (No Prices),1597.110771998817,3903.6772070927154,0.578435003033974
-Random Forest,Market Characteristics (No Prices),1306.2691367343205,3920.2859738928782,0.5748401517288435
-Mean Baseline,With Min & Max Prices,3293.723011099506,6012.361050204094,-1.5775625947567207e-05
-Ridge Regression,With Min & Max Prices,192.90584759720656,1924.2499974475975,0.8975670370440668
-Random Forest,With Min & Max Prices,140.1021008135567,915.5721637696093,0.9768099381727483
+Experiment,Feature_Set,Model,MAE,RMSE,R2,Split
+Market Characteristics (No Prices),Market Characteristics (No Prices),Mean Baseline,3387.9450757859577,6117.3804179064155,-0.0024146084265377343,Test
+Market Characteristics (No Prices),Market Characteristics (No Prices),Linear Regression,1660.296425913985,3835.1754425851013,0.6060084734882887,Test
+Market Characteristics (No Prices),Market Characteristics (No Prices),Polynomial Regression,1595.904389850384,3904.0411378450417,0.5917321510912124,Test
+Market Characteristics (No Prices),Market Characteristics (No Prices),Decision Tree Regressor,2566.874664957314,4261.411746133798,0.5135665776033527,Test
+With Min & Max Prices (Bounds),With Min & Max Prices (Bounds),Mean Baseline,3387.9450757859577,6117.3804179064155,-0.0024146084265377343,Test
+With Min & Max Prices (Bounds),With Min & Max Prices (Bounds),Linear Regression,209.01943042368578,1858.943906634803,0.907434536437035,Test
+With Min & Max Prices (Bounds),With Min & Max Prices (Bounds),Polynomial Regression,202.52856918960734,1981.2481509979682,0.8948536603800996,Test
+With Min & Max Prices (Bounds),With Min & Max Prices (Bounds),Decision Tree Regressor,187.5356576228001,1226.5567988961088,0.9597012348722154,Test
