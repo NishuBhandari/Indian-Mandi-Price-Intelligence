@@ -89,7 +89,7 @@ def run_data_audit():
 
     # Parse single snapshot date
     if "Arrival_Date" in df.columns:
-        df["Arrival_Date"] = pd.to_datetime(df["Arrival_Date"], errors="coerce")
+        df["Arrival_Date"] = pd.to_datetime(df["Arrival_Date"], dayfirst=True, errors="coerce")
 
     print(f"Standardized Columns: {list(df.columns)}")
 

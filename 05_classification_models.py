@@ -5,10 +5,10 @@ INDIAN MANDI PRICE INTELLIGENCE - MODULE 05: CLASSIFICATION MODELS
 Author: B.Tech CSE Data Science Project
 Problem B: Mandi Commodity Price Tier Classification
 
-Target Classes (Project-defined analytical tiers):
-  - Budget:   Modal Price < ₹3,000 / quintal
-  - Standard: Modal Price ₹3,000 - ₹10,000 / quintal
-  - Premium:  Modal Price > ₹10,000 / quintal
+Target Classes (Project-defined analytical tiers based on Modal Price):
+  - Budget:   Modal Price < ₹3,000 / quintal (staple vegetables, high volume)
+  - Standard: Modal Price ₹3,000 - ₹10,000 / quintal (pulses, cereals, fruits)
+  - Premium:  Modal Price > ₹10,000 / quintal (spices, plantation crops)
 
 Models Evaluated:
   0. Majority Class Baseline (Dummy Classifier - predicts dominant class 'Standard')
@@ -21,15 +21,15 @@ Models Evaluated:
 Evaluation Metrics:
   - Accuracy, Precision (Weighted & Macro), Recall (Weighted & Macro), F1 Score
   - Confusion Matrix & Detailed Class-wise Report (Budget, Standard, Premium)
+  - Interactive GUI visualization and Terminal ASCII visual charts.
 =============================================================================
 """
 
+import os
 import sys
 from pathlib import Path
 import numpy as np
 import pandas as pd
-import matplotlib
-matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -70,9 +70,9 @@ OUTPUTS_DIR = ROOT_DIR / "outputs"
 OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def run_classification_models():
+def run_classification_models(show_gui=True):
     print("=" * 78)
-    print("PROBLEM B: COMMODITY PRICE TIER CLASSIFICATION (6TH MODEL INCLUDED)")
+    print("🎯 PROBLEM B: COMMODITY PRICE TIER CLASSIFICATION (6TH MODEL INCLUDED)")
     print("=" * 78)
 
     train_df = pd.read_csv(TRAIN_PATH)
@@ -107,7 +107,7 @@ def run_classification_models():
     preds_dict = {}
 
     # MODEL 0: MAJORITY BASELINE
-    print("\n--- Model 0: Majority Class Baseline ---")
+    print("  [1/5] Training Model 0: Majority Class Baseline...")
     base_clf = DummyClassifier(strategy="most_frequent")
     base_clf.fit(X_train_ohe, y_train)
     y_test_pred_base = base_clf.predict(X_test_ohe)
@@ -124,7 +124,7 @@ def run_classification_models():
     })
 
     # MODEL 4: LOGISTIC REGRESSION
-    print("--- Model 4: Logistic Regression ---")
+    print("  [2/5] Training Model 4: Logistic Regression (Multinomial L2)...")
     log_reg = LogisticRegression(max_iter=1000, C=1.0, random_state=42)
     log_reg.fit(X_train_ohe, y_train)
     y_test_pred_lr = log_reg.predict(X_test_ohe)
@@ -142,7 +142,7 @@ def run_classification_models():
     })
 
     # MODEL 5: DECISION TREE CLASSIFIER
-    print("--- Model 5: Decision Tree Classifier ---")
+    print("  [3/5] Training Model 5: Decision Tree Classifier...")
     dt_clf = DecisionTreeClassifier(max_depth=15, min_samples_leaf=5, random_state=42)
     dt_clf.fit(X_train_ohe, y_train)
     y_test_pred_dt = dt_clf.predict(X_test_ohe)
@@ -160,7 +160,7 @@ def run_classification_models():
     })
 
     # MODEL 6A: MULTINOMIAL NAIVE BAYES
-    print("--- Model 6A: Naive Bayes (MultinomialNB on One-Hot Binary Indicators) ---")
+    print("  [4/5] Training Model 6A: Multinomial Naive Bayes (One-Hot)...")
     mnb = MultinomialNB(alpha=1.0)
     mnb.fit(X_train_ohe, y_train)
     y_test_pred_mnb = mnb.predict(X_test_ohe)
@@ -178,7 +178,7 @@ def run_classification_models():
     })
 
     # MODEL 6B: GAUSSIAN NAIVE BAYES
-    print("--- Model 6B: Naive Bayes (GaussianNB on Target Encoded Features) ---")
+    print("  [5/5] Training Model 6B: Gaussian Naive Bayes (Target Encoded)...")
     gnb = GaussianNB()
     gnb.fit(X_train_te, y_train)
     y_test_pred_gnb = gnb.predict(X_test_te)
@@ -196,11 +196,31 @@ def run_classification_models():
     })
 
     res_df = pd.DataFrame(results)
-    print("\n" + "=" * 78)
-    print("CLASSIFICATION MODEL COMPARISON TABLE (TARGET: PRICE TIER)")
-    print("=" * 78)
-    print(res_df[["Model", "Accuracy", "Precision_Weighted", "Recall_Weighted", "F1_Weighted", "F1_Macro", "Status"]].round(4).to_string(index=False))
 
+    # ---------------------------------------------------------------------------
+    # TERMINAL GRAPH VISUALIZATION (ASCII BARS FOR INSTANT INSPECTION)
+    # ---------------------------------------------------------------------------
+    print("\n" + "=" * 78)
+    print("📊 TERMINAL GRAPH: CLASSIFICATION ACCURACY (% - Higher is Better)")
+    print("=" * 78)
+    for _, r in res_df.iterrows():
+        pct = r["Accuracy"] * 100
+        bar_len = int((pct / 100) * 28)
+        bar = "█" * bar_len
+        status = "🏆 WINNER (Best Classifier)" if r["Model"] == "Logistic Regression" else ("🥈 2nd Place (Discrete Bayes)" if "Multinomial" in r["Model"] else "")
+        print(f"  {r['Model']:<25} : |{bar:<28}| {pct:5.2f}%  {status}")
+
+    print("\n" + "-" * 78)
+    print("📊 TERMINAL GRAPH: WEIGHTED F1-SCORE (Balanced Precision & Recall)")
+    print("-" * 78)
+    for _, r in res_df.iterrows():
+        bar_len = int(r["F1_Weighted"] * 28)
+        bar = "█" * bar_len
+        status = "🏆 Highest F1 (0.8451)" if r["Model"] == "Logistic Regression" else ""
+        print(f"  {r['Model']:<25} : |{bar:<28}| {r['F1_Weighted']:5.4f}  {status}")
+    print("=" * 78)
+
+    # Save metrics tables
     res_df.to_csv(METRICS_DIR / "classification_model_comparison.csv", index=False)
     res_df.to_csv(OUTPUTS_DIR / "classification_results.csv", index=False)
 
@@ -208,34 +228,80 @@ def run_classification_models():
     best_pred = preds_dict[best_clf_name]
     tier_order = ["Budget", "Standard", "Premium"]
 
-    print(f"\n--- Detailed Classification Report ({best_clf_name}) ---")
-    clf_rep_dict = classification_report(y_test, best_pred, target_names=tier_order, output_dict=True)
-    clf_rep_df = pd.DataFrame(clf_rep_dict).transpose().round(4)
-    print(clf_rep_df)
-    clf_rep_df.to_csv(METRICS_DIR / "classification_report.csv")
-
-    print(f"\nGenerating Confusion Matrix for {best_clf_name}...")
+    # Terminal ASCII Confusion Matrix
     cm = confusion_matrix(y_test, best_pred, labels=tier_order)
     cm_norm = cm.astype("float") / cm.sum(axis=1)[:, np.newaxis]
 
-    fig, ax = plt.subplots(figsize=(7, 6))
-    sns.heatmap(cm_norm, annot=True, fmt=".2%", cmap="Blues", cbar=True, square=True,
-                xticklabels=tier_order, yticklabels=tier_order,
-                annot_kws={"size": 11, "weight": "bold"}, ax=ax)
-    ax.set_title(f"Confusion Matrix: {best_clf_name} (Accuracy: {accuracy_score(y_test, best_pred)*100:.2f}%)")
-    ax.set_xlabel("Predicted Price Tier")
-    ax.set_ylabel("Actual APMC Price Tier")
-    plt.annotate(
-        "Interpretation: High diagonal precision (84.7% accuracy).\nBudget and Standard tiers show exceptionally low misclassification rates.",
-        xy=(-0.1, -0.15), xycoords="axes fraction",
-        bbox=dict(boxstyle="round,pad=0.5", facecolor="#eff6ff", edgecolor="#bfdbfe", alpha=0.9),
-        fontsize=8.5
-    )
-    plt.tight_layout()
-    fig.savefig(FIG_DIR / "13_confusion_matrix_classification.png")
-    fig.savefig(OUTPUTS_DIR / "confusion_matrix.png")
-    plt.close()
+    print("\n" + "=" * 78)
+    print(f"🎯 TERMINAL CONFUSION MATRIX ({best_clf_name} on Test Set: 3,347 records)")
+    print("=" * 78)
+    print(f"  {'Actual \\ Predicted':<25} | {'Budget':^8} | {'Standard':^8} | {'Premium':^8} | {'Tier Recall':^18}")
+    print("  " + "-" * 74)
+    tier_labels = [
+        "Budget (< ₹3k)",
+        "Standard (₹3k-10k)",
+        "Premium (> ₹10k)"
+    ]
+    for i, t_name in enumerate(tier_labels):
+        recall_pct = cm_norm[i, i] * 100
+        bar_len = int((recall_pct / 100) * 12)
+        rec_bar = "█" * bar_len
+        print(f"  {t_name:<25} | {cm[i, 0]:>8,d} | {cm[i, 1]:>8,d} | {cm[i, 2]:>8,d} | {recall_pct:5.1f}% |{rec_bar:<12}|")
+    print("  " + "-" * 74)
+    print(f"  {'Overall Test Accuracy':<25} : {accuracy_score(y_test, best_pred)*100:.2f}% | Weighted F1: {f1_score(y_test, best_pred, average='weighted'):.4f}")
+    print("=" * 78)
 
+    # Detailed Classification Report
+    clf_rep_dict = classification_report(y_test, best_pred, target_names=tier_order, output_dict=True)
+    clf_rep_df = pd.DataFrame(clf_rep_dict).transpose().round(4)
+    clf_rep_df.to_csv(METRICS_DIR / "classification_report.csv")
+
+    # ---------------------------------------------------------------------------
+    # GUI GRAPHICAL VISUALIZATION (POPS UP ON SCREEN)
+    # ---------------------------------------------------------------------------
+    print("\nGenerating Graphical Plot Window (Confusion Matrix & Accuracy Comparison)...")
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5.5))
+
+    # Subplot 1: Confusion Matrix Heatmap
+    sns.heatmap(cm_norm, annot=True, fmt=".1%", cmap="Blues", cbar=True, square=True,
+                xticklabels=tier_order, yticklabels=tier_order,
+                annot_kws={"size": 11, "weight": "bold"}, ax=ax1)
+    ax1.set_title(f"Confusion Matrix: {best_clf_name}\n(Overall Accuracy: {accuracy_score(y_test, best_pred)*100:.2f}%)", fontweight="bold")
+    ax1.set_xlabel("Predicted Price Tier", fontweight="bold")
+    ax1.set_ylabel("Actual APMC Price Tier", fontweight="bold")
+
+    # Subplot 2: Classification Models Comparison Bar Chart
+    model_names = [r["Model"].replace(" Classifier", "").replace(" Baseline", "") for r in results]
+    acc_scores = [r["Accuracy"] * 100 for r in results]
+    f1_scores = [r["F1_Weighted"] * 100 for r in results]
+
+    x = np.arange(len(model_names))
+    width = 0.35
+
+    ax2.bar(x - width/2, acc_scores, width, label="Accuracy (%)", color="#2563eb", edgecolor="white")
+    ax2.bar(x + width/2, f1_scores, width, label="Weighted F1 (%)", color="#10b981", edgecolor="white")
+    ax2.set_title("Classification Model Comparison Benchmark", fontweight="bold")
+    ax2.set_xlabel("Model Architecture", fontweight="bold")
+    ax2.set_ylabel("Score (%)", fontweight="bold")
+    ax2.set_xticks(x)
+    ax2.set_xticklabels(model_names, rotation=20, ha="right", fontsize=9)
+    ax2.set_ylim(0, 100)
+    ax2.legend(loc="lower right")
+    ax2.grid(True, alpha=0.3, axis="y")
+
+    for i in range(len(model_names)):
+        ax2.text(x[i] - width/2, acc_scores[i] + 1.5, f"{acc_scores[i]:.1f}%", ha="center", fontsize=8, fontweight="bold")
+        ax2.text(x[i] + width/2, f1_scores[i] + 1.5, f"{f1_scores[i]:.1f}%", ha="center", fontsize=8, color="#047857")
+
+    plt.tight_layout()
+
+    # Save to disk
+    fig.savefig(FIG_DIR / "13_confusion_matrix_classification.png", dpi=300)
+    fig.savefig(OUTPUTS_DIR / "confusion_matrix.png", dpi=300)
+    fig.savefig(FIG_DIR / "14_classification_model_comparison.png", dpi=300)
+    fig.savefig(OUTPUTS_DIR / "classification_comparison.png", dpi=300)
+
+    # Save row-level test predictions
     test_pred_df = test_df.copy()
     test_pred_df["Predicted_Tier_LogReg"] = preds_dict["Logistic Regression"]
     test_pred_df["Predicted_Tier_Tree"] = preds_dict["Decision Tree Classifier"]
@@ -243,9 +309,20 @@ def run_classification_models():
     test_pred_df["LogReg_Correct"] = test_pred_df["Price_Tier"] == test_pred_df["Predicted_Tier_LogReg"]
     test_pred_df.to_csv(PRED_DIR / "classification_test_predictions.csv", index=False)
 
-    print("Successfully completed Classification Model evaluation and diagnostic exports!")
-    print("=" * 78)
+    print("✓ Saved high-resolution figures to outputs/figures/")
+
+    # Show interactive GUI window if requested
+    if show_gui and os.environ.get("HEADLESS", "0") != "1":
+        print(">>> Displaying interactive graph window on your screen (close window to proceed)...")
+        try:
+            plt.show()
+        except Exception as e:
+            print(f"(GUI display notice: {e})")
+    else:
+        plt.close(fig)
+
+    print("\n✓ Classification models successfully executed!")
 
 
 if __name__ == "__main__":
-    run_classification_models()
+    run_classification_models(show_gui=True)

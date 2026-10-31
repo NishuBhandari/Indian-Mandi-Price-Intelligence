@@ -4,11 +4,20 @@ INDIAN MANDI PRICE INTELLIGENCE - MASTER RUNNER (RUN ALL IN ONE STEP)
 =============================================================================
 Run this single file to execute the entire project from start to finish:
     python run_all.py
+
+Features:
+  - Executes all 6 modules + dashboard builder in sequence.
+  - Displays terminal ASCII visual graphs for all models.
+  - Generates all 15 high-resolution figures.
+  - Opens the Master Model Benchmark GUI graph on screen.
+  - Automatically launches the interactive web dashboard in your browser.
 =============================================================================
 """
 
+import os
 import sys
 import runpy
+import webbrowser
 from pathlib import Path
 
 # Ensure UTF-8 output for rupee symbol ₹
@@ -27,10 +36,15 @@ pipeline_steps = [
     ("Step 7: Build Interactive Web Dashboard", ROOT_DIR / "src" / "build_dashboard.py"),
 ]
 
+
 def main():
     print("=" * 78)
     print("🌾 STARTING COMPLETE INDIAN MANDI PRICE INTELLIGENCE PIPELINE")
     print("=" * 78)
+
+    # During automated batch execution of steps 1-5, keep headless to prevent multiple blocking popups
+    user_headless = os.environ.get("HEADLESS", "0")
+    os.environ["HEADLESS"] = "1"
 
     for step_num, (step_name, script_path) in enumerate(pipeline_steps, start=1):
         print(f"\n>>> Running [{step_num}/7]: {step_name}...")
@@ -40,6 +54,12 @@ def main():
         except Exception as e:
             print(f"❌ Error in {step_name}: {e}")
             sys.exit(1)
+
+    # Restore headless setting
+    if user_headless == "1":
+        os.environ["HEADLESS"] = "1"
+    else:
+        os.environ.pop("HEADLESS", None)
 
     print("\n" + "=" * 78)
     print("🎉 ALL 7 STEPS COMPLETED SUCCESSFULLY!")
@@ -88,13 +108,43 @@ Evaluated on: 3,347 test records (Unseen data)
    • F1-Score (Balance)    : 0.7493
 
 (Comparison Baseline: If you always guessed the most common tier, accuracy is only 60.71%)
-
-==============================================================================
-🌐 DASHBOARD READY:
-   Double-click 'dashboard.html' or 'index.html' in your folder to open
-   the interactive dashboard in your web browser!
 ==============================================================================
 """)
+
+    # Open Master Evaluation GUI Graph Window
+    if user_headless != "1" and "--no-gui" not in sys.argv:
+        try:
+            import matplotlib.pyplot as plt
+            import matplotlib.image as mpimg
+
+            master_fig_path = ROOT_DIR / "outputs" / "figures" / "15_all_models_master_evaluation.png"
+            if master_fig_path.exists():
+                print(">>> Displaying Master 6-Model Benchmark Graph on screen...")
+                img = mpimg.imread(str(master_fig_path))
+                fig, ax = plt.subplots(figsize=(14, 5.5))
+                ax.imshow(img)
+                ax.axis("off")
+                fig.canvas.manager.set_window_title("Indian Mandi ML Benchmark - 6 Models Comparison")
+                plt.tight_layout()
+                plt.show(block=False)
+                plt.pause(1)
+        except Exception as e:
+            pass
+
+    # Launch dashboard in default browser
+    dashboard_path = ROOT_DIR / "dashboard.html"
+    if dashboard_path.exists():
+        print(f"🌐 Launching interactive web dashboard in your default browser...")
+        try:
+            webbrowser.open(dashboard_path.as_uri())
+            print("✓ Dashboard opened successfully!")
+        except Exception as e:
+            print(f"(Could not auto-open browser: {e}. You can double-click dashboard.html directly.)")
+
+    print("\n" + "=" * 78)
+    print("✅ PIPELINE EXECUTION COMPLETE! READY FOR SUBMISSION & VIVA.")
+    print("=" * 78)
+
 
 if __name__ == "__main__":
     main()

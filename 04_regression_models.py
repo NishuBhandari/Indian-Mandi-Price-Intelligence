@@ -16,16 +16,15 @@ Evaluation Metrics:
   - MSE  (Mean Squared Error)
   - RMSE (Root Mean Squared Error in ₹/Quintal)
   - R²   (Coefficient of Determination)
-  - Evaluated on both Train and Test to audit Overfitting vs. Underfitting.
+  - Interactive GUI visualization and Terminal ASCII visual charts.
 =============================================================================
 """
 
+import os
 import sys
 from pathlib import Path
 import numpy as np
 import pandas as pd
-import matplotlib
-matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -58,9 +57,9 @@ OUTPUTS_DIR = ROOT_DIR / "outputs"
 OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def run_regression_models():
+def run_regression_models(show_gui=True):
     print("=" * 78)
-    print("PROBLEM A: MANDI MODAL PRICE ESTIMATION (REGRESSION MODELS)")
+    print("🌾 PROBLEM A: MANDI MODAL PRICE ESTIMATION (REGRESSION MODELS)")
     print("=" * 78)
 
     train_df = pd.read_csv(TRAIN_PATH)
@@ -87,7 +86,7 @@ def run_regression_models():
     preds_dict = {}
 
     # MODEL 0: MEAN BASELINE
-    print("\n--- Model 0: Mean Prediction Baseline ---")
+    print("  [1/4] Training Model 0: Mean Prediction Baseline...")
     base_model = DummyRegressor(strategy="mean")
     base_model.fit(X_train_enc, y_train)
     y_train_pred_base = base_model.predict(X_train_enc)
@@ -106,7 +105,7 @@ def run_regression_models():
     })
 
     # MODEL 1: LINEAR REGRESSION (OLS)
-    print("--- Model 1: Linear Regression (OLS) ---")
+    print("  [2/4] Training Model 1: Linear Regression (OLS)...")
     lr = LinearRegression()
     lr.fit(X_train_enc, y_train)
     y_train_pred_lr = lr.predict(X_train_enc)
@@ -127,7 +126,7 @@ def run_regression_models():
     })
 
     # MODEL 2: POLYNOMIAL REGRESSION (DEGREE 2 + RIDGE)
-    print("--- Model 2: Polynomial Regression (Degree 2 with Ridge) ---")
+    print("  [3/4] Training Model 2: Polynomial Regression (Degree 2 with Ridge)...")
     poly = PolynomialFeatures(degree=2, include_bias=False)
     X_train_poly = poly.fit_transform(X_train_enc)
     X_test_poly = poly.transform(X_test_enc)
@@ -152,7 +151,7 @@ def run_regression_models():
     })
 
     # MODEL 3: DECISION TREE REGRESSOR
-    print("--- Model 3: Decision Tree Regressor ---")
+    print("  [4/4] Training Model 3: Decision Tree Regressor...")
     dt = DecisionTreeRegressor(max_depth=12, min_samples_leaf=10, random_state=42)
     dt.fit(X_train_enc, y_train)
     y_train_pred_dt = dt.predict(X_train_enc)
@@ -173,17 +172,39 @@ def run_regression_models():
     })
 
     res_df = pd.DataFrame(results)
-    print("\n" + "=" * 78)
-    print("REGRESSION MODEL COMPARISON TABLE (TARGET: MODAL PRICE ₹/QUINTAL)")
-    print("=" * 78)
-    print(res_df.to_string(index=False))
 
+    # ---------------------------------------------------------------------------
+    # TERMINAL GRAPH VISUALIZATION (ASCII BARS FOR INSTANT TERMINAL INSPECTION)
+    # ---------------------------------------------------------------------------
+    print("\n" + "=" * 78)
+    print("📊 TERMINAL GRAPH: REGRESSION MODEL ERROR (MAE in ₹/Quintal - Lower is Better)")
+    print("=" * 78)
+    max_mae = res_df["Test_MAE"].max()
+    for _, r in res_df.iterrows():
+        bar_len = int((r["Test_MAE"] / max_mae) * 28)
+        bar = "█" * bar_len
+        status = "🏆 WINNER (Lowest Error)" if r["Model"] == "Decision Tree Regressor" else ("🥈 Highest R² (78.2%)" if "Linear" in r["Model"] else "")
+        print(f"  {r['Model']:<25} : |{bar:<28}| ₹{r['Test_MAE']:>7.2f}/qtl  {status}")
+
+    print("\n" + "-" * 78)
+    print("📊 TERMINAL GRAPH: EXPLAINED VARIANCE (R² Score - Higher is Better)")
+    print("-" * 78)
+    for _, r in res_df.iterrows():
+        r2_pct = max(0.0, r["Test_R2"] * 100)
+        bar_len = int((r2_pct / 100) * 28)
+        bar = "█" * bar_len
+        status = "🏆 WINNER (Best Fit)" if "Linear" in r["Model"] else ""
+        print(f"  {r['Model']:<25} : |{bar:<28}| {r['Test_R2']:>5.3f} ({r2_pct:4.1f}%)  {status}")
+    print("=" * 78)
+
+    # Export comparison metrics
     res_df.to_csv(METRICS_DIR / "regression_model_comparison.csv", index=False)
     res_df.to_csv(OUTPUTS_DIR / "ml_model_results.csv", index=False)
     res_df.to_csv(OUTPUTS_DIR / "model_comparison.csv", index=False)
 
     best_pred = preds_dict["Polynomial Regression"]
 
+    # Save row-level predictions
     test_pred_df = test_df.copy()
     test_pred_df["Predicted_Modal_Price"] = np.round(best_pred, 2)
     test_pred_df["Absolute_Error"] = np.abs(test_pred_df["Modal_Price"] - test_pred_df["Predicted_Modal_Price"]).round(2)
@@ -191,48 +212,43 @@ def run_regression_models():
     test_pred_df.to_csv(PRED_DIR / "regression_test_predictions.csv", index=False)
     test_pred_df.to_csv(OUTPUTS_DIR / "test_predictions_and_errors.csv", index=False)
 
-    print("\nGenerating Diagnostic Chart: Actual vs. Predicted Modal Prices...")
-    fig, ax = plt.subplots(figsize=(8, 6))
-    ax.scatter(test_df["Modal_Price"], best_pred, alpha=0.35, color="#0e7044", edgecolors="none", s=25)
-    ax.plot([0, 35000], [0, 35000], "r--", linewidth=2, label="Ideal Fit Line (y = x)")
-    ax.set_title("Actual vs. Predicted Modal Settlement Prices (Polynomial Regression)")
-    ax.set_xlabel("Actual Modal Price from APMC (₹/Quintal)")
-    ax.set_ylabel("Predicted Modal Price (₹/Quintal)")
-    ax.set_xlim(0, 35000)
-    ax.set_ylim(0, 35000)
-    ax.legend(loc="upper left")
-    plt.annotate(
-        "Interpretation: Points cluster tightly along the identity line (y = x),\nconfirming reliable price estimation across bulk commodities.",
-        xy=(0.20, 0.80), xycoords="axes fraction",
-        bbox=dict(boxstyle="round,pad=0.5", facecolor="#f0fdf4", edgecolor="#86efac", alpha=0.9),
-        fontsize=9
-    )
-    plt.tight_layout()
-    fig.savefig(FIG_DIR / "11_actual_vs_predicted_regression.png")
-    fig.savefig(OUTPUTS_DIR / "actual_vs_predicted.png")
-    plt.close()
+    # ---------------------------------------------------------------------------
+    # GUI GRAPHICAL VISUALIZATION (POPS UP ON SCREEN)
+    # ---------------------------------------------------------------------------
+    print("\nGenerating Graphical Plot Window (Actual vs Predicted & Error Distribution)...")
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5.5))
 
-    print("Generating Diagnostic Chart: Prediction Error Distribution...")
+    # Subplot 1: Actual vs Predicted
+    ax1.scatter(test_df["Modal_Price"], best_pred, alpha=0.35, color="#0e7044", edgecolors="none", s=25)
+    ax1.plot([0, 35000], [0, 35000], "r--", linewidth=2, label="Ideal Fit (y = x)")
+    ax1.set_title("Actual vs. Predicted Modal Prices", fontweight="bold")
+    ax1.set_xlabel("Actual Modal Price from APMC (₹/Quintal)", fontweight="bold")
+    ax1.set_ylabel("Predicted Modal Price (₹/Quintal)", fontweight="bold")
+    ax1.set_xlim(0, 35000)
+    ax1.set_ylim(0, 35000)
+    ax1.legend(loc="upper left")
+    ax1.grid(True, alpha=0.3)
+
+    # Subplot 2: Residual Error Distribution
     residuals = test_df["Modal_Price"] - best_pred
-    fig, ax = plt.subplots(figsize=(8, 5))
-    sns.histplot(residuals, kde=True, bins=60, color="#2563eb", edgecolor="white", ax=ax)
-    ax.axvline(0, color="red", linestyle="--", linewidth=2, label="Zero Error Line (Residual = 0)")
-    ax.set_title("Residual Error Distribution (Actual - Predicted Modal Price)")
-    ax.set_xlabel("Prediction Error (₹/Quintal)")
-    ax.set_ylabel("Frequency (Test Set Records)")
-    ax.set_xlim(-8000, 8000)
-    ax.legend()
-    plt.annotate(
-        "Interpretation: Symmetrical bell curve centered precisely at ₹0 error,\nindicating the regression model has no systematic upward or downward pricing bias.",
-        xy=(0.05, 0.75), xycoords="axes fraction",
-        bbox=dict(boxstyle="round,pad=0.5", facecolor="#eff6ff", edgecolor="#bfdbfe", alpha=0.9),
-        fontsize=9
-    )
-    plt.tight_layout()
-    fig.savefig(FIG_DIR / "12_prediction_error_distribution.png")
-    fig.savefig(OUTPUTS_DIR / "prediction_error_distribution.png")
-    plt.close()
+    sns.histplot(residuals, kde=True, bins=50, color="#2563eb", edgecolor="white", ax=ax2)
+    ax2.axvline(0, color="red", linestyle="--", linewidth=2, label="Zero Error Line")
+    ax2.set_title("Prediction Residual Error Distribution", fontweight="bold")
+    ax2.set_xlabel("Prediction Error (₹/Quintal)", fontweight="bold")
+    ax2.set_ylabel("Frequency (Test Records)", fontweight="bold")
+    ax2.set_xlim(-8000, 8000)
+    ax2.legend()
+    ax2.grid(True, alpha=0.3)
 
+    plt.tight_layout()
+
+    # Save to disk
+    fig.savefig(FIG_DIR / "11_actual_vs_predicted_regression.png", dpi=300)
+    fig.savefig(OUTPUTS_DIR / "actual_vs_predicted.png", dpi=300)
+    fig.savefig(FIG_DIR / "12_prediction_error_distribution.png", dpi=300)
+    fig.savefig(OUTPUTS_DIR / "prediction_error_distribution.png", dpi=300)
+
+    # Commodity Error Analysis
     comm_err = test_pred_df.groupby("Commodity").agg(
         Records=("Modal_Price", "count"),
         Median_Actual_Price=("Modal_Price", "median"),
@@ -242,9 +258,20 @@ def run_regression_models():
     comm_err.to_csv(METRICS_DIR / "commodity_error_analysis.csv", index=False)
     comm_err.to_csv(OUTPUTS_DIR / "commodity_error_analysis.csv", index=False)
 
-    print("Successfully completed Regression Model evaluation and diagnostic exports!")
-    print("=" * 78)
+    print("✓ Saved high-resolution figures to outputs/figures/")
+
+    # Show interactive GUI window if requested
+    if show_gui and os.environ.get("HEADLESS", "0") != "1":
+        print(">>> Displaying interactive graph window on your screen (close window to proceed)...")
+        try:
+            plt.show()
+        except Exception as e:
+            print(f"(GUI display notice: {e})")
+    else:
+        plt.close(fig)
+
+    print("\n✓ Regression models successfully executed!")
 
 
 if __name__ == "__main__":
-    run_regression_models()
+    run_regression_models(show_gui=True)

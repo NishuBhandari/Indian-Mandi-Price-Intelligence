@@ -11,12 +11,11 @@ Purpose:
 =============================================================================
 """
 
+import os
 import sys
 from pathlib import Path
 import numpy as np
 import pandas as pd
-import matplotlib
-matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -72,7 +71,7 @@ def assign_agri_category(commodity_name):
         return 'Other Agri'
 
 
-def run_eda():
+def run_eda(show_gui=True):
     print("=" * 78)
     print("EXPLORATORY DATA ANALYSIS - COMPUTING SUMMARY METRICS & 10 CHARTS")
     print("=" * 78)
@@ -304,7 +303,7 @@ def run_eda():
     )
     plt.tight_layout()
     fig.savefig(FIG_DIR / "10_price_outliers_boxplot.png")
-    plt.close()
+    plt.close(fig)
 
     # EXPORT CSV SUMMARY TABLES
     print("\nExporting Summary CSV Tables...")
@@ -352,9 +351,94 @@ def run_eda():
     arb_df.to_csv(METRICS_DIR / "intermarket_arbitrage.csv", index=False)
     arb_df.to_csv(OUTPUTS_DIR / "intermarket_arbitrage.csv", index=False)
 
-    print("Successfully generated all 10 EDA charts in outputs/figures/ and summary CSVs in outputs/metrics/!")
+    print("✓ Successfully saved 10 individual figures in outputs/figures/")
+
+    # ---------------------------------------------------------------------------
+    # TERMINAL GRAPH VISUALIZATION (ASCII BARS FOR INSTANT INSPECTION)
+    # ---------------------------------------------------------------------------
+    print("\n" + "=" * 78)
+    print("📊 TERMINAL GRAPH: TOP 10 COMMODITIES BY TRANSACTION VOLUME")
     print("=" * 78)
+    top_comm = comm_df.head(10)
+    max_c_vol = top_comm["Total_Records"].max()
+    for _, r in top_comm.iterrows():
+        bar_len = int((r["Total_Records"] / max_c_vol) * 28)
+        bar = "█" * bar_len
+        print(f"  {r['Commodity']:<18} : |{bar:<28}| {r['Total_Records']:>5,d} rows (Avg: ₹{r['Avg_Modal_Price']:>6.1f})")
+
+    print("\n" + "-" * 78)
+    print("📊 TERMINAL GRAPH: AGRICULTURAL SECTOR TRANSACTION DISTRIBUTION")
+    print("-" * 78)
+    sec_counts = df["Category"].value_counts()
+    for cat, cnt in sec_counts.items():
+        pct = cnt / len(df) * 100
+        bar_len = int((pct / 100) * 28)
+        bar = "█" * bar_len
+        print(f"  {cat:<18} : |{bar:<28}| {pct:5.1f}% ({cnt:>5,d} records)")
+    print("=" * 78)
+
+    # ---------------------------------------------------------------------------
+    # GUI GRAPHICAL VISUALIZATION: 4-PANEL EDA MASTER SHOWCASE WINDOW
+    # ---------------------------------------------------------------------------
+    print("\nGenerating Interactive 4-Panel EDA Master Plot Window...")
+    fig_master, axes = plt.subplots(2, 2, figsize=(14, 10))
+
+    # Panel 1: Modal Price Distribution
+    sns.histplot(df["Modal_Price"], kde=True, bins=50, color="#0e7044", edgecolor="white", ax=axes[0, 0])
+    axes[0, 0].axvline(df["Modal_Price"].median(), color="red", linestyle="--", linewidth=2,
+                       label=f"Median: ₹{df['Modal_Price'].median():,.0f}")
+    axes[0, 0].set_title("1. Mandi Modal Settlement Price Distribution", fontweight="bold")
+    axes[0, 0].set_xlabel("Modal Price (₹/Quintal)", fontweight="bold")
+    axes[0, 0].set_ylabel("Records (Frequency)", fontweight="bold")
+    axes[0, 0].set_xlim(0, 25000)
+    axes[0, 0].legend()
+    axes[0, 0].grid(True, alpha=0.3)
+
+    # Panel 2: Price Bounds (Min vs Max vs Modal)
+    sample_sub = df.sample(min(3000, len(df)), random_state=42)
+    axes[0, 1].scatter(sample_sub["Min_Price"], sample_sub["Max_Price"], alpha=0.35, color="#2563eb", s=15, label="Intraday Bounds")
+    axes[0, 1].plot([0, 30000], [0, 30000], "r--", linewidth=1.5, label="Parity (Max = Min)")
+    axes[0, 1].set_title("2. Intraday Price Bounds (Min vs. Max Price)", fontweight="bold")
+    axes[0, 1].set_xlabel("Minimum Price (₹/Quintal)", fontweight="bold")
+    axes[0, 1].set_ylabel("Maximum Price (₹/Quintal)", fontweight="bold")
+    axes[0, 1].set_xlim(0, 25000)
+    axes[0, 1].set_ylim(0, 25000)
+    axes[0, 1].legend()
+    axes[0, 1].grid(True, alpha=0.3)
+
+    # Panel 3: Top 10 Commodities Volume Bar Chart
+    top10_c = comm_df.head(10).sort_values("Total_Records", ascending=True)
+    axes[1, 0].barh(top10_c["Commodity"], top10_c["Total_Records"], color="#059669", edgecolor="white")
+    axes[1, 0].set_title("3. Top 10 Commodities by Reporting Volume", fontweight="bold")
+    axes[1, 0].set_xlabel("Total Transactions / Reporting Mandis", fontweight="bold")
+    axes[1, 0].grid(True, alpha=0.3, axis="x")
+
+    # Panel 4: Numerical Correlation Heatmap
+    corr_cols = ["Min_Price", "Max_Price", "Modal_Price", "Price_Spread"]
+    corr_mat = df[corr_cols].corr()
+    sns.heatmap(corr_mat, annot=True, fmt=".3f", cmap="Blues", cbar=True, square=True,
+                annot_kws={"size": 10, "weight": "bold"}, ax=axes[1, 1])
+    axes[1, 1].set_title("4. Correlation Matrix of Numerical Price Features", fontweight="bold")
+
+    plt.tight_layout()
+
+    # Save to disk
+    fig_master.savefig(FIG_DIR / "00_eda_showcase_overview.png", dpi=300)
+    fig_master.savefig(OUTPUTS_DIR / "eda_overview.png", dpi=300)
+    print("✓ Saved EDA master overview figure to outputs/figures/00_eda_showcase_overview.png")
+
+    # Show interactive GUI window if requested
+    if show_gui and os.environ.get("HEADLESS", "0") != "1":
+        print(">>> Displaying interactive EDA graph window on your screen (close window to proceed)...")
+        try:
+            plt.show()
+        except Exception as e:
+            print(f"(GUI display notice: {e})")
+    else:
+        plt.close(fig_master)
+
+    print("\n✓ Exploratory Data Analysis successfully executed!")
 
 
 if __name__ == "__main__":
-    run_eda()
+    run_eda(show_gui=True)
